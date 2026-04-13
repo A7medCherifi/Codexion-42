@@ -59,6 +59,6 @@ typedef struct table_s
 int	ft_atoi(char *nptr);
 int	my_isdigit(char *str);
 void free_all(arguments_t **args);
-int parsing(int argc, char **argv);
+int parsing(arguments_t	**args, int argc, char **argv);
 
 #endif
