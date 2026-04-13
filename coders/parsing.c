@@ -1,0 +1,69 @@
+#include "codexion.h"
+
+
+int check_numbers(char *argument, int min) {
+	int		number;
+
+	if (my_isdigit(argument)) {
+		number = ft_atoi(argument);
+		if (number >= min)
+			return (number);
+	}
+	return (-1);
+}
+
+
+void check_add_agrs(int *arg, char *str, int *isvalid, int min)
+{
+	int		value;
+
+	if (!*isvalid)
+		return ;
+	value = check_numbers(str, min);
+	if (value < 0) {
+		*isvalid = 0;
+		return ;
+	}
+	*arg = value;
+}
+
+void check_sheduler(int *arg, char *str, int *isvalid)
+{
+	if (!*isvalid)
+		return ;
+	if (strcmp(str, "fifo") == 0) {
+		*arg = 1;
+	} else if (strcmp(str, "edf") == 0) {
+		*arg = 0;
+	} else {
+		*isvalid = 0;
+		return ;
+	}
+}
+
+int parsing(int argc, char **argv) {
+	arguments_t	*args;
+	int			isvalid;
+
+	if (argc != 9) {
+		printf("Error\n");
+		return (1);
+	}
+	args = malloc(sizeof(arguments_t));
+	if (!args)
+		return (1);
+	isvalid = 1;
+	check_add_agrs(&args->number_of_coders, argv[1], &isvalid, 1);
+	check_add_agrs(&args->time_to_burnout, argv[2], &isvalid, 1);
+	check_add_agrs(&args->time_to_compile, argv[3], &isvalid, 0);
+	check_add_agrs(&args->time_to_debug, argv[4], &isvalid, 0);
+	check_add_agrs(&args->time_to_refactor, argv[5], &isvalid, 0);
+	check_add_agrs(&args->number_of_compiles_required, argv[6], &isvalid, 1);
+	check_add_agrs(&args->dongle_cooldown, argv[7], &isvalid, 0);
+	check_sheduler(&args->scheduler, argv[8], &isvalid);
+	if (!isvalid) {
+		printf("Error\n");
+		free_all(&args);
+	}
+	return (0);
+}
