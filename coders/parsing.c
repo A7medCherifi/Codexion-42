@@ -4,6 +4,8 @@
 int check_numbers(char *argument, int min) {
 	int		number;
 
+	if (strlen(argument) == 0)
+		return (-1);
 	if (my_isdigit(argument)) {
 		number = ft_atoi(argument);
 		if (number >= min)
@@ -41,14 +43,14 @@ void check_sheduler(int *arg, char *str, int *isvalid)
 	}
 }
 
-int parsing(arguments_t	**args, int argc, char **argv) {
+int parsing(t_arguments	**args, int argc, char **argv) {
 	int			isvalid;
 
 	if (argc != 9) {
 		printf("Error\n");
 		return (1);
 	}
-	*args = malloc(sizeof(arguments_t));
+	*args = malloc(sizeof(t_arguments));
 	if (!*args)
 		return (1);
 	isvalid = 1;
@@ -62,8 +64,7 @@ int parsing(arguments_t	**args, int argc, char **argv) {
 	check_sheduler(&(*args)->scheduler, argv[8], &isvalid);
 	if (!isvalid) {
 		printf("Error\n");
-		free_all(args);
-		*args = NULL;
+		return (1);
 	}
 	return (0);
 }

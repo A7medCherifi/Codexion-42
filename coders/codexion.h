@@ -5,13 +5,15 @@
 #include <pthread.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+#include <sys/time.h>
 
 // Forward declarations
-typedef struct table_s table_t;
-typedef struct coder_s coder_t;
-typedef struct dongle_s dongle_t;
+typedef struct s_table t_table;
+typedef struct s_coder t_coder;
+typedef struct s_dongle t_dongle;
 
-typedef struct arguments_s
+typedef struct s_arguments
 {
 	int		number_of_coders;
 	int		time_to_burnout;
@@ -21,44 +23,56 @@ typedef struct arguments_s
 	int		number_of_compiles_required;
 	int		dongle_cooldown;
 	int		scheduler;
-}	arguments_t;
+}	t_arguments;
 
-typedef struct dongle_s
+typedef struct s_request
+{
+	int				coder_id;
+	long			requested_at;
+	int				deadline;
+}	t_request;
+
+typedef struct s_dongle
 {
 	pthread_mutex_t	mutex;
     pthread_cond_t	cond;
+	t_request		queue[2];
+	int				queue_size;
 	int				id;
 	int				is_available;
 	int				released_at;
-}	dongle_t;
+}	t_dongle;
 
-typedef struct coder_s
+typedef struct s_coder
 {
 	pthread_t		thread;
-	dongle_t		*left_dongle;
-	dongle_t		*right_dongle;
-	table_t			*table;
+	t_dongle		*left_dongle;
+	t_dongle		*right_dongle;
+	t_table			*table;
 	int				id;
 	int				compile_count;
-	int				last_compile_start;
-}	coder_t;
+	long			last_compile_start;
+}	t_coder;
 
-typedef struct table_s
+typedef struct s_table
 {
-	arguments_t		*args;
-	coder_t			*coders;
-	dongle_t		*dongles;
+	pthread_t		monitor;
+	t_arguments		*args;
+	t_coder			*coders;
+	t_dongle		*dongles;
 	pthread_mutex_t	log_mutex;
 	pthread_mutex_t	stop_mutex;
-	int				start_time;
-	int				stop_time;
-}	table_t;
+	pthread_cond_t	stop_cond;
+	long			start_time;
+	int				stop;
+}	t_table;
 
 
 // FUNCTIONS
 int	ft_atoi(char *nptr);
 int	my_isdigit(char *str);
-void free_all(arguments_t **args);
-int parsing(arguments_t	**args, int argc, char **argv);
+int free_all(t_arguments **arg, t_table **tbl, t_coder **cdr);
+int parsing(t_arguments	**args, int argc, char **argv);
+long get_time();
 
 #endif

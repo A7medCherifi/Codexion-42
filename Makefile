@@ -1,12 +1,12 @@
 NAME = codexion
-CC = cc 
-CFLAGS = -Wall -Wextra -Werror -pthread
+CC = gcc 
+CFLAGS = -g -Wall -Wextra -Werror -pthread
 RM = rm -f
 
 HEADER = coders/codexion.h
 INCLUDES = -I coders
 
-SRC = parsing.c ft_atoi.c utils.c codexion.c
+SRC = parsing.c ft_atoi.c utils.c codexion.c get_time.c
 
 OBJ = $(SRC:%.c=obj/%.o)
 
