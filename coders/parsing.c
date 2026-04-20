@@ -1,12 +1,13 @@
 #include "codexion.h"
 
-
-int check_numbers(char *argument, int min) {
+int check_numbers(char *argument, int min)
+{
 	int		number;
 
 	if (strlen(argument) == 0)
 		return (-1);
-	if (my_isdigit(argument)) {
+	if (my_isdigit(argument))
+    {
 		number = ft_atoi(argument);
 		if (number >= min)
 			return (number);
@@ -43,7 +44,8 @@ void check_sheduler(int *arg, char *str, int *isvalid)
 	}
 }
 
-int parsing(t_arguments	**args, int argc, char **argv) {
+int parsing(t_arguments	**args, int argc, char **argv)
+{
 	int			isvalid;
 
 	if (argc != 9) {
