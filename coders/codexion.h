@@ -29,7 +29,7 @@ typedef struct s_request
 {
 	int				coder_id;
 	long			requested_at;
-	int				deadline;
+	long			deadline;
 }	t_request;
 
 typedef struct s_dongle
@@ -40,7 +40,7 @@ typedef struct s_dongle
 	int				queue_size;
 	int				id;
 	int				is_available;
-	int				released_at;
+	long			released_at;
 }	t_dongle;
 
 typedef struct s_coder
@@ -69,17 +69,16 @@ typedef struct s_table
 
 
 // FUNCTIONS
-int	ft_atoi(char *nptr);
-int	my_isdigit(char *str);
-int free_all(t_table *table);
-int parsing(t_arguments	**args, int argc, char **argv);
-long get_time();
-void	*func1(void *arg);
 t_coder     *create_coders(t_table *table);
 t_dongle    *create_dongles(t_table *table);
-void *monitor(void *arg);
-void	*thread_manager(void *arg);
-void	take_dongle(t_dongle *dongle, t_coder *coder);
-void	release_dongle(t_dongle *dongle);
+void 		*monitor(void *arg);
+void		*thread_manager(void *arg);
+long		get_time();
+int			ft_atoi(char *nptr);
+int			my_isdigit(char *str);
+int			free_all(t_table *table);
+int			parsing(t_arguments	**args, int argc, char **argv);
+void		take_dongle(t_dongle *dongle, t_coder *coder);
+void		release_dongle(t_dongle *dongle);
 
 #endif

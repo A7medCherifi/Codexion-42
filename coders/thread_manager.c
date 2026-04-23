@@ -3,12 +3,14 @@
 
 void	request_dongles(t_coder *coder)
 {
+	// if (coder->table->stop)
+	// 	return (0);
 	if (coder->id % 2 == 1) {
-		take_dongle(coder->right_dongle, coder);
 		take_dongle(coder->left_dongle, coder);
+		take_dongle(coder->right_dongle, coder);
 	} else {
-		take_dongle(coder->left_dongle, coder);
 		take_dongle(coder->right_dongle, coder);
+		take_dongle(coder->left_dongle, coder);
 	}
 }
 
@@ -50,28 +52,33 @@ void	coder_refacture(t_coder *coder)
 void	*thread_manager(void *arg)
 {
 	t_coder     *coder;
+	int			number_of_compiles;
 
 	coder = (t_coder *)arg;
+	number_of_compiles = coder->table->args->number_of_compiles_required;
 	coder->compile_count = 1;
-	while (coder->compile_count <= coder->table->args->number_of_compiles_required && !coder->table->stop)
+	while (coder->compile_count <= number_of_compiles)
 	{
-		if (coder->table->stop)
-			return (NULL);
+		// if (!request_dongles(coder))
+		// 	return (NULL);
 		request_dongles(coder);
-		coder_compiles(coder);
 		if (coder->table->stop)
 			return (NULL);
+		coder_compiles(coder);
+		
 		release_dongle(coder->right_dongle);
+		// if (coder->table->stop)
+		// 	return (NULL);
 		release_dongle(coder->left_dongle);
+		if (coder->table->stop)
+			return (NULL);
 		coder_debug(coder);
 		if (coder->table->stop)
 			return (NULL);
-
 		coder_refacture(coder);		
 		if (coder->table->stop)
 			return (NULL);
 		coder->compile_count++;
 	}
-
 	return (NULL);
 }

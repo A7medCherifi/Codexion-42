@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 12:05:03 by acherifi          #+#    #+#             */
-/*   Updated: 2026/04/20 18:58:59 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/04/21 10:26:18 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ t_dongle    *create_dongles(t_table *table)
 {
     int     i;
 
-    i = 0;
     table->dongles = malloc(sizeof(t_dongle) * (table->args->number_of_coders));
 	if (!table->dongles)
 		return (NULL);
 
+	i = 0;
 	while (i < table->args->number_of_coders)
 	{
 		table->dongles[i].queue_size = 0;
