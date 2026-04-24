@@ -6,7 +6,7 @@ RM = rm -f
 HEADER = coders/codexion.h
 INCLUDES = -I coders
 
-SRC = parsing.c ft_atoi.c utils.c codexion.c get_time.c monitor.c \
+SRC = parsing.c ft_atoi.c utils.c codexion.c utils2.c monitor.c \
 	thread_manager.c heap_manager.c
 
 OBJ = $(SRC:%.c=obj/%.o)
@@ -31,3 +31,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean
+
+#-fsanitize=thread

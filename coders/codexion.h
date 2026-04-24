@@ -52,6 +52,7 @@ typedef struct s_coder
 	int				id;
 	int				compile_count;
 	long			last_compile_start;
+	int				dongles_i_have;
 }	t_coder;
 
 typedef struct s_table
@@ -69,16 +70,18 @@ typedef struct s_table
 
 
 // FUNCTIONS
-t_coder     *create_coders(t_table *table);
-t_dongle    *create_dongles(t_table *table);
-void 		*monitor(void *arg);
-void		*thread_manager(void *arg);
-long		get_time();
-int			ft_atoi(char *nptr);
-int			my_isdigit(char *str);
-int			free_all(t_table *table);
-int			parsing(t_arguments	**args, int argc, char **argv);
-void		take_dongle(t_dongle *dongle, t_coder *coder);
-void		release_dongle(t_dongle *dongle);
+struct timespec	get_time_spec(int	time);
+t_coder     	*create_coders(t_table *table);
+t_dongle    	*create_dongles(t_table *table);
+void 			*monitor(void *arg);
+void			*thread_manager(void *arg);
+long			get_time();
+int				ft_atoi(char *nptr);
+int				my_isdigit(char *str);
+int				free_all(t_table *table);
+int				parsing(t_arguments	**args, int argc, char **argv);
+void			take_both_dongles(t_coder *coder);
+void			release_dongle(t_coder *coder);
+int				check_for_stop(t_table *table);
 
 #endif

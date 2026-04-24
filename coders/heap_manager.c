@@ -1,11 +1,11 @@
 #include "codexion.h"
 
-int		has_priority(t_request a, t_request b, int scheduler)
+
+int		get_priority(t_request child, t_request parent, int scheduler)
 {
-	if (scheduler) {
-		return (a.requested_at < b.requested_at);
-	}
-	return (a.deadline < b.deadline);
+	if (scheduler)
+		return (child.requested_at < parent.requested_at);
+	return (child.deadline < parent.deadline);
 }
 
 void	push_request_to_heap(t_dongle *dongle, t_request request, int scheduler)
@@ -17,9 +17,11 @@ void	push_request_to_heap(t_dongle *dongle, t_request request, int scheduler)
 	dongle->queue[dongle->queue_size] = request;
 	i = dongle->queue_size;
 	dongle->queue_size++;
-	while (i > 0) {
+	while (i > 0)
+	{
 		parent = (i - 1) / 2;
-		if (has_priority(dongle->queue[i], dongle->queue[parent], scheduler)) {
+		if (get_priority(dongle->queue[i], dongle->queue[parent], scheduler))
+		{
 			temp = dongle->queue[parent];
 			dongle->queue[parent] = dongle->queue[i];
 			dongle->queue[i] = temp;
@@ -28,59 +30,65 @@ void	push_request_to_heap(t_dongle *dongle, t_request request, int scheduler)
 		else
 			break;
 	}
+	
 }
 
 void	pop_coder_from_heap(t_dongle *dongle)
 {
 	if (dongle->queue_size == 0)
 		return ;
+	//if (dongle->queue->coder_id == dongle->queue[0].coder_id)
 	dongle->queue[0] = dongle->queue[dongle->queue_size - 1];
 	dongle->queue_size--;
 }
 
-
-void	check_priority_node(t_dongle *dongle, t_coder *coder, t_request request)
+void	check_priority_node(t_request request, t_coder *coder)
 {
-	struct	timespec	ts;
-	long				cooldown_end;
+	struct timespec	ts;
 
-	push_request_to_heap(dongle, request, coder->table->args->scheduler);
-	while (dongle->queue[0].coder_id != coder->id
-		|| !dongle->is_available
-		|| get_time() - dongle->released_at < coder->table->args->dongle_cooldown)
+	push_request_to_heap(coder->left_dongle, request, coder->table->args->scheduler);
+	push_request_to_heap(coder->right_dongle, request, coder->table->args->scheduler);
+	while (
+		coder->left_dongle->is_available && coder->right_dongle->is_available
+		&& coder->left_dongle->queue[0].coder_id == coder->id
+		&& coder->right_dongle->queue[0].coder_id == coder->id
+		&& get_time() - coder->left_dongle->released_at >= coder->table->args->dongle_cooldown 
+		&& get_time() - coder->right_dongle->released_at >= coder->table->args->dongle_cooldown 
+	)
 	{
 		if (coder->table->stop) {
-			pop_coder_from_heap(dongle);
+			pop_coder_from_heap(coder->left_dongle);
+			pop_coder_from_heap(coder->right_dongle);
 			return ;
 		}
-		if (dongle->queue[0].coder_id == coder->id && dongle->is_available) {
-			cooldown_end = dongle->released_at + coder->table->args->dongle_cooldown;
-			ts.tv_sec = cooldown_end / 1000;
-			ts.tv_nsec = (cooldown_end % 1000) * 1000000;
-			pthread_cond_timedwait(&dongle->cond, &dongle->mutex, &ts);
-		}
-		else
-			pthread_cond_wait(&dongle->cond, &dongle->mutex);
+		ts = get_time_spec(coder->table->args->dongle_cooldown);
+		pthread_cond_timedwait(&coder->table->dongles->cond, &coder->table->dongles->mutex, &ts);
 	}
-	pop_coder_from_heap(dongle);
-	dongle->is_available = 0;
+	pop_coder_from_heap(coder->left_dongle);
+	pop_coder_from_heap(coder->right_dongle);
+	coder->left_dongle->is_available = 0;
+	coder->right_dongle->is_available = 0;
 }
 
-void	take_dongle(t_dongle *dongle, t_coder *coder)
+void	take_both_dongles(t_coder *coder)
 {
-	t_request			request;
+	t_request	request;
 
 	request.coder_id = coder->id;
 	request.requested_at = get_time();
 	request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
-	if (coder->table->stop)
+
+	if (check_for_stop(coder->table))
 		return ;
-	pthread_mutex_lock(&dongle->mutex);
-	check_priority_node(dongle, coder, request);
-	pthread_mutex_unlock(&dongle->mutex);
-	if (coder->table->stop)
+	pthread_mutex_lock(&coder->left_dongle->mutex);
+	pthread_mutex_lock(&coder->right_dongle->mutex);
+	check_priority_node(request, coder);
+	pthread_mutex_unlock(&coder->left_dongle->mutex);
+	pthread_mutex_unlock(&coder->right_dongle->mutex);
+	if (check_for_stop(coder->table))
 		return ;
 	pthread_mutex_lock(&coder->table->log_mutex);
-	printf("%ld %d has taken a dongle\n", get_time() - coder->table->start_time, coder->id);
+	printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
+	coder->dongles_i_have++;
 	pthread_mutex_unlock(&coder->table->log_mutex);
 }

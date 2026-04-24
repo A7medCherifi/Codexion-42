@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 12:05:03 by acherifi          #+#    #+#             */
-/*   Updated: 2026/04/21 10:26:18 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/04/24 17:57:12 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,28 @@
 
 int free_all(t_table *table)
 {
+	int		i;
 
+	if (!table)
+		return (1);
+	pthread_mutex_destroy(&table->log_mutex);
+	if (table->dongles && table->args) {
+		i = 0;
+		while (i < table->args->number_of_coders) {
+			pthread_mutex_destroy(&table->dongles[i].mutex);
+			pthread_cond_destroy(&table->dongles[i].cond);
+			i++;
+		}
+	}
     if (table->dongles) {
         free(table->dongles);
     }
-
     if (table->coders) {
         free(table->coders);
     }
-
     if (table->args) {
         free(table->args);
     }
-
 	return (1);
 }
 
@@ -75,13 +84,18 @@ t_coder     *create_coders(t_table *table)
     table->coders = malloc(sizeof(t_coder) * (table->args->number_of_coders));
 	if (!table->coders)
 		return (NULL);
+	pthread_mutex_lock(&table->log_mutex);
 	table->stop = 0;
 	table->start_time = get_time();
+	pthread_mutex_unlock(&table->log_mutex);
 	while (i < table->args->number_of_coders) {
 		if (table->stop)
+		{
 			return (NULL);
+		}
 		table->coders[i].id = i + 1;
 		table->coders[i].table = table;
+		table->coders[i].dongles_i_have = 0;
 		table->coders[i].last_compile_start = table->start_time;
 		table->coders[i].left_dongle = &table->dongles[i];
 		table->coders[i].right_dongle = &table->dongles[(i + 1) % table->args->number_of_coders];
@@ -89,16 +103,20 @@ t_coder     *create_coders(t_table *table)
 		i++;
 	}
     if (table->stop)
+	{
 		return (NULL);
+	}
 	
     return (table->coders);
 }
 
-void	release_dongle(t_dongle *dongle)
+void	release_dongle(t_coder *coder)
 {
-	pthread_mutex_lock(&dongle->mutex);
-	dongle->is_available = 1;
-	dongle->released_at = get_time();
-	pthread_cond_broadcast(&dongle->cond);
-	pthread_mutex_unlock(&dongle->mutex);
+	pthread_mutex_lock(&coder->table->dongles->mutex);
+	coder->left_dongle->is_available = 1;
+	coder->right_dongle->is_available = 1;
+	coder->left_dongle->released_at = get_time();
+	coder->right_dongle->released_at = get_time();
+	// pthread_cond_broadcast(&coder->table->cond);
+	pthread_mutex_unlock(&coder->table->dongles->mutex);
 }
