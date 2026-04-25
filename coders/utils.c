@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/19 12:05:03 by acherifi          #+#    #+#             */
-/*   Updated: 2026/04/24 17:57:12 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/04/25 14:57:48 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,13 +110,11 @@ t_coder     *create_coders(t_table *table)
     return (table->coders);
 }
 
-void	release_dongle(t_coder *coder)
+void    release_dongle(t_dongle *dongle)
 {
-	pthread_mutex_lock(&coder->table->dongles->mutex);
-	coder->left_dongle->is_available = 1;
-	coder->right_dongle->is_available = 1;
-	coder->left_dongle->released_at = get_time();
-	coder->right_dongle->released_at = get_time();
-	// pthread_cond_broadcast(&coder->table->cond);
-	pthread_mutex_unlock(&coder->table->dongles->mutex);
+    pthread_mutex_lock(&dongle->mutex);
+    dongle->is_available = 1;
+    dongle->released_at = get_time();
+    pthread_cond_broadcast(&dongle->cond);
+    pthread_mutex_unlock(&dongle->mutex);
 }

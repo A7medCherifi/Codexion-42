@@ -1,12 +1,18 @@
 #include "codexion.h"
 
 
-int		request_dongles(t_coder *coder)
+int        request_dongles(t_coder *coder)
 {
-	if (check_for_stop(coder->table))
-		return (1);
-	take_both_dongles(coder);
-	return (0);
+    if (check_for_stop(coder->table))
+        return (1);
+    if (coder->id % 2 == 1) {
+        take_dongle(coder->right_dongle, coder);
+        take_dongle(coder->left_dongle, coder);
+    } else {
+        take_dongle(coder->right_dongle, coder);
+        take_dongle(coder->left_dongle, coder);
+    }
+    return (0);
 }
 
 int		coder_compiles(t_coder *coder)
@@ -53,36 +59,37 @@ int		coder_refacture(t_coder *coder)
 	return (0);
 }
 
-void	*thread_manager(void *arg)
+void    *thread_manager(void *arg)
 {
-	t_coder     *coder;
-	int			number_of_compiles;
+    t_coder     *coder;
+    int            number_of_compiles;
 
-	coder = (t_coder *)arg;
-	number_of_compiles = coder->table->args->number_of_compiles_required;
-	coder->compile_count = 1;
-	while (coder->compile_count <= number_of_compiles)
-	{
-		if (request_dongles(coder)) {
+    coder = (t_coder *)arg;
+    number_of_compiles = coder->table->args->number_of_compiles_required;
+    coder->compile_count = 1;
+    while (coder->compile_count <= number_of_compiles)
+    {
+        if (request_dongles(coder)) {
+            return (NULL);
+        }
+        if (coder_compiles(coder)) {
 			return (NULL);
-		}
-		if (coder_compiles(coder)) {
-			return (NULL);
-		}
-		if (coder_debug(coder)) {
-			return (NULL);
-		}
-		release_dongle(coder);
-		if (check_for_stop(coder->table)) {
-			return (NULL);
-		}
-		if (coder_refacture(coder)) {
-			return (NULL);
-		}
-		if (check_for_stop(coder->table)) {
-			return (NULL);
-		}
-		coder->compile_count++;
-	}
-	return (NULL);
+        }
+		release_dongle(coder->right_dongle);
+		release_dongle(coder->left_dongle);
+        if (coder_debug(coder)) {
+            return (NULL);
+        }
+        if (check_for_stop(coder->table)) {
+            return (NULL);
+        }
+        if (coder_refacture(coder)) {
+            return (NULL);
+        }
+        if (check_for_stop(coder->table)) {
+            return (NULL);
+        }
+        coder->compile_count++;
+    }
+    return (NULL);
 }

@@ -80,8 +80,9 @@ int				ft_atoi(char *nptr);
 int				my_isdigit(char *str);
 int				free_all(t_table *table);
 int				parsing(t_arguments	**args, int argc, char **argv);
-void			take_both_dongles(t_coder *coder);
-void			release_dongle(t_coder *coder);
+void			take_dongle(t_dongle *dongle, t_coder *coder);
+void			release_dongle(t_dongle *dongle);
 int				check_for_stop(t_table *table);
+void	broadcast(t_table *table);
 
 #endif
