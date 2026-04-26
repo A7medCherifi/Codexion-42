@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/19 12:05:03 by acherifi          #+#    #+#             */
-/*   Updated: 2026/04/25 14:57:48 by acherifi         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "codexion.h"
 
 
@@ -86,6 +74,7 @@ t_coder     *create_coders(t_table *table)
 		return (NULL);
 	pthread_mutex_lock(&table->log_mutex);
 	table->stop = 0;
+	table->done = 1;
 	table->start_time = get_time();
 	pthread_mutex_unlock(&table->log_mutex);
 	while (i < table->args->number_of_coders) {
@@ -95,7 +84,7 @@ t_coder     *create_coders(t_table *table)
 		}
 		table->coders[i].id = i + 1;
 		table->coders[i].table = table;
-		table->coders[i].dongles_i_have = 0;
+		table->coders[i].compile_count = 1;
 		table->coders[i].last_compile_start = table->start_time;
 		table->coders[i].left_dongle = &table->dongles[i];
 		table->coders[i].right_dongle = &table->dongles[(i + 1) % table->args->number_of_coders];
@@ -115,6 +104,5 @@ void    release_dongle(t_dongle *dongle)
     pthread_mutex_lock(&dongle->mutex);
     dongle->is_available = 1;
     dongle->released_at = get_time();
-    pthread_cond_broadcast(&dongle->cond);
     pthread_mutex_unlock(&dongle->mutex);
 }

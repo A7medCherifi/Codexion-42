@@ -52,7 +52,6 @@ typedef struct s_coder
 	int				id;
 	int				compile_count;
 	long			last_compile_start;
-	int				dongles_i_have;
 }	t_coder;
 
 typedef struct s_table
@@ -62,10 +61,9 @@ typedef struct s_table
 	t_coder			*coders;
 	t_dongle		*dongles;
 	pthread_mutex_t	log_mutex;
-	pthread_mutex_t	stop_mutex;
-	pthread_cond_t	stop_cond;
 	long			start_time;
 	int				stop;
+	int				done;
 }	t_table;
 
 
@@ -80,9 +78,9 @@ int				ft_atoi(char *nptr);
 int				my_isdigit(char *str);
 int				free_all(t_table *table);
 int				parsing(t_arguments	**args, int argc, char **argv);
-void			take_dongle(t_dongle *dongle, t_coder *coder);
 void			release_dongle(t_dongle *dongle);
 int				check_for_stop(t_table *table);
 void	broadcast(t_table *table);
+int    take_both_dongles(t_coder *coder);
 
 #endif

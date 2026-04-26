@@ -59,31 +59,17 @@ int		can_take_both(t_coder *coder)
          && right->queue_size > 0 && right->queue[0].coder_id == coder->id);
 }
 
-void    check_priority_node(t_dongle *dongle, t_request request, t_coder *coder)
+void    take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
 {
-    struct timespec    ts;
-
     push_request_to_heap(dongle, request, coder->table->args->scheduler);
-    while (
-        dongle->queue[0].coder_id != coder->id
-        || !dongle->is_available
-        || get_time() - dongle->released_at < coder->table->args->dongle_cooldown
-    )
-    {
-        if (coder->table->stop) {
-            pop_coder_from_heap(dongle);
-            return ;
-        }
-        else {
-            ts = get_time_spec(coder->table->args->dongle_cooldown);
-            pthread_cond_timedwait(&dongle->cond, &dongle->mutex, &ts);
-        }
-    }
-    pop_coder_from_heap(dongle);
+    pthread_mutex_lock(&coder->table->log_mutex);
+    printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
+    pthread_mutex_unlock(&coder->table->log_mutex);
+	pop_coder_from_heap(dongle);
     dongle->is_available = 0;
 }
 
-void    take_dongle(t_dongle *dongle, t_coder *coder)
+int    take_both_dongles(t_coder *coder)
 {
     t_request    request;
 
@@ -91,15 +77,13 @@ void    take_dongle(t_dongle *dongle, t_coder *coder)
     request.requested_at = get_time();
     request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
 
-    if (check_for_stop(coder->table))
-        return ;
-    pthread_mutex_lock(&dongle->mutex);
-    check_priority_node(dongle, request, coder);
-    pthread_mutex_unlock(&dongle->mutex);
-    if (check_for_stop(coder->table))
-        return ;
-    pthread_mutex_lock(&coder->table->log_mutex);
-    printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
-    coder->dongles_i_have++;
-    pthread_mutex_unlock(&coder->table->log_mutex);
+    if (check_for_stop(coder->table)) {
+        return (1); }
+
+	take_dongle(coder->left_dongle, request, coder);
+	take_dongle(coder->right_dongle, request, coder);
+
+    if (check_for_stop(coder->table)) {
+    	return (1); }
+	return (0);
 }
