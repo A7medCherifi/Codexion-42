@@ -68,7 +68,7 @@ typedef struct s_table
 
 
 // FUNCTIONS
-struct timespec	get_time_spec(int	time);
+struct timespec	get_time_spec(long	time);
 t_coder     	*create_coders(t_table *table);
 t_dongle    	*create_dongles(t_table *table);
 void 			*monitor(void *arg);
@@ -78,9 +78,10 @@ int				ft_atoi(char *nptr);
 int				my_isdigit(char *str);
 int				free_all(t_table *table);
 int				parsing(t_arguments	**args, int argc, char **argv);
-void			release_dongle(t_dongle *dongle);
+void			release_dongle(t_coder *coder);
 int				check_for_stop(t_table *table);
 void	broadcast(t_table *table);
 int    take_both_dongles(t_coder *coder);
+void	time_sleep(t_table *table, int	time);
 
 #endif

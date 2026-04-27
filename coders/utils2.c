@@ -8,7 +8,7 @@ long get_time() {
 }
 
 
-struct timespec get_time_spec(int	time)
+struct timespec get_time_spec(long	time)
 {
 	struct	timespec	ts;
 
@@ -30,4 +30,18 @@ int		check_for_stop(t_table *table)
 	}
 	pthread_mutex_unlock(&table->log_mutex);
 	return (0);
+}
+
+void	time_sleep(t_table *table, int	time)
+{
+	long	start;
+
+	start = get_time();
+	while (get_time() - start < time) 
+	{
+		if (check_for_stop(table)) {
+			return ;
+		}
+		usleep(500);
+	}
 }

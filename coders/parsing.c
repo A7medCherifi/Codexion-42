@@ -49,7 +49,6 @@ int parsing(t_arguments	**args, int argc, char **argv)
 	int			isvalid;
 
 	if (argc != 9) {
-		printf("Error\n");
 		return (1);
 	}
 	*args = malloc(sizeof(t_arguments));
@@ -65,7 +64,6 @@ int parsing(t_arguments	**args, int argc, char **argv)
 	check_add_agrs(&(*args)->dongle_cooldown, argv[7], &isvalid, 0);
 	check_sheduler(&(*args)->scheduler, argv[8], &isvalid);
 	if (!isvalid) {
-		printf("Error\n");
 		return (1);
 	}
 	return (0);

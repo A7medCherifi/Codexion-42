@@ -42,30 +42,17 @@ void	pop_coder_from_heap(t_dongle *dongle)
 	dongle->queue_size--;
 }
 
-int		can_take_both(t_coder *coder)
-{
-    long	now;
-    int		cooldown;
-
-    t_dongle *left = coder->left_dongle;
-    t_dongle *right = coder->right_dongle;
-	cooldown = coder->table->args->dongle_cooldown;
-    now = get_time();
-
-    return (left->is_available && right->is_available
-         && now - left->released_at >= cooldown
-         && now - right->released_at >= cooldown
-         && left->queue_size > 0 && left->queue[0].coder_id == coder->id
-         && right->queue_size > 0 && right->queue[0].coder_id == coder->id);
-}
-
 void    take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
 {
+	if (get_time() >= request.deadline) {
+		return ;
+	}
     push_request_to_heap(dongle, request, coder->table->args->scheduler);
     pthread_mutex_lock(&coder->table->log_mutex);
     printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
     pthread_mutex_unlock(&coder->table->log_mutex);
 	pop_coder_from_heap(dongle);
+
     dongle->is_available = 0;
 }
 
