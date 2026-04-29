@@ -34,7 +34,7 @@ int	my_isdigit(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] == '+' && strlen(str) > 1) {
+	if (str[i] == '+' && strlen(str) > 1) {
 		i++;
 	}
 	while (str[i]) {
@@ -100,8 +100,11 @@ t_coder     *create_coders(t_table *table)
     return (table->coders);
 }
 
-void    release_dongle(t_coder *coder)
+int		release_dongle(t_coder *coder)
 {
+	if (check_for_stop(coder->table)) {
+		return (1);
+	}
     pthread_mutex_lock(&coder->left_dongle->mutex);
     pthread_mutex_lock(&coder->right_dongle->mutex);
     coder->left_dongle->is_available = 1;
@@ -110,4 +113,5 @@ void    release_dongle(t_coder *coder)
     coder->right_dongle->released_at = get_time();
     pthread_mutex_unlock(&coder->left_dongle->mutex);
     pthread_mutex_unlock(&coder->right_dongle->mutex);
+	return (0);
 }

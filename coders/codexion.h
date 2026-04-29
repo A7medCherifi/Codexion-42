@@ -27,20 +27,19 @@ typedef struct s_arguments
 
 typedef struct s_request
 {
-	int				coder_id;
 	long			requested_at;
 	long			deadline;
+	int				coder_id;
 }	t_request;
 
 typedef struct s_dongle
 {
 	pthread_mutex_t	mutex;
-    pthread_cond_t	cond;
 	t_request		queue[2];
+	long			released_at;
 	int				queue_size;
 	int				id;
 	int				is_available;
-	long			released_at;
 }	t_dongle;
 
 typedef struct s_coder
@@ -49,18 +48,18 @@ typedef struct s_coder
 	t_dongle		*left_dongle;
 	t_dongle		*right_dongle;
 	t_table			*table;
+	long			last_compile_start;
 	int				id;
 	int				compile_count;
-	long			last_compile_start;
 }	t_coder;
 
 typedef struct s_table
 {
+	pthread_mutex_t	log_mutex;
 	pthread_t		monitor;
 	t_arguments		*args;
 	t_coder			*coders;
 	t_dongle		*dongles;
-	pthread_mutex_t	log_mutex;
 	long			start_time;
 	int				stop;
 	int				done;
@@ -78,10 +77,12 @@ int				ft_atoi(char *nptr);
 int				my_isdigit(char *str);
 int				free_all(t_table *table);
 int				parsing(t_arguments	**args, int argc, char **argv);
-void			release_dongle(t_coder *coder);
+int				release_dongle(t_coder *coder);
 int				check_for_stop(t_table *table);
-void	broadcast(t_table *table);
-int    take_both_dongles(t_coder *coder);
-void	time_sleep(t_table *table, int	time);
+void			broadcast(t_table *table);
+int				take_both_dongles(t_coder *coder);
+void			time_sleep(t_table *table, int	time);
+int				check_for_compiles(t_coder *coder);
+void			check_for_done_simulation(t_coder *coder);
 
 #endif

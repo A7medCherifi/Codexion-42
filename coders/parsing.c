@@ -44,25 +44,26 @@ void check_sheduler(int *arg, char *str, int *isvalid)
 	}
 }
 
-int parsing(t_arguments	**args, int argc, char **argv)
+int parsing(t_table *table, int argc, char **argv)
 {
 	int			isvalid;
 
 	if (argc != 9) {
 		return (1);
 	}
-	*args = malloc(sizeof(t_arguments));
-	if (!*args)
+	table->args = malloc(sizeof(t_arguments));
+	if (!table->args)
 		return (1);
 	isvalid = 1;
-	check_add_agrs(&(*args)->number_of_coders, argv[1], &isvalid, 1);
-	check_add_agrs(&(*args)->time_to_burnout, argv[2], &isvalid, 1);
-	check_add_agrs(&(*args)->time_to_compile, argv[3], &isvalid, 0);
-	check_add_agrs(&(*args)->time_to_debug, argv[4], &isvalid, 0);
-	check_add_agrs(&(*args)->time_to_refactor, argv[5], &isvalid, 0);
-	check_add_agrs(&(*args)->number_of_compiles_required, argv[6], &isvalid, 1);
-	check_add_agrs(&(*args)->dongle_cooldown, argv[7], &isvalid, 0);
-	check_sheduler(&(*args)->scheduler, argv[8], &isvalid);
+	memset(&table, 0, sizeof(t_table));
+	check_add_agrs(&table->args->number_of_coders, argv[1], &isvalid, 1);
+	check_add_agrs(&table->args->time_to_burnout, argv[2], &isvalid, 1);
+	check_add_agrs(&table->args->time_to_compile, argv[3], &isvalid, 0);
+	check_add_agrs(&table->args->time_to_debug, argv[4], &isvalid, 0);
+	check_add_agrs(&table->args->time_to_refactor, argv[5], &isvalid, 0);
+	check_add_agrs(&table->args->number_of_compiles_required, argv[6], &isvalid, 1);
+	check_add_agrs(&table->args->dongle_cooldown, argv[7], &isvalid, 0);
+	check_sheduler(&table->args->scheduler, argv[8], &isvalid);
 	if (!isvalid) {
 		return (1);
 	}

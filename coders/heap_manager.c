@@ -47,8 +47,11 @@ void    take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
 	if (get_time() >= request.deadline) {
 		return ;
 	}
-    push_request_to_heap(dongle, request, coder->table->args->scheduler);
+	push_request_to_heap(dongle, request, coder->table->args->scheduler);
     pthread_mutex_lock(&coder->table->log_mutex);
+	if (coder->table->stop) {
+		pthread_mutex_unlock(&coder->table->log_mutex);
+        return ; }
     printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
     pthread_mutex_unlock(&coder->table->log_mutex);
 	pop_coder_from_heap(dongle);
@@ -72,5 +75,9 @@ int    take_both_dongles(t_coder *coder)
 
     if (check_for_stop(coder->table)) {
     	return (1); }
+
+	pthread_mutex_lock(&coder->table->log_mutex);
+	coder->last_compile_start = get_time();
+	pthread_mutex_unlock(&coder->table->log_mutex);
 	return (0);
 }

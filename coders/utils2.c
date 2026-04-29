@@ -32,6 +32,36 @@ int		check_for_stop(t_table *table)
 	return (0);
 }
 
+int		check_for_compiles(t_coder *coder)
+{
+	int		number_of_compiles;
+
+	pthread_mutex_lock(&coder->table->log_mutex);
+	number_of_compiles = coder->table->args->number_of_compiles_required;
+	if (coder->compile_count <= number_of_compiles && !coder->table->stop)
+	{
+		pthread_mutex_unlock(&coder->table->log_mutex);
+		return (1);
+	}
+	pthread_mutex_unlock(&coder->table->log_mutex);
+	return (0);
+}
+
+void	check_for_done_simulation(t_coder *coder)
+{
+	int		number_of_coders;
+	int		number_of_compiles_required;
+
+	pthread_mutex_lock(&coder->table->log_mutex);
+	number_of_coders = coder->table->args->number_of_coders;
+	number_of_compiles_required = coder->table->args->number_of_compiles_required;
+	coder->compile_count++;
+	if (coder->table->done >= number_of_coders * number_of_compiles_required) {
+		coder->table->stop = 1;
+	}
+	pthread_mutex_unlock(&coder->table->log_mutex);
+}
+
 void	time_sleep(t_table *table, int	time)
 {
 	long	start;
