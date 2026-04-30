@@ -75,3 +75,12 @@ void	time_sleep(t_table *table, int	time)
 		usleep(500);
 	}
 }
+
+void	swap_nodes(t_request **parent, t_request **child)
+{
+	t_request	temp;
+
+	temp = *parent;
+	*parent = *child;
+	*child = temp;
+}

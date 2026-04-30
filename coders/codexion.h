@@ -76,7 +76,7 @@ long			get_time();
 int				ft_atoi(char *nptr);
 int				my_isdigit(char *str);
 int				free_all(t_table *table);
-int				parsing(t_arguments	**args, int argc, char **argv);
+int				parsing(t_table *table, int argc, char **argv);
 int				release_dongle(t_coder *coder);
 int				check_for_stop(t_table *table);
 void			broadcast(t_table *table);
@@ -84,5 +84,6 @@ int				take_both_dongles(t_coder *coder);
 void			time_sleep(t_table *table, int	time);
 int				check_for_compiles(t_coder *coder);
 void			check_for_done_simulation(t_coder *coder);
+void			swap_nodes(t_request **parent, t_request **child);
 
 #endif

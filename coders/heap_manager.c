@@ -33,13 +33,35 @@ void	push_request_to_heap(t_dongle *dongle, t_request request, int scheduler)
 	
 }
 
-void	pop_coder_from_heap(t_dongle *dongle)
+void	pop_coder_from_heap(t_dongle *dongle, int scheduler)
 {
+	int		small;
+	int		left;
+	int		right;
+	int		i;
+
 	if (dongle->queue_size == 0)
 		return ;
-	//if (dongle->queue->coder_id == dongle->queue[0].coder_id)
 	dongle->queue[0] = dongle->queue[dongle->queue_size - 1];
 	dongle->queue_size--;
+	i = 0;
+	while (1)
+	{
+		left = (i * 2) + 1;
+		right = (i * 2) + 2;
+		small = i;
+		if (left < dongle->queue_size
+			&& get_priority(dongle->queue[left], dongle->queue[small], scheduler))
+			small = left;
+		if (right < dongle->queue_size
+			&& get_priority(dongle->queue[right], dongle->queue[small], scheduler))
+			small = right;
+		if (small == i)
+			break;
+		swap_nodes(dongle->queue[i], dongle->queue[small]);
+		i = small;
+	}
+	
 }
 
 void    take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
