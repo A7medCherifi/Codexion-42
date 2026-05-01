@@ -1,12 +1,12 @@
 NAME = codexion
-CC = cc 
-CFLAGS = -Wall -Wextra -Werror -pthread
+CC = gcc 
+CFLAGS = -g -Wall -Wextra -Werror -pthread
 RM = rm -f
 
 HEADER = coders/codexion.h
-INCLUDES = -I coders
 
-SRC = parsing.c ft_atoi.c utils.c codexion.c
+SRC = parsing.c ft_atoi.c utils.c codexion.c utils2.c monitor.c \
+	thread_manager.c heap_manager.c
 
 OBJ = $(SRC:%.c=obj/%.o)
 
@@ -18,7 +18,7 @@ $(NAME): $(OBJ)
 
 obj/%.o: coders/%.c $(HEADER)
 	@mkdir -p obj
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@$(RM) $(OBJ)
@@ -30,3 +30,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean
+
+#-fsanitize=thread
