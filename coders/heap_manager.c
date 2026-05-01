@@ -58,27 +58,28 @@ void	pop_coder_from_heap(t_dongle *dongle, int scheduler)
 			small = right;
 		if (small == i)
 			break;
-		swap_nodes(dongle->queue[i], dongle->queue[small]);
-		i = small;
-	}
-	
+		swap_nodes(&dongle->queue[i], &dongle->queue[small]);
+		i = small; }
 }
 
-void    take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
+int		take_dongle(t_dongle *dongle, t_request request, t_coder *coder)
 {
-	if (get_time() >= request.deadline) {
-		return ;
+	if (get_time() >= request.deadline)
+	{
+		return (1);
 	}
 	push_request_to_heap(dongle, request, coder->table->args->scheduler);
     pthread_mutex_lock(&coder->table->log_mutex);
-	if (coder->table->stop) {
+	if (coder->table->stop)
+	{
 		pthread_mutex_unlock(&coder->table->log_mutex);
-        return ; }
-    printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
+        return (1);
+	}
+	printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
     pthread_mutex_unlock(&coder->table->log_mutex);
-	pop_coder_from_heap(dongle);
-
+	pop_coder_from_heap(dongle, coder->table->args->scheduler);
     dongle->is_available = 0;
+	return (0);
 }
 
 int    take_both_dongles(t_coder *coder)
@@ -87,13 +88,18 @@ int    take_both_dongles(t_coder *coder)
 
     request.coder_id = coder->id;
     request.requested_at = get_time();
+	pthread_mutex_lock(&coder->table->log_mutex);
     request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
+	pthread_mutex_unlock(&coder->table->log_mutex);
 
     if (check_for_stop(coder->table)) {
         return (1); }
 
-	take_dongle(coder->left_dongle, request, coder);
-	take_dongle(coder->right_dongle, request, coder);
+	if (take_dongle(coder->left_dongle, request, coder)
+		|| take_dongle(coder->right_dongle, request, coder))
+	{
+		return (1);
+	}
 
     if (check_for_stop(coder->table)) {
     	return (1); }

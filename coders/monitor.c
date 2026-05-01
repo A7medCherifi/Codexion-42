@@ -1,19 +1,19 @@
 #include "codexion.h"
 
-void	broadcast(t_table *table)
-{
-	int i;
+// void	broadcast(t_table *table)
+// {
+// 	int i;
 	
-	i = 0;
-	while (i < table->args->number_of_coders)
-	{
-		pthread_mutex_lock(&table->dongles[i].mutex);
-		pthread_cond_broadcast(&table->dongles[i].cond);
-		pthread_mutex_unlock(&table->dongles[i].mutex);
-		i++;
-	}
+// 	i = 0;
+// 	while (i < table->args->number_of_coders)
+// 	{
+// 		pthread_mutex_lock(&table->dongles[i].mutex);
+// 		pthread_cond_broadcast(&table->dongles[i].cond);
+// 		pthread_mutex_unlock(&table->dongles[i].mutex);
+// 		i++;
+// 	}
 
-}
+// }
 
 void	*monitor(void *arg)
 {

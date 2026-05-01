@@ -1,5 +1,14 @@
 #include "codexion.h"
 
+void	swap_nodes(t_request *parent, t_request *child)
+{
+	t_request	temp;
+
+	temp = *parent;
+	*parent = *child;
+	*child = temp;
+}
+
 int check_numbers(char *argument, int min)
 {
 	int		number;
@@ -48,6 +57,7 @@ int parsing(t_table *table, int argc, char **argv)
 {
 	int			isvalid;
 
+	memset(table, 0, sizeof(t_table));
 	if (argc != 9) {
 		return (1);
 	}
@@ -55,7 +65,6 @@ int parsing(t_table *table, int argc, char **argv)
 	if (!table->args)
 		return (1);
 	isvalid = 1;
-	memset(&table, 0, sizeof(t_table));
 	check_add_agrs(&table->args->number_of_coders, argv[1], &isvalid, 1);
 	check_add_agrs(&table->args->time_to_burnout, argv[2], &isvalid, 1);
 	check_add_agrs(&table->args->time_to_compile, argv[3], &isvalid, 0);

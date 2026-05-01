@@ -9,23 +9,24 @@ int free_all(t_table *table)
 		return (1);
 	if (table->args)
 	{
-		pthread_mutex_destroy(&table->log_mutex);
 		if (table->dongles)
 		{
 			i = 0;
-			while (i < table->args->number_of_coders) {
+			pthread_mutex_destroy(&table->log_mutex);
+			while (i < table->args->number_of_coders)
+			{
 				pthread_mutex_destroy(&table->dongles[i].mutex);
 				i++;
 			}
 		}
 		free(table->args);
 	}
-    if (table->dongles) {
+    if (table->dongles)
         free(table->dongles);
-    }
-    if (table->coders) {
+    if (table->coders)
+	{
         free(table->coders);
-    }
+	}
 	return (1);
 }
 
@@ -77,13 +78,10 @@ t_coder     *create_coders(t_table *table)
 		return (NULL);
 	pthread_mutex_lock(&table->log_mutex);
 	table->stop = 0;
-	table->done = 1;
+	table->done = 0;
 	table->start_time = get_time();
 	pthread_mutex_unlock(&table->log_mutex);
 	while (i < table->args->number_of_coders) {
-		// if (table->stop) {
-		// 	return (NULL);
-		// }
 		table->coders[i].id = i + 1;
 		table->coders[i].table = table;
 		table->coders[i].compile_count = 1;
@@ -93,10 +91,6 @@ t_coder     *create_coders(t_table *table)
 		pthread_create(&table->coders[i].thread, NULL, thread_manager, &table->coders[i]);
 		i++;
 	}
-    // if (table->stop)
-	// {
-	// 	return (NULL);
-	// }
     return (table->coders);
 }
 

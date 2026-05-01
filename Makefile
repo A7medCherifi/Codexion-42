@@ -1,6 +1,6 @@
 NAME = codexion
-CC = gcc 
-CFLAGS = -g -Wall -Wextra -Werror -pthread
+CC = cc 
+CFLAGS = -Wall -Wextra -Werror -pthread
 RM = rm -f
 
 HEADER = coders/codexion.h
