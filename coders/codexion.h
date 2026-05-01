@@ -83,7 +83,7 @@ void			broadcast(t_table *table);
 int				take_both_dongles(t_coder *coder);
 void			time_sleep(t_table *table, int	time);
 int				check_for_compiles(t_coder *coder);
+void			swap_nodes(t_request *parent, t_request *child);
 void			check_for_done_simulation(t_coder *coder);
-void			swap_nodes(t_request **parent, t_request **child);
 
 #endif
