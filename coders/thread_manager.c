@@ -1,34 +1,84 @@
 #include "codexion.h"
 
+int		send_request_to_queue(t_coder *coder, t_dongle *dongle)
+{
+	t_request    request;
 
-int        request_dongles(t_coder *coder)
+	if (check_for_stop(coder->table))
+		return (1);
+    request.coder_id = coder->id;
+    request.requested_at = get_time();
+	pthread_mutex_lock(&coder->table->log_mutex);
+    request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
+	pthread_mutex_unlock(&coder->table->log_mutex);
+	if (check_for_stop(coder->table))
+		return (1);
+	push_and_bubble_up(dongle, request, coder->table->args->scheduler);
+	return (0);
+}
+
+int		request_dongles(t_coder *coder)
 {
 	int		result;
-
-	result = 0;
+	
+	// if (coder->id % 2 == 0) {
+	// 	usleep(100);
+	// }
+	if (send_request_to_queue(coder, coder->left_dongle)
+		|| send_request_to_queue(coder, coder->right_dongle))
+	{
+		return (1);
+	}
 	while (1)
 	{
-		if (check_for_stop(coder->table))
+		if (check_for_stop(coder->table)) {
 			return (1);
-		pthread_mutex_lock(&coder->left_dongle->mutex);
-		pthread_mutex_lock(&coder->right_dongle->mutex);
+		}
 		if (coder->left_dongle->is_available && coder->right_dongle->is_available
 			&& get_time() - coder->left_dongle->released_at >= coder->table->args->dongle_cooldown
 			&& get_time() - coder->right_dongle->released_at >= coder->table->args->dongle_cooldown)
 		{
 			result = take_both_dongles(coder);
-			pthread_mutex_unlock(&coder->right_dongle->mutex);
-			pthread_mutex_unlock(&coder->left_dongle->mutex);
-			if (result)
+			if (result) {
 				return (1);
+			}
 			break;
 		}
-		pthread_mutex_unlock(&coder->right_dongle->mutex);
-		pthread_mutex_unlock(&coder->left_dongle->mutex);
 		usleep(300);
 	}
-    return (0);
+	return (0);
 }
+
+
+// int        request_dongles(t_coder *coder)
+// {
+
+// 	int		result;
+
+// 	result = 0;
+// 	while (1)
+// 	{
+// 		if (check_for_stop(coder->table))
+// 			return (1);
+// 		pthread_mutex_lock(&coder->left_dongle->mutex);
+// 		pthread_mutex_lock(&coder->right_dongle->mutex);
+// 		if (coder->left_dongle->is_available && coder->right_dongle->is_available
+// 			&& get_time() - coder->left_dongle->released_at >= coder->table->args->dongle_cooldown
+// 			&& get_time() - coder->right_dongle->released_at >= coder->table->args->dongle_cooldown)
+// 		{
+// 			result = take_both_dongles(coder);
+// 			pthread_mutex_unlock(&coder->right_dongle->mutex);
+// 			pthread_mutex_unlock(&coder->left_dongle->mutex);
+// 			if (result)
+// 				return (1);
+// 			break;
+// 		}
+// 		pthread_mutex_unlock(&coder->right_dongle->mutex);
+// 		pthread_mutex_unlock(&coder->left_dongle->mutex);
+// 		usleep(300);
+// 	}
+//     return (0);
+// }
 
 int		coder_compiles(t_coder *coder)
 {
