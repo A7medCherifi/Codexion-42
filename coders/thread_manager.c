@@ -6,47 +6,32 @@ int		send_request_to_queue(t_coder *coder, t_dongle *dongle)
 
 	if (check_for_stop(coder->table))
 		return (1);
-    request.coder_id = coder->id;
+	request.coder_id = coder->id;
     request.requested_at = get_time();
 	pthread_mutex_lock(&coder->table->log_mutex);
     request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
+	push_and_bubble_up(coder, dongle, request);
 	pthread_mutex_unlock(&coder->table->log_mutex);
-	if (check_for_stop(coder->table))
-		return (1);
-	push_and_bubble_up(dongle, request, coder->table->args->scheduler);
 	return (0);
 }
 
-int		request_dongles(t_coder *coder)
+int        request_dongles(t_coder *coder)
 {
 	int		result;
-	
-	// if (coder->id % 2 == 0) {
-	// 	usleep(100);
-	// }
+
+	result = 0;
 	if (send_request_to_queue(coder, coder->left_dongle)
-		|| send_request_to_queue(coder, coder->right_dongle))
-	{
+		|| send_request_to_queue(coder, coder->right_dongle)) {
 		return (1);
 	}
-	while (1)
-	{
-		if (check_for_stop(coder->table)) {
-			return (1);
-		}
-		if (coder->left_dongle->is_available && coder->right_dongle->is_available
-			&& get_time() - coder->left_dongle->released_at >= coder->table->args->dongle_cooldown
-			&& get_time() - coder->right_dongle->released_at >= coder->table->args->dongle_cooldown)
-		{
-			result = take_both_dongles(coder);
-			if (result) {
-				return (1);
-			}
-			break;
-		}
-		usleep(300);
+	if (check_for_stop(coder->table)) {
+		return (1);
 	}
-	return (0);
+	result = take_both_dongles(coder);
+	if (result) {
+		return (1);
+	}
+    return (0);
 }
 
 
@@ -138,6 +123,9 @@ void	*thread_manager(void *arg)
     coder = (t_coder *)arg;
 	if (check_for_stop(coder->table))
 		return (NULL); 
+	if (coder->id % 2 == 0) {
+		time_sleep(coder->table, coder->table->args->time_to_compile + coder->table->args->dongle_cooldown / 2);
+	}
     while (check_for_compiles(coder))
     {
         if (request_dongles(coder))

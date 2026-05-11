@@ -1,0 +1,1396 @@
+0 1 is taken dongle
+0 1 is taken dongle
+0 1 is compiling
+0 1 is debugging
+0 1 is refactoring
+0 1 is taken dongle
+0 1 is taken dongle
+0 1 is compiling
+0 1 is debugging
+0 1 is refactoring
+0 1 is taken dongle
+0 1 is taken dongle
+0 1 is compiling
+0 1 is debugging
+0 1 is refactoring
+0 3 is taken dongle
+0 3 is taken dongle
+0 3 is compiling
+0 3 is debugging
+0 3 is refactoring
+0 3 is taken dongle
+0 3 is taken dongle
+0 3 is compiling
+0 3 is debugging
+0 3 is refactoring
+0 3 is taken dongle
+0 3 is taken dongle
+0 3 is compiling
+0 3 is debugging
+0 3 is refactoring
+0 4 is taken dongle
+0 4 is taken dongle
+0 4 is compiling
+0 4 is debugging
+0 4 is refactoring
+0 4 is taken dongle
+0 4 is taken dongle
+0 4 is compiling
+0 4 is debugging
+0 4 is refactoring
+0 4 is taken dongle
+0 4 is taken dongle
+0 4 is compiling
+0 4 is debugging
+0 4 is refactoring
+0 7 is taken dongle
+0 7 is taken dongle
+0 7 is compiling
+0 7 is debugging
+0 7 is refactoring
+0 7 is taken dongle
+0 7 is taken dongle
+0 7 is compiling
+0 7 is debugging
+0 7 is refactoring
+0 7 is taken dongle
+0 7 is taken dongle
+0 7 is compiling
+0 7 is debugging
+0 8 is taken dongle
+0 8 is taken dongle
+0 8 is compiling
+0 8 is debugging
+0 2 is taken dongle
+0 2 is taken dongle
+0 2 is compiling
+0 2 is debugging
+0 2 is refactoring
+0 2 is taken dongle
+0 2 is taken dongle
+0 5 is taken dongle
+0 5 is taken dongle
+0 8 is refactoring
+0 2 is compiling
+0 2 is debugging
+0 2 is refactoring
+0 2 is taken dongle
+0 2 is taken dongle
+0 2 is compiling
+0 2 is debugging
+0 2 is refactoring
+0 9 is taken dongle
+0 9 is taken dongle
+0 9 is compiling
+0 9 is debugging
+0 9 is refactoring
+0 9 is taken dongle
+0 9 is taken dongle
+0 9 is compiling
+0 22 is taken dongle
+0 22 is taken dongle
+0 20 is taken dongle
+0 20 is taken dongle
+0 24 is taken dongle
+0 24 is taken dongle
+0 24 is compiling
+0 24 is debugging
+0 24 is refactoring
+0 7 is refactoring
+0 9 is debugging
+0 9 is refactoring
+0 22 is compiling
+0 22 is debugging
+0 22 is refactoring
+0 5 is compiling
+0 5 is debugging
+0 5 is refactoring
+0 20 is compiling
+0 20 is debugging
+1 20 is refactoring
+1 16 is taken dongle
+1 16 is taken dongle
+1 16 is compiling
+1 16 is debugging
+1 16 is refactoring
+1 16 is taken dongle
+1 16 is taken dongle
+1 14 is taken dongle
+1 14 is taken dongle
+1 33 is taken dongle
+1 33 is taken dongle
+1 33 is compiling
+1 6 is taken dongle
+1 6 is taken dongle
+1 6 is compiling
+1 6 is debugging
+1 6 is refactoring
+1 16 is compiling
+1 16 is debugging
+1 16 is refactoring
+1 16 is taken dongle
+1 16 is taken dongle
+1 16 is compiling
+1 16 is debugging
+1 16 is refactoring
+1 40 is taken dongle
+1 40 is taken dongle
+1 40 is compiling
+1 40 is debugging
+1 40 is refactoring
+1 40 is taken dongle
+1 40 is taken dongle
+1 37 is taken dongle
+1 37 is taken dongle
+1 37 is compiling
+1 37 is debugging
+1 37 is refactoring
+1 43 is taken dongle
+1 43 is taken dongle
+1 19 is taken dongle
+1 19 is taken dongle
+1 37 is taken dongle
+1 37 is taken dongle
+1 37 is compiling
+1 37 is debugging
+1 37 is refactoring
+1 37 is taken dongle
+1 37 is taken dongle
+1 43 is compiling
+1 43 is debugging
+1 43 is refactoring
+1 43 is taken dongle
+1 43 is taken dongle
+1 5 is taken dongle
+1 5 is taken dongle
+1 50 is taken dongle
+1 50 is taken dongle
+1 50 is compiling
+1 50 is debugging
+1 50 is refactoring
+1 50 is taken dongle
+1 50 is taken dongle
+1 50 is compiling
+1 50 is debugging
+1 47 is taken dongle
+1 47 is taken dongle
+1 14 is compiling
+1 14 is debugging
+1 14 is refactoring
+1 58 is taken dongle
+1 58 is taken dongle
+1 58 is compiling
+1 33 is debugging
+1 33 is refactoring
+1 61 is taken dongle
+1 61 is taken dongle
+1 5 is compiling
+1 5 is debugging
+1 5 is refactoring
+1 64 is taken dongle
+1 64 is taken dongle
+1 64 is compiling
+1 30 is taken dongle
+1 30 is taken dongle
+1 30 is compiling
+1 30 is debugging
+1 30 is refactoring
+1 54 is taken dongle
+1 54 is taken dongle
+1 54 is compiling
+1 54 is debugging
+1 54 is refactoring
+1 54 is taken dongle
+1 54 is taken dongle
+1 54 is compiling
+1 54 is debugging
+1 54 is refactoring
+1 54 is taken dongle
+1 54 is taken dongle
+1 54 is compiling
+1 54 is debugging
+1 54 is refactoring
+1 73 is taken dongle
+1 73 is taken dongle
+1 73 is compiling
+1 73 is debugging
+1 73 is refactoring
+1 73 is taken dongle
+1 73 is taken dongle
+1 40 is compiling
+1 31 is taken dongle
+1 31 is taken dongle
+1 15 is taken dongle
+1 15 is taken dongle
+1 15 is compiling
+1 43 is compiling
+1 43 is debugging
+1 43 is refactoring
+1 43 is taken dongle
+1 43 is taken dongle
+1 43 is compiling
+1 43 is debugging
+1 43 is refactoring
+1 19 is compiling
+1 19 is debugging
+1 19 is refactoring
+1 10 is taken dongle
+2 10 is taken dongle
+2 10 is compiling
+2 10 is debugging
+2 10 is refactoring
+2 50 is refactoring
+2 50 is taken dongle
+2 50 is taken dongle
+2 50 is compiling
+2 50 is debugging
+2 50 is refactoring
+2 51 is taken dongle
+2 51 is taken dongle
+2 51 is compiling
+2 51 is debugging
+2 51 is refactoring
+2 51 is taken dongle
+2 51 is taken dongle
+2 51 is compiling
+2 51 is debugging
+2 51 is refactoring
+2 51 is taken dongle
+2 51 is taken dongle
+2 51 is compiling
+2 84 is taken dongle
+2 84 is taken dongle
+2 84 is compiling
+2 84 is debugging
+2 84 is refactoring
+2 84 is taken dongle
+2 84 is taken dongle
+2 84 is compiling
+2 84 is debugging
+2 84 is refactoring
+2 84 is taken dongle
+2 84 is taken dongle
+2 84 is compiling
+2 84 is debugging
+2 84 is refactoring
+2 53 is taken dongle
+2 53 is taken dongle
+2 53 is compiling
+2 53 is debugging
+2 53 is refactoring
+2 53 is taken dongle
+2 53 is taken dongle
+2 53 is compiling
+2 53 is debugging
+2 53 is refactoring
+2 53 is taken dongle
+2 53 is taken dongle
+2 53 is compiling
+2 53 is debugging
+2 53 is refactoring
+2 56 is taken dongle
+2 56 is taken dongle
+2 56 is compiling
+2 56 is debugging
+2 56 is refactoring
+2 56 is taken dongle
+2 56 is taken dongle
+2 56 is compiling
+2 56 is debugging
+2 56 is refactoring
+2 56 is taken dongle
+2 56 is taken dongle
+2 56 is compiling
+2 56 is debugging
+2 56 is refactoring
+2 68 is taken dongle
+2 68 is taken dongle
+2 68 is compiling
+2 68 is debugging
+2 68 is refactoring
+2 68 is taken dongle
+2 68 is taken dongle
+2 68 is compiling
+2 68 is debugging
+2 68 is refactoring
+2 68 is taken dongle
+2 68 is taken dongle
+2 68 is compiling
+2 68 is debugging
+2 68 is refactoring
+2 47 is compiling
+2 47 is debugging
+2 47 is refactoring
+2 70 is taken dongle
+2 70 is taken dongle
+2 70 is compiling
+2 70 is debugging
+2 70 is refactoring
+2 61 is compiling
+2 61 is debugging
+2 61 is refactoring
+2 81 is taken dongle
+2 81 is taken dongle
+2 81 is compiling
+2 51 is debugging
+2 51 is refactoring
+2 34 is taken dongle
+2 34 is taken dongle
+2 34 is compiling
+2 34 is debugging
+2 34 is refactoring
+2 40 is debugging
+2 40 is refactoring
+2 40 is taken dongle
+2 40 is taken dongle
+2 29 is taken dongle
+2 29 is taken dongle
+2 29 is compiling
+2 29 is debugging
+2 29 is refactoring
+2 31 is compiling
+2 31 is debugging
+2 31 is refactoring
+2 33 is taken dongle
+2 33 is taken dongle
+2 33 is compiling
+2 33 is debugging
+2 79 is taken dongle
+2 79 is taken dongle
+2 79 is compiling
+2 70 is taken dongle
+2 70 is taken dongle
+2 70 is compiling
+2 70 is debugging
+2 70 is refactoring
+2 70 is taken dongle
+2 70 is taken dongle
+2 70 is compiling
+2 70 is debugging
+2 70 is refactoring
+2 8 is taken dongle
+2 8 is taken dongle
+2 8 is compiling
+2 8 is debugging
+2 8 is refactoring
+2 69 is taken dongle
+2 69 is taken dongle
+2 95 is taken dongle
+2 95 is taken dongle
+2 95 is compiling
+2 95 is debugging
+2 95 is refactoring
+2 95 is taken dongle
+2 95 is taken dongle
+2 95 is compiling
+2 95 is debugging
+2 95 is refactoring
+2 95 is taken dongle
+2 95 is taken dongle
+2 95 is compiling
+2 95 is debugging
+2 95 is refactoring
+2 73 is compiling
+2 23 is taken dongle
+2 23 is taken dongle
+2 23 is compiling
+2 23 is debugging
+2 98 is taken dongle
+2 98 is taken dongle
+2 35 is taken dongle
+2 35 is taken dongle
+2 46 is taken dongle
+2 46 is taken dongle
+2 46 is compiling
+2 46 is debugging
+2 46 is refactoring
+2 98 is compiling
+2 98 is debugging
+2 98 is refactoring
+2 90 is taken dongle
+2 90 is taken dongle
+2 90 is compiling
+2 90 is debugging
+2 90 is refactoring
+2 93 is taken dongle
+3 93 is taken dongle
+3 93 is compiling
+3 93 is debugging
+3 93 is refactoring
+3 93 is taken dongle
+3 93 is taken dongle
+3 93 is compiling
+3 93 is debugging
+3 93 is refactoring
+3 93 is taken dongle
+3 93 is taken dongle
+3 93 is compiling
+3 85 is taken dongle
+3 85 is taken dongle
+3 9 is taken dongle
+3 9 is taken dongle
+3 75 is taken dongle
+3 75 is taken dongle
+3 75 is compiling
+3 75 is debugging
+3 75 is refactoring
+3 75 is taken dongle
+3 75 is taken dongle
+3 75 is compiling
+3 75 is debugging
+3 20 is taken dongle
+3 20 is taken dongle
+3 20 is compiling
+3 20 is debugging
+3 20 is refactoring
+3 22 is taken dongle
+3 22 is taken dongle
+3 22 is compiling
+3 22 is debugging
+3 22 is refactoring
+3 30 is taken dongle
+3 30 is taken dongle
+3 30 is compiling
+3 30 is debugging
+3 30 is refactoring
+3 89 is taken dongle
+3 89 is taken dongle
+3 89 is compiling
+3 21 is taken dongle
+3 21 is taken dongle
+3 21 is compiling
+3 21 is debugging
+3 21 is refactoring
+3 24 is taken dongle
+3 24 is taken dongle
+3 24 is compiling
+3 24 is debugging
+3 24 is refactoring
+3 64 is debugging
+3 64 is refactoring
+3 15 is debugging
+3 15 is refactoring
+2 58 is debugging
+3 58 is refactoring
+3 28 is taken dongle
+3 28 is taken dongle
+3 28 is compiling
+3 73 is debugging
+3 6 is taken dongle
+3 6 is taken dongle
+3 6 is compiling
+3 6 is debugging
+3 6 is refactoring
+3 9 is compiling
+3 9 is debugging
+3 9 is refactoring
+3 23 is refactoring
+3 23 is taken dongle
+3 23 is taken dongle
+3 23 is compiling
+3 23 is debugging
+3 23 is refactoring
+3 75 is refactoring
+3 63 is taken dongle
+3 63 is taken dongle
+3 65 is taken dongle
+3 65 is taken dongle
+3 65 is compiling
+3 65 is debugging
+3 65 is refactoring
+3 32 is taken dongle
+3 32 is taken dongle
+3 32 is compiling
+3 32 is debugging
+3 32 is refactoring
+3 89 is debugging
+3 89 is refactoring
+3 5 is taken dongle
+3 5 is taken dongle
+3 5 is compiling
+3 5 is debugging
+3 5 is refactoring
+3 96 is taken dongle
+3 96 is taken dongle
+3 96 is compiling
+3 11 is taken dongle
+3 11 is taken dongle
+3 72 is taken dongle
+3 72 is taken dongle
+3 72 is compiling
+3 72 is debugging
+3 72 is refactoring
+3 72 is taken dongle
+3 72 is taken dongle
+3 73 is refactoring
+3 8 is taken dongle
+3 8 is taken dongle
+3 8 is compiling
+3 8 is debugging
+3 8 is refactoring
+3 93 is debugging
+3 93 is refactoring
+3 45 is taken dongle
+3 45 is taken dongle
+3 45 is compiling
+3 45 is debugging
+3 45 is refactoring
+3 79 is debugging
+3 79 is refactoring
+3 59 is taken dongle
+3 59 is taken dongle
+3 59 is compiling
+3 25 is taken dongle
+3 25 is taken dongle
+3 88 is taken dongle
+3 88 is taken dongle
+3 34 is taken dongle
+3 34 is taken dongle
+3 34 is compiling
+3 34 is debugging
+3 34 is refactoring
+3 34 is taken dongle
+3 34 is taken dongle
+3 34 is compiling
+3 76 is taken dongle
+3 76 is taken dongle
+3 76 is compiling
+3 76 is debugging
+3 76 is refactoring
+3 6 is taken dongle
+3 6 is taken dongle
+3 6 is compiling
+3 6 is debugging
+3 33 is refactoring
+3 60 is taken dongle
+3 60 is taken dongle
+3 60 is compiling
+3 60 is debugging
+3 60 is refactoring
+3 94 is taken dongle
+3 94 is taken dongle
+3 94 is compiling
+3 94 is debugging
+3 94 is refactoring
+3 94 is taken dongle
+3 94 is taken dongle
+3 94 is compiling
+3 94 is debugging
+3 94 is refactoring
+3 94 is taken dongle
+3 94 is taken dongle
+3 94 is compiling
+3 94 is debugging
+3 94 is refactoring
+3 66 is taken dongle
+3 66 is taken dongle
+3 66 is compiling
+3 31 is taken dongle
+3 31 is taken dongle
+3 31 is compiling
+3 31 is debugging
+3 31 is refactoring
+3 69 is compiling
+3 69 is debugging
+3 69 is refactoring
+3 69 is taken dongle
+3 69 is taken dongle
+3 69 is compiling
+3 69 is debugging
+3 69 is refactoring
+3 69 is taken dongle
+3 69 is taken dongle
+3 69 is compiling
+3 69 is debugging
+3 69 is refactoring
+3 85 is compiling
+3 85 is debugging
+3 85 is refactoring
+3 48 is taken dongle
+3 48 is taken dongle
+3 48 is compiling
+3 48 is debugging
+3 48 is refactoring
+3 86 is taken dongle
+3 86 is taken dongle
+3 86 is compiling
+3 86 is debugging
+3 86 is refactoring
+3 67 is taken dongle
+3 67 is taken dongle
+3 67 is compiling
+3 67 is debugging
+3 67 is refactoring
+3 81 is debugging
+3 18 is taken dongle
+3 18 is taken dongle
+3 18 is compiling
+3 18 is debugging
+3 18 is refactoring
+3 35 is compiling
+3 35 is debugging
+3 35 is refactoring
+3 37 is compiling
+3 37 is debugging
+4 37 is refactoring
+4 74 is taken dongle
+4 74 is taken dongle
+4 74 is compiling
+4 74 is debugging
+4 74 is refactoring
+4 36 is taken dongle
+4 36 is taken dongle
+4 36 is compiling
+4 36 is debugging
+4 36 is refactoring
+4 11 is compiling
+4 11 is debugging
+4 11 is refactoring
+4 22 is taken dongle
+4 22 is taken dongle
+4 17 is taken dongle
+4 17 is taken dongle
+4 17 is compiling
+4 19 is taken dongle
+4 19 is taken dongle
+4 19 is compiling
+4 19 is debugging
+4 72 is compiling
+4 72 is debugging
+4 72 is refactoring
+4 72 is taken dongle
+4 72 is taken dongle
+4 72 is compiling
+4 72 is debugging
+4 72 is refactoring
+4 55 is taken dongle
+4 55 is taken dongle
+4 55 is compiling
+4 55 is debugging
+4 55 is refactoring
+4 55 is taken dongle
+4 55 is taken dongle
+4 67 is taken dongle
+4 67 is taken dongle
+4 67 is compiling
+4 67 is debugging
+4 67 is refactoring
+4 67 is taken dongle
+4 67 is taken dongle
+4 67 is compiling
+4 67 is debugging
+3 28 is debugging
+4 28 is refactoring
+4 75 is taken dongle
+4 75 is taken dongle
+4 75 is compiling
+4 75 is debugging
+4 98 is taken dongle
+4 98 is taken dongle
+4 98 is compiling
+4 98 is debugging
+4 98 is refactoring
+4 85 is taken dongle
+4 85 is taken dongle
+4 85 is compiling
+4 85 is debugging
+4 85 is refactoring
+4 86 is taken dongle
+4 86 is taken dongle
+4 96 is debugging
+4 96 is refactoring
+4 96 is taken dongle
+4 96 is taken dongle
+4 96 is compiling
+4 58 is taken dongle
+4 58 is taken dongle
+4 61 is taken dongle
+4 61 is taken dongle
+4 61 is compiling
+4 61 is debugging
+4 61 is refactoring
+4 25 is compiling
+4 35 is taken dongle
+4 35 is taken dongle
+4 35 is compiling
+4 35 is debugging
+4 35 is refactoring
+4 49 is taken dongle
+4 49 is taken dongle
+4 49 is compiling
+4 49 is debugging
+4 49 is refactoring
+4 10 is taken dongle
+4 10 is taken dongle
+4 10 is compiling
+4 10 is debugging
+4 10 is refactoring
+4 6 is refactoring
+4 17 is debugging
+4 17 is refactoring
+4 19 is refactoring
+4 92 is taken dongle
+4 92 is taken dongle
+4 92 is compiling
+4 92 is debugging
+4 92 is refactoring
+4 58 is compiling
+4 58 is debugging
+4 58 is refactoring
+4 58 is taken dongle
+4 58 is taken dongle
+4 58 is compiling
+4 58 is debugging
+4 58 is refactoring
+4 81 is refactoring
+4 18 is taken dongle
+4 18 is taken dongle
+4 18 is compiling
+4 18 is debugging
+4 18 is refactoring
+4 63 is compiling
+4 63 is debugging
+4 63 is refactoring
+4 26 is taken dongle
+4 26 is taken dongle
+4 26 is compiling
+4 26 is debugging
+4 26 is refactoring
+4 83 is taken dongle
+4 83 is taken dongle
+4 83 is compiling
+4 83 is debugging
+4 83 is refactoring
+4 52 is taken dongle
+4 52 is taken dongle
+4 27 is taken dongle
+4 27 is taken dongle
+4 27 is compiling
+4 27 is debugging
+4 27 is refactoring
+4 67 is refactoring
+4 71 is taken dongle
+4 71 is taken dongle
+4 71 is compiling
+4 71 is debugging
+4 71 is refactoring
+4 71 is taken dongle
+4 71 is taken dongle
+4 71 is compiling
+4 71 is debugging
+4 71 is refactoring
+4 71 is taken dongle
+4 71 is taken dongle
+4 71 is compiling
+4 71 is debugging
+4 71 is refactoring
+4 55 is compiling
+4 55 is debugging
+4 55 is refactoring
+4 55 is taken dongle
+4 55 is taken dongle
+4 55 is compiling
+4 82 is taken dongle
+4 82 is taken dongle
+4 82 is compiling
+4 82 is debugging
+4 82 is refactoring
+4 96 is debugging
+4 80 is taken dongle
+4 80 is taken dongle
+4 80 is compiling
+4 80 is debugging
+4 80 is refactoring
+4 25 is debugging
+4 25 is refactoring
+4 64 is taken dongle
+4 64 is taken dongle
+4 64 is compiling
+4 64 is debugging
+4 64 is refactoring
+4 88 is compiling
+4 88 is debugging
+4 88 is refactoring
+4 52 is compiling
+4 52 is debugging
+4 52 is refactoring
+4 52 is taken dongle
+4 52 is taken dongle
+4 52 is compiling
+4 52 is debugging
+4 52 is refactoring
+4 83 is taken dongle
+4 83 is taken dongle
+4 83 is compiling
+4 83 is debugging
+5 83 is refactoring
+4 34 is debugging
+5 34 is refactoring
+5 12 is taken dongle
+5 12 is taken dongle
+5 12 is compiling
+5 12 is debugging
+5 12 is refactoring
+5 81 is taken dongle
+5 81 is taken dongle
+5 81 is compiling
+5 81 is debugging
+5 81 is refactoring
+5 36 is taken dongle
+5 36 is taken dongle
+5 36 is compiling
+5 36 is debugging
+5 36 is refactoring
+5 22 is compiling
+5 22 is debugging
+5 22 is refactoring
+5 21 is taken dongle
+5 21 is taken dongle
+5 21 is compiling
+5 21 is debugging
+5 21 is refactoring
+5 17 is taken dongle
+5 17 is taken dongle
+5 17 is compiling
+5 17 is debugging
+5 17 is refactoring
+5 55 is debugging
+5 55 is refactoring
+5 82 is taken dongle
+5 82 is taken dongle
+5 82 is compiling
+5 82 is debugging
+5 82 is refactoring
+5 29 is taken dongle
+5 29 is taken dongle
+5 29 is compiling
+5 29 is debugging
+5 29 is refactoring
+5 79 is taken dongle
+5 79 is taken dongle
+5 79 is compiling
+5 79 is debugging
+5 79 is refactoring
+5 78 is taken dongle
+5 78 is taken dongle
+5 78 is compiling
+5 78 is debugging
+5 78 is refactoring
+5 59 is debugging
+5 59 is refactoring
+5 47 is taken dongle
+5 47 is taken dongle
+5 47 is compiling
+5 47 is debugging
+5 85 is taken dongle
+5 85 is taken dongle
+5 85 is compiling
+5 13 is taken dongle
+5 13 is taken dongle
+5 13 is compiling
+5 83 is taken dongle
+5 83 is taken dongle
+5 83 is compiling
+5 83 is debugging
+5 83 is refactoring
+5 35 is taken dongle
+5 35 is taken dongle
+5 35 is compiling
+5 35 is debugging
+5 35 is refactoring
+5 85 is debugging
+5 85 is refactoring
+5 66 is debugging
+5 66 is refactoring
+5 62 is taken dongle
+5 62 is taken dongle
+5 62 is compiling
+5 40 is compiling
+5 40 is debugging
+5 40 is refactoring
+5 46 is taken dongle
+5 46 is taken dongle
+5 46 is compiling
+5 46 is debugging
+5 46 is refactoring
+5 24 is taken dongle
+5 24 is taken dongle
+5 24 is compiling
+5 24 is debugging
+5 24 is refactoring
+5 48 is taken dongle
+5 48 is taken dongle
+5 48 is compiling
+5 48 is debugging
+5 48 is refactoring
+5 11 is taken dongle
+5 11 is taken dongle
+5 11 is compiling
+5 11 is debugging
+5 11 is refactoring
+5 86 is compiling
+5 86 is debugging
+5 86 is refactoring
+5 99 is taken dongle
+5 99 is taken dongle
+5 99 is compiling
+5 99 is debugging
+5 99 is refactoring
+5 99 is taken dongle
+5 99 is taken dongle
+5 99 is compiling
+5 99 is debugging
+5 99 is refactoring
+5 99 is taken dongle
+5 99 is taken dongle
+5 99 is compiling
+5 99 is debugging
+5 23 is taken dongle
+5 23 is taken dongle
+5 23 is compiling
+5 23 is debugging
+5 23 is refactoring
+5 91 is taken dongle
+5 91 is taken dongle
+5 91 is compiling
+5 91 is debugging
+5 91 is refactoring
+5 87 is taken dongle
+5 87 is taken dongle
+5 87 is compiling
+5 87 is debugging
+5 87 is refactoring
+5 49 is taken dongle
+5 49 is taken dongle
+5 49 is compiling
+5 49 is debugging
+5 49 is refactoring
+5 36 is taken dongle
+5 36 is taken dongle
+5 36 is compiling
+5 36 is debugging
+5 36 is refactoring
+5 90 is taken dongle
+5 90 is taken dongle
+5 90 is compiling
+5 20 is taken dongle
+5 20 is taken dongle
+5 20 is compiling
+5 80 is taken dongle
+5 80 is taken dongle
+5 80 is compiling
+5 80 is debugging
+5 80 is refactoring
+5 33 is taken dongle
+5 33 is taken dongle
+5 33 is compiling
+5 33 is debugging
+5 33 is refactoring
+5 32 is taken dongle
+5 32 is taken dongle
+5 32 is compiling
+5 63 is taken dongle
+5 63 is taken dongle
+5 52 is taken dongle
+5 52 is taken dongle
+5 48 is taken dongle
+5 48 is taken dongle
+5 48 is compiling
+5 48 is debugging
+5 48 is refactoring
+5 21 is taken dongle
+5 21 is taken dongle
+5 21 is compiling
+5 89 is taken dongle
+5 89 is taken dongle
+5 89 is compiling
+5 89 is debugging
+5 89 is refactoring
+5 90 is debugging
+5 86 is taken dongle
+5 86 is taken dongle
+5 86 is compiling
+5 86 is debugging
+5 60 is taken dongle
+5 60 is taken dongle
+5 19 is taken dongle
+5 19 is taken dongle
+5 19 is compiling
+5 19 is debugging
+5 19 is refactoring
+5 30 is taken dongle
+5 30 is taken dongle
+5 30 is compiling
+5 30 is debugging
+5 30 is refactoring
+5 32 is debugging
+6 32 is refactoring
+6 63 is compiling
+6 77 is taken dongle
+6 77 is taken dongle
+6 77 is compiling
+6 79 is taken dongle
+6 79 is taken dongle
+6 79 is compiling
+6 49 is taken dongle
+6 49 is taken dongle
+6 49 is compiling
+6 49 is debugging
+6 49 is refactoring
+6 90 is refactoring
+6 21 is debugging
+6 21 is refactoring
+6 60 is compiling
+6 60 is debugging
+6 60 is refactoring
+6 28 is taken dongle
+6 28 is taken dongle
+6 28 is compiling
+6 28 is debugging
+6 28 is refactoring
+5 47 is refactoring
+6 45 is taken dongle
+6 45 is taken dongle
+6 45 is compiling
+6 45 is debugging
+6 45 is refactoring
+6 99 is refactoring
+6 18 is taken dongle
+6 18 is taken dongle
+6 18 is compiling
+6 18 is debugging
+6 18 is refactoring
+6 13 is debugging
+6 46 is taken dongle
+6 46 is taken dongle
+6 46 is compiling
+6 78 is taken dongle
+6 78 is taken dongle
+6 78 is compiling
+6 44 is taken dongle
+6 44 is taken dongle
+6 44 is compiling
+6 44 is debugging
+6 44 is refactoring
+6 44 is taken dongle
+6 44 is taken dongle
+6 44 is compiling
+6 44 is debugging
+6 44 is refactoring
+6 44 is taken dongle
+6 44 is taken dongle
+6 44 is compiling
+6 44 is debugging
+6 44 is refactoring
+6 29 is taken dongle
+6 29 is taken dongle
+6 29 is compiling
+6 29 is debugging
+6 29 is refactoring
+6 65 is taken dongle
+6 65 is taken dongle
+6 65 is compiling
+6 65 is debugging
+6 65 is refactoring
+6 14 is taken dongle
+6 14 is taken dongle
+6 14 is compiling
+6 31 is taken dongle
+6 31 is taken dongle
+6 31 is compiling
+6 76 is taken dongle
+6 76 is taken dongle
+6 76 is compiling
+6 13 is refactoring
+6 61 is taken dongle
+6 61 is taken dongle
+6 61 is compiling
+6 61 is debugging
+6 61 is refactoring
+6 59 is taken dongle
+6 59 is taken dongle
+6 59 is compiling
+6 59 is debugging
+6 59 is refactoring
+6 64 is taken dongle
+6 64 is taken dongle
+6 64 is compiling
+6 64 is debugging
+6 64 is refactoring
+6 86 is refactoring
+6 96 is refactoring
+6 81 is taken dongle
+6 81 is taken dongle
+6 81 is compiling
+6 81 is debugging
+6 81 is refactoring
+6 80 is taken dongle
+6 80 is taken dongle
+6 80 is compiling
+6 80 is debugging
+6 80 is refactoring
+6 75 is refactoring
+6 82 is taken dongle
+6 82 is taken dongle
+6 82 is compiling
+6 82 is debugging
+6 82 is refactoring
+6 10 is taken dongle
+6 10 is taken dongle
+6 10 is compiling
+6 10 is debugging
+6 10 is refactoring
+6 88 is taken dongle
+6 88 is taken dongle
+6 88 is compiling
+6 88 is debugging
+6 88 is refactoring
+6 14 is debugging
+6 14 is refactoring
+6 77 is debugging
+6 77 is refactoring
+6 77 is taken dongle
+6 77 is taken dongle
+6 77 is compiling
+6 77 is debugging
+6 77 is refactoring
+6 77 is taken dongle
+6 77 is taken dongle
+6 77 is compiling
+6 77 is debugging
+6 77 is refactoring
+6 62 is debugging
+6 62 is refactoring
+6 62 is taken dongle
+6 62 is taken dongle
+6 62 is compiling
+6 78 is debugging
+6 78 is refactoring
+6 60 is taken dongle
+6 60 is taken dongle
+6 60 is compiling
+6 60 is debugging
+6 60 is refactoring
+6 25 is taken dongle
+6 25 is taken dongle
+6 25 is compiling
+6 25 is debugging
+6 25 is refactoring
+6 97 is taken dongle
+6 97 is taken dongle
+6 97 is compiling
+6 97 is debugging
+6 97 is refactoring
+6 15 is taken dongle
+6 15 is taken dongle
+6 15 is compiling
+6 15 is debugging
+6 31 is debugging
+6 26 is taken dongle
+6 26 is taken dongle
+6 26 is compiling
+6 26 is debugging
+6 26 is refactoring
+6 17 is taken dongle
+6 17 is taken dongle
+6 17 is compiling
+6 17 is debugging
+6 17 is refactoring
+6 20 is debugging
+6 20 is refactoring
+6 52 is compiling
+6 52 is debugging
+6 52 is refactoring
+6 66 is taken dongle
+6 66 is taken dongle
+6 66 is compiling
+6 66 is debugging
+6 66 is refactoring
+6 62 is debugging
+6 62 is refactoring
+6 89 is taken dongle
+6 89 is taken dongle
+6 89 is compiling
+6 89 is debugging
+6 89 is refactoring
+6 32 is taken dongle
+6 32 is taken dongle
+6 32 is compiling
+6 32 is debugging
+6 32 is refactoring
+6 31 is refactoring
+6 11 is taken dongle
+6 11 is taken dongle
+6 11 is compiling
+6 11 is debugging
+6 11 is refactoring
+6 87 is taken dongle
+6 87 is taken dongle
+6 87 is compiling
+6 27 is taken dongle
+6 27 is taken dongle
+6 27 is compiling
+6 27 is debugging
+6 27 is refactoring
+6 15 is refactoring
+6 46 is debugging
+6 96 is taken dongle
+6 96 is taken dongle
+6 96 is compiling
+6 96 is debugging
+6 96 is refactoring
+7 28 is taken dongle
+7 28 is taken dongle
+7 28 is compiling
+7 25 is taken dongle
+7 25 is taken dongle
+7 25 is compiling
+7 25 is debugging
+7 88 is taken dongle
+7 88 is taken dongle
+7 88 is compiling
+7 88 is debugging
+7 88 is refactoring
+7 46 is refactoring
+7 59 is taken dongle
+7 59 is taken dongle
+7 59 is compiling
+7 59 is debugging
+7 59 is refactoring
+7 28 is debugging
+7 28 is refactoring
+7 62 is taken dongle
+7 62 is taken dongle
+7 62 is compiling
+7 62 is debugging
+7 62 is refactoring
+7 79 is debugging
+7 12 is taken dongle
+7 12 is taken dongle
+7 12 is compiling
+7 12 is debugging
+7 12 is refactoring
+6 76 is debugging
+7 76 is refactoring
+7 98 is taken dongle
+7 98 is taken dongle
+7 98 is compiling
+7 98 is debugging
+7 98 is refactoring
+7 65 is taken dongle
+7 65 is taken dongle
+7 65 is compiling
+7 65 is debugging
+7 65 is refactoring
+7 25 is refactoring
+7 92 is taken dongle
+7 92 is taken dongle
+7 92 is compiling
+7 91 is taken dongle
+7 91 is taken dongle
+7 91 is compiling
+7 91 is debugging
+7 91 is refactoring
+7 63 is debugging
+7 63 is refactoring
+7 63 is taken dongle
+7 63 is taken dongle
+7 63 is compiling
+7 63 is debugging
+7 63 is refactoring
+7 79 is refactoring
+7 92 is debugging
+7 92 is refactoring
+7 78 is taken dongle
+7 78 is taken dongle
+7 78 is compiling
+7 78 is debugging
+7 45 is taken dongle
+7 45 is taken dongle
+7 45 is compiling
+7 45 is debugging
+7 45 is refactoring
+7 47 is taken dongle
+7 47 is taken dongle
+7 47 is compiling
+7 47 is debugging
+7 47 is refactoring
+7 13 is taken dongle
+7 13 is taken dongle
+7 13 is compiling
+7 13 is debugging
+7 90 is taken dongle
+7 90 is taken dongle
+7 90 is compiling
+7 90 is debugging
+7 90 is refactoring
+7 78 is refactoring
+7 87 is debugging
+7 87 is refactoring
+7 14 is taken dongle
+7 14 is taken dongle
+7 14 is compiling
+7 14 is debugging
+7 14 is refactoring
+7 13 is refactoring
+7 66 is taken dongle
+7 66 is taken dongle
+7 66 is compiling
+7 66 is debugging
+7 66 is refactoring
+7 26 is taken dongle
+7 26 is taken dongle
+7 26 is compiling
+7 26 is debugging
+7 26 is refactoring
+7 91 is taken dongle
+7 91 is taken dongle
+7 91 is compiling
+7 91 is debugging
+7 91 is refactoring
+7 76 is taken dongle
+7 76 is taken dongle
+7 76 is compiling
+7 76 is debugging
+7 76 is refactoring
+7 15 is taken dongle
+7 15 is taken dongle
+7 15 is compiling
+7 15 is debugging
+7 15 is refactoring
+7 97 is taken dongle
+7 97 is taken dongle
+7 97 is compiling
+7 97 is debugging
+7 97 is refactoring
+7 27 is taken dongle
+7 27 is taken dongle
+7 12 is taken dongle
+7 12 is taken dongle
+7 12 is compiling
+7 12 is debugging
+7 12 is refactoring
+7 27 is compiling
+7 27 is debugging
+7 27 is refactoring
+7 97 is taken dongle
+7 97 is taken dongle
+8 97 is compiling
+8 97 is debugging
+8 97 is refactoring
+8 87 is taken dongle
+8 87 is taken dongle
+8 87 is compiling
+8 87 is debugging
+8 87 is refactoring
+8 13 is taken dongle
+8 13 is taken dongle
+8 13 is compiling
+8 13 is debugging
+8 13 is refactoring
+8 92 is taken dongle
+8 92 is taken dongle
+8 92 is compiling
+8 92 is debugging
+8 92 is refactoring
+900 38 burned out

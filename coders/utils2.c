@@ -69,7 +69,7 @@ void	time_sleep(t_table *table, int	time)
 	long	start;
 
 	start = get_time();
-	while (get_time() - start < time) 
+	while ((get_time() - start) < time) 
 	{
 		if (check_for_stop(table))
 		{

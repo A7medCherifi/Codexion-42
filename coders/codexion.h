@@ -85,6 +85,6 @@ void			time_sleep(t_table *table, int	time);
 int				check_for_compiles(t_coder *coder);
 void			swap_nodes(t_request *parent, t_request *child);
 void			check_for_done_simulation(t_coder *coder);
-void	push_and_bubble_up(t_dongle *dongle, t_request request, int scheduler);
+void	push_and_bubble_up(t_coder *coder, t_dongle *dongle, t_request request);
 
 #endif

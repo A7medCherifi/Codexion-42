@@ -7,6 +7,7 @@ void	swap_nodes(t_request *parent, t_request *child)
 	temp = *parent;
 	*parent = *child;
 	*child = temp;
+	printf("hahahaha\n\n");
 }
 
 int check_numbers(char *argument, int min)

@@ -99,13 +99,11 @@ int		release_dongle(t_coder *coder)
 	if (check_for_stop(coder->table)) {
 		return (1);
 	}
-    pthread_mutex_lock(&coder->left_dongle->mutex);
-    pthread_mutex_lock(&coder->right_dongle->mutex);
+    pthread_mutex_lock(&coder->table->log_mutex);
     coder->left_dongle->is_available = 1;
     coder->right_dongle->is_available = 1;
     coder->left_dongle->released_at = get_time();
     coder->right_dongle->released_at = get_time();
-    pthread_mutex_unlock(&coder->left_dongle->mutex);
-    pthread_mutex_unlock(&coder->right_dongle->mutex);
+    pthread_mutex_unlock(&coder->table->log_mutex);
 	return (0);
 }
