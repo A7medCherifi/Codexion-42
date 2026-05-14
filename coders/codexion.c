@@ -2,24 +2,23 @@
 
 int	main(int argc, char **argv)
 {
-	t_table	table;
-	int		i;
+	t_table		table;
 
+	if (pthread_mutex_init(&table.log_mutex, NULL))
+		return (1);
 	if (parsing(&table, argc, argv))
 		return (free_all(&table));
-	pthread_mutex_init(&table.log_mutex, NULL);
 	table.dongles = create_dongles(&table);
 	if (!table.dongles)
 		return (free_all(&table));
-	table.coders = create_coders(&table);
+	table.coders = create_coders_data(&table);
 	if (!table.coders)
 		return (free_all(&table));
 	pthread_create(&table.monitor, NULL, monitor, &table);
-	i = 0;
-	while (i < table.args->number_of_coders)
+	if (create_threads(&table))
 	{
-		pthread_join(table.coders[i].thread, NULL);
-		i++;
+		pthread_join(table.monitor, NULL);
+		return (free_all(&table));
 	}
 	pthread_mutex_lock(&table.log_mutex);
 	table.stop = 1;

@@ -1,70 +1,5 @@
 #include "codexion.h"
 
-int		send_request_to_queue(t_coder *coder, t_dongle *dongle)
-{
-	t_request    request;
-
-	if (check_for_stop(coder->table))
-		return (1);
-	request.coder_id = coder->id;
-    request.requested_at = get_time();
-	pthread_mutex_lock(&coder->table->log_mutex);
-    request.deadline = coder->last_compile_start + coder->table->args->time_to_burnout;
-	push_and_bubble_up(coder, dongle, request);
-	pthread_mutex_unlock(&coder->table->log_mutex);
-	return (0);
-}
-
-int        request_dongles(t_coder *coder)
-{
-	int		result;
-
-	result = 0;
-	if (send_request_to_queue(coder, coder->left_dongle)
-		|| send_request_to_queue(coder, coder->right_dongle)) {
-		return (1);
-	}
-	if (check_for_stop(coder->table)) {
-		return (1);
-	}
-	result = take_both_dongles(coder);
-	if (result) {
-		return (1);
-	}
-    return (0);
-}
-
-
-// int        request_dongles(t_coder *coder)
-// {
-
-// 	int		result;
-
-// 	result = 0;
-// 	while (1)
-// 	{
-// 		if (check_for_stop(coder->table))
-// 			return (1);
-// 		pthread_mutex_lock(&coder->left_dongle->mutex);
-// 		pthread_mutex_lock(&coder->right_dongle->mutex);
-// 		if (coder->left_dongle->is_available && coder->right_dongle->is_available
-// 			&& get_time() - coder->left_dongle->released_at >= coder->table->args->dongle_cooldown
-// 			&& get_time() - coder->right_dongle->released_at >= coder->table->args->dongle_cooldown)
-// 		{
-// 			result = take_both_dongles(coder);
-// 			pthread_mutex_unlock(&coder->right_dongle->mutex);
-// 			pthread_mutex_unlock(&coder->left_dongle->mutex);
-// 			if (result)
-// 				return (1);
-// 			break;
-// 		}
-// 		pthread_mutex_unlock(&coder->right_dongle->mutex);
-// 		pthread_mutex_unlock(&coder->left_dongle->mutex);
-// 		usleep(300);
-// 	}
-//     return (0);
-// }
-
 int		coder_compiles(t_coder *coder)
 {
 	long	current_time;
@@ -72,10 +7,13 @@ int		coder_compiles(t_coder *coder)
 	if (check_for_stop(coder->table))
 		return (1);
 	pthread_mutex_lock(&coder->table->log_mutex);
+	coder->last_compile_start = get_time();
 	current_time = get_time() - coder->table->start_time;
-	if (coder->table->stop) {
+	if (coder->table->stop)
+	{
 		pthread_mutex_unlock(&coder->table->log_mutex);
-		return (1); }
+		return (1);
+	}
 	printf("%ld %d is compiling\n", current_time, coder->id);
 	coder->table->done++;
 	pthread_mutex_unlock(&coder->table->log_mutex);
@@ -91,9 +29,11 @@ int		coder_debug(t_coder *coder)
 		return (1);
 	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->log_mutex);
-	if (coder->table->stop) {
+	if (coder->table->stop)
+	{
 		pthread_mutex_unlock(&coder->table->log_mutex);
-		return (1); }
+		return (1);
+	}
 	printf("%ld %d is debugging\n", current_time, coder->id);
 	pthread_mutex_unlock(&coder->table->log_mutex);
 	time_sleep(coder->table, coder->table->args->time_to_debug);
@@ -107,12 +47,34 @@ int		coder_refacture(t_coder *coder)
 		return (1);
 	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->log_mutex);
-	if (coder->table->stop) {
+	if (coder->table->stop)
+	{
 		pthread_mutex_unlock(&coder->table->log_mutex);
-		return (1); }
+		return (1);
+	}
 	printf("%ld %d is refactoring\n", current_time, coder->id);
 	pthread_mutex_unlock(&coder->table->log_mutex);
 	time_sleep(coder->table, coder->table->args->time_to_refactor);
+	return (0);
+}
+
+int		threads_processing(t_coder *coder)
+{
+	if (request_dongles(coder))
+        return (1);
+	if (coder_compiles(coder))
+		return (1);
+	if (release_dongle(coder))
+		return (1);
+	if (coder_debug(coder))
+		return (1);
+	if (coder_refacture(coder))
+		return (1);
+	if (check_for_stop(coder->table))
+		return (1);
+	pthread_mutex_lock(&coder->table->log_mutex);
+	coder->compile_count++;
+	pthread_mutex_unlock(&coder->table->log_mutex);
 	return (0);
 }
 
@@ -121,29 +83,23 @@ void	*thread_manager(void *arg)
     t_coder		*coder;
 
     coder = (t_coder *)arg;
+	while (1)
+	{
+		if (check_if_start_simulation(coder))
+			break;
+		usleep(100);
+	}
 	if (check_for_stop(coder->table))
 		return (NULL); 
-	if (coder->id % 2 == 0) {
+	if (coder->id % 2 == 0)
+	{
 		time_sleep(coder->table, coder->table->args->time_to_compile + coder->table->args->dongle_cooldown / 2);
 	}
     while (check_for_compiles(coder))
-    {
-        if (request_dongles(coder))
-            return (NULL);
-        if (coder_compiles(coder))
+	{
+		if (threads_processing(coder))
 			return (NULL);
-		if (release_dongle(coder))
-			return (NULL);
-        if (coder_debug(coder))
-            return (NULL);
-        if (coder_refacture(coder))
-            return (NULL);
-        if (check_for_stop(coder->table))
-            return (NULL);
-		pthread_mutex_lock(&coder->table->log_mutex);
-        coder->compile_count++;
-		pthread_mutex_unlock(&coder->table->log_mutex);
-    }
+	}
 	check_for_done_simulation(coder);
-    return (NULL);
+	return (NULL);
 }
