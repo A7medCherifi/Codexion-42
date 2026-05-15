@@ -28,21 +28,29 @@ void	print_and_pop_dongles(t_coder *coder)
 	long	start_time;
 
 	start_time = coder->table->start_time;
+	pthread_mutex_lock(&coder->table->mutex);
+	if (coder->table->stop)
+	{
+		pthread_mutex_unlock(&coder->table->mutex);
+		return ;
+	}
 	printf("%ld %d is taken dongle\n", get_time() - start_time, coder->id);
 	printf("%ld %d is taken dongle\n", get_time() - start_time, coder->id);
-	pop_and_bubble_down(coder->left_dongle, coder->table->args->scheduler);
-	pop_and_bubble_down(coder->right_dongle, coder->table->args->scheduler);
+	pthread_mutex_unlock(&coder->table->mutex);
 }
 
 int	check_for_burnout(t_table *table, int i)
 {
 	long	burnout_time;
 
+	pthread_mutex_lock(&table->coders[i].mutex);
 	burnout_time = get_time() - table->coders[i].last_compile_start;
 	if (burnout_time >= table->args->time_to_burnout)
 	{
+		pthread_mutex_unlock(&table->coders[i].mutex);
 		return (1);
 	}
+	pthread_mutex_unlock(&table->coders[i].mutex);
 	return (0);
 }
 
@@ -52,11 +60,13 @@ int	release_dongle(t_coder *coder)
 	{
 		return (1);
 	}
-	pthread_mutex_lock(&coder->table->mutex);
+	pthread_mutex_lock(&coder->left_dongle->mutex);
 	coder->left_dongle->is_available = 1;
-	coder->right_dongle->is_available = 1;
 	coder->left_dongle->released_at = get_time();
+	pthread_mutex_unlock(&coder->left_dongle->mutex);
+	pthread_mutex_lock(&coder->right_dongle->mutex);
+	coder->right_dongle->is_available = 1;
 	coder->right_dongle->released_at = get_time();
-	pthread_mutex_unlock(&coder->table->mutex);
+	pthread_mutex_unlock(&coder->right_dongle->mutex);
 	return (0);
 }

@@ -1,5 +1,24 @@
 #include "codexion.h"
 
+void	print_burnout(t_table *table, int i)
+{
+	printf("%ld %d burned out\n",
+		get_time() - table->start_time, i + 1);
+}
+
+int	monitor_check(t_table *table, int i)
+{
+	pthread_mutex_lock(&table->mutex);
+	if (i < table->args->number_of_coders
+		&& !table->stop && table->start_simulation)
+	{
+		pthread_mutex_unlock(&table->mutex);
+		return (1);
+	}
+	pthread_mutex_unlock(&table->mutex);
+	return (0);
+}
+
 void	*monitor(void *arg)
 {
 	t_table		*table;
@@ -11,15 +30,14 @@ void	*monitor(void *arg)
 		i = 0;
 		while (monitor_check(table, i))
 		{
-			pthread_mutex_lock(&table->mutex);
 			if (check_for_burnout(table, i))
 			{
+				pthread_mutex_lock(&table->mutex);
 				print_burnout(table, i);
 				table->stop = 1;
 				pthread_mutex_unlock(&table->mutex);
 				return (NULL);
 			}
-			pthread_mutex_unlock(&table->mutex);
 			i++;
 		}
 		usleep(300);

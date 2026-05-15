@@ -16,14 +16,16 @@ int	check_for_compiles(t_coder *coder)
 {
 	int		number_of_compiles;
 
-	pthread_mutex_lock(&coder->table->mutex);
+	if (check_for_stop(coder->table))
+		return (0);
 	number_of_compiles = coder->table->args->number_of_compiles_required;
-	if (coder->compile_count <= number_of_compiles && !coder->table->stop)
+	pthread_mutex_lock(&coder->mutex);
+	if (coder->compile_count <= number_of_compiles)
 	{
-		pthread_mutex_unlock(&coder->table->mutex);
+		pthread_mutex_unlock(&coder->mutex);
 		return (1);
 	}
-	pthread_mutex_unlock(&coder->table->mutex);
+	pthread_mutex_unlock(&coder->mutex);
 	return (0);
 }
 
@@ -31,15 +33,29 @@ void	check_for_done_simulation(t_coder *coder)
 {
 	int		number_of_coders;
 	int		compiles_required;
+	int		all_done;
+	int		i;
 
-	pthread_mutex_lock(&coder->table->mutex);
+	i = 0;
+	all_done = 1;
 	number_of_coders = coder->table->args->number_of_coders;
 	compiles_required = coder->table->args->number_of_compiles_required;
-	if (coder->table->done >= number_of_coders * compiles_required)
+	while (i < number_of_coders)
 	{
-		coder->table->stop = 1;
+		pthread_mutex_lock(&coder->table->coders[i].mutex);
+		if (coder->table->coders[i].compile_count <= compiles_required)
+			all_done = 0;
+		pthread_mutex_unlock(&coder->table->coders[i].mutex);
+		if (!all_done)
+			break ;
+		i++;
 	}
-	pthread_mutex_unlock(&coder->table->mutex);
+	if (all_done)
+	{
+		pthread_mutex_lock(&coder->table->mutex);
+		coder->table->stop = 1;
+		pthread_mutex_unlock(&coder->table->mutex);
+	}
 }
 
 int	check_can_take_dongle(t_coder *coder)
@@ -64,15 +80,3 @@ int	check_can_take_dongle(t_coder *coder)
 	return (0);
 }
 
-int	monitor_check(t_table *table, int i)
-{
-	pthread_mutex_lock(&table->mutex);
-	if (i < table->args->number_of_coders
-		&& !table->stop && table->start_simulation)
-	{
-		pthread_mutex_unlock(&table->mutex);
-		return (1);
-	}
-	pthread_mutex_unlock(&table->mutex);
-	return (0);
-}

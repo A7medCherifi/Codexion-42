@@ -34,6 +34,7 @@ typedef struct s_request
 
 typedef struct s_dongle
 {
+	pthread_mutex_t	mutex;
 	t_request		queue[2];
 	long			released_at;
 	int				queue_size;
@@ -43,6 +44,7 @@ typedef struct s_dongle
 
 typedef struct s_coder
 {
+	pthread_mutex_t	mutex;
 	pthread_t		thread;
 	t_dongle		*left_dongle;
 	t_dongle		*right_dongle;
@@ -62,7 +64,6 @@ typedef struct s_table
 	long			start_time;
 	int				start_simulation;
 	int				stop;
-	int				done;
 }	t_table;
 
 struct timespec		get_time_spec(long time);
@@ -98,7 +99,6 @@ int					monitor_check(t_table *table, int i);
 void				print_and_pop_dongles(t_coder *coder);
 void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
 int					check_for_burnout(t_table *table, int i);
-int					initialize_mutexes(t_table *table);
 void				print_burnout(t_table *table, int i);
 
 #endif

@@ -4,7 +4,7 @@ int	main(int argc, char **argv)
 {
 	t_table		table;
 
-	if (initialize_mutexes(&table))
+	if (pthread_mutex_init(&table.mutex, NULL))
 		return (1);
 	if (parsing(&table, argc, argv))
 		return (free_all(&table));
@@ -27,4 +27,3 @@ int	main(int argc, char **argv)
 	free_all(&table);
 	return (0);
 }
-                                                                                                                                                                                                                                                                          

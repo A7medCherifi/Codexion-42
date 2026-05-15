@@ -34,14 +34,16 @@ int	send_request_to_queue(t_coder *coder, t_dongle *dongle)
 		time_sleep(coder->table, coder->table->args->time_to_burnout * 1000);
 		return (1);
 	}
-	time_to_burnout = coder->table->args->time_to_burnout;
+	pthread_mutex_lock(&coder->mutex);
 	request.coder_id = coder->id;
 	request.requested_at = get_time();
-	pthread_mutex_lock(&coder->table->mutex);
+	time_to_burnout = coder->table->args->time_to_burnout;
 	request.compiles = coder->compile_count;
 	request.deadline = coder->last_compile_start + time_to_burnout;
+	pthread_mutex_unlock(&coder->mutex);
+	pthread_mutex_lock(&dongle->mutex);
 	push_and_bubble_up(coder, dongle, request);
-	pthread_mutex_unlock(&coder->table->mutex);
+	pthread_mutex_unlock(&dongle->mutex);
 	return (0);
 }
 
