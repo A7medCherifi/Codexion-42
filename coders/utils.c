@@ -93,7 +93,7 @@ int	create_coders(t_table *table)
 	while (i < table->args->number_of_coders)
 	{
 		if (pthread_create(&table->coders[i].thread, NULL,
-				thread_manager, &table->coders[i++]))
+				thread_manager, &table->coders[i]))
 		{
 			pthread_mutex_lock(&table->log_mutex);
 			printf("ERROR: pthread create failed!\n");
@@ -103,12 +103,12 @@ int	create_coders(t_table *table)
 				pthread_join(table->coders[i].thread, NULL);
 			return (1);
 		}
+		i++;
 	}
 	pthread_mutex_lock(&table->log_mutex);
 	table->start_time = get_time();
-	i = 0;
-	while (i < table->args->number_of_coders)
-		table->coders[i++].last_compile_start = get_time();
+	while (--i >= 0)
+		table->coders[i].last_compile_start = get_time();
 	table->start_simulation = 1;
 	pthread_mutex_unlock(&table->log_mutex);
 	return (0);
