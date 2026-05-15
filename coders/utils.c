@@ -1,7 +1,6 @@
 #include "codexion.h"
 
-
-int free_all(t_table *table)
+int	free_all(t_table *table)
 {
 	if (!table)
 		return (1);
@@ -10,13 +9,13 @@ int free_all(t_table *table)
 	{
 		free(table->args);
 	}
-    if (table->dongles)
+	if (table->dongles)
 	{
-        free(table->dongles);
+		free(table->dongles);
 	}
-    if (table->coders)
+	if (table->coders)
 	{
-        free(table->coders);
+		free(table->coders);
 	}
 	return (1);
 }
@@ -38,14 +37,13 @@ int	my_isdigit(char *str)
 	return (1);
 }
 
-t_dongle    *create_dongles(t_table *table)
+t_dongle	*create_dongles(t_table *table)
 {
-    int     i;
+	int	i;
 
-    table->dongles = malloc(sizeof(t_dongle) * (table->args->number_of_coders));
+	table->dongles = malloc(sizeof(t_dongle) * (table->args->number_of_coders));
 	if (!table->dongles)
 		return (NULL);
-
 	i = 0;
 	while (i < table->args->number_of_coders)
 	{
@@ -55,17 +53,16 @@ t_dongle    *create_dongles(t_table *table)
 		table->dongles[i].released_at = 0;
 		i++;
 	}
-    return (table->dongles);
+	return (table->dongles);
 }
 
-t_coder     *create_coders_data(t_table *table)
+t_coder	*create_coders_data(t_table *table)
 {
-
 	int		i;
 	int		right_index;
 
 	i = 0;
-    table->coders = malloc(sizeof(t_coder) * (table->args->number_of_coders));
+	table->coders = malloc(sizeof(t_coder) * (table->args->number_of_coders));
 	if (!table->coders)
 		return (NULL);
 	pthread_mutex_lock(&table->log_mutex);
@@ -81,22 +78,22 @@ t_coder     *create_coders_data(t_table *table)
 		table->coders[i].left_dongle = &table->dongles[i];
 		right_index = (i + 1) % table->args->number_of_coders;
 		if (right_index == i)
-			table->coders[i].right_dongle = NULL;
+			table->coders[i++].right_dongle = NULL;
 		else
-			table->coders[i].right_dongle = &table->dongles[right_index];
-		i++;
+			table->coders[i++].right_dongle = &table->dongles[right_index];
 	}
-    return (table->coders);
+	return (table->coders);
 }
 
-int		create_coders(t_table *table)
+int	create_coders(t_table *table)
 {
 	int		i;
 
 	i = 0;
 	while (i < table->args->number_of_coders)
 	{
-		if (pthread_create(&table->coders[i].thread, NULL, thread_manager, &table->coders[i]))
+		if (pthread_create(&table->coders[i].thread, NULL,
+				thread_manager, &table->coders[i++]))
 		{
 			pthread_mutex_lock(&table->log_mutex);
 			printf("ERROR: pthread create failed!\n");
@@ -106,7 +103,6 @@ int		create_coders(t_table *table)
 				pthread_join(table->coders[i].thread, NULL);
 			return (1);
 		}
-		i++;
 	}
 	pthread_mutex_lock(&table->log_mutex);
 	table->start_time = get_time();

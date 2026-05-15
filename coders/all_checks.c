@@ -63,6 +63,7 @@ int	check_can_take_dongle(t_coder *coder)
 	}
 	return (0);
 }
+
 int	monitor_check(t_table *table, int i)
 {
 	pthread_mutex_lock(&table->log_mutex);

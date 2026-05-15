@@ -1,15 +1,14 @@
 #ifndef CODEXION_H
-#define CODEXION_H
+# define CODEXION_H
 
-#include <stdio.h>
-#include <pthread.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/time.h>
+# include <stdio.h>
+# include <pthread.h>
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
+# include <sys/time.h>
 
-// Forward declarations
-typedef struct s_table t_table;
+typedef struct s_table	t_table;
 // typedef struct s_coder t_coder;
 // typedef struct s_dongle t_dongle;
 
@@ -30,6 +29,7 @@ typedef struct s_request
 	long			requested_at;
 	long			deadline;
 	int				coder_id;
+	int				compiles;
 }	t_request;
 
 typedef struct s_dongle
@@ -65,13 +65,12 @@ typedef struct s_table
 	int				done;
 }	t_table;
 
-
-struct timespec		get_time_spec(long	time);
-t_coder     		*create_coders_data(t_table *table);
-t_dongle    		*create_dongles(t_table *table);
-void 				*monitor(void *arg);
+struct timespec		get_time_spec(long time);
+t_coder				*create_coders_data(t_table *table);
+t_dongle			*create_dongles(t_table *table);
+void				*monitor(void *arg);
 void				*thread_manager(void *arg);
-long				get_time();
+long				get_time(void);
 int					ft_atoi(char *nptr);
 int					my_isdigit(char *str);
 int					free_all(t_table *table);
@@ -79,18 +78,25 @@ int					parsing(t_table *table, int argc, char **argv);
 int					release_dongle(t_coder *coder);
 int					check_for_stop(t_table *table);
 void				broadcast(t_table *table);
-int    				take_both_dongles(t_coder *coder);
-void				time_sleep(t_table *table, int	time);
+int					take_dongles(t_coder *coder);
+void				time_sleep(t_table *table, int time);
 int					check_for_compiles(t_coder *coder);
 void				swap_nodes(t_request *parent, t_request *child);
 void				check_for_done_simulation(t_coder *coder);
-void				push_and_bubble_up(t_coder *coder, t_dongle *dongle, t_request request);
+void				push_and_bubble_up(
+						t_coder *coder,
+						t_dongle *dongle,
+						t_request request
+						);
 int					create_coders(t_table *table);
-int        			request_dongles(t_coder *coder);
+int					request_dongles(t_coder *coder);
 int					create_threads(t_table *table);
 int					check_if_start_simulation(t_coder *coder);
 int					pop_from_heap(t_dongle *dongle);
 int					check_can_take_dongle(t_coder *coder);
 int					monitor_check(t_table *table, int i);
+void				print_and_pop_dongles(t_coder *coder);
+void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
+int					check_for_burnout(t_table *table, int i);
 
 #endif

@@ -1,6 +1,6 @@
 #include "codexion.h"
 
-int		coder_compiles(t_coder *coder)
+int	coder_compiles(t_coder *coder)
 {
 	long	current_time;
 
@@ -21,7 +21,7 @@ int		coder_compiles(t_coder *coder)
 	return (0);
 }
 
-int		coder_debug(t_coder *coder)
+int	coder_debug(t_coder *coder)
 {
 	long	current_time;
 
@@ -39,7 +39,8 @@ int		coder_debug(t_coder *coder)
 	time_sleep(coder->table, coder->table->args->time_to_debug);
 	return (0);
 }
-int		coder_refacture(t_coder *coder)
+
+int	coder_refacture(t_coder *coder)
 {
 	long	current_time;
 
@@ -58,10 +59,10 @@ int		coder_refacture(t_coder *coder)
 	return (0);
 }
 
-int		threads_processing(t_coder *coder)
+int	threads_processing(t_coder *coder)
 {
 	if (request_dongles(coder))
-        return (1);
+		return (1);
 	if (coder_compiles(coder))
 		return (1);
 	if (release_dongle(coder))
@@ -80,22 +81,24 @@ int		threads_processing(t_coder *coder)
 
 void	*thread_manager(void *arg)
 {
-    t_coder		*coder;
+	t_coder		*coder;
+	int			time_to_compile;
+	int			dongle_cooldown;
 
-    coder = (t_coder *)arg;
+	coder = (t_coder *)arg;
 	while (1)
 	{
 		if (check_if_start_simulation(coder))
-			break;
+			break ;
 		usleep(100);
 	}
 	if (check_for_stop(coder->table))
-		return (NULL); 
+		return (NULL);
+	time_to_compile = coder->table->args->time_to_compile;
+	dongle_cooldown = coder->table->args->dongle_cooldown;
 	if (coder->id % 2 == 0)
-	{
-		time_sleep(coder->table, coder->table->args->time_to_compile + coder->table->args->dongle_cooldown / 2);
-	}
-    while (check_for_compiles(coder))
+		time_sleep(coder->table, (time_to_compile + dongle_cooldown) / 2);
+	while (check_for_compiles(coder))
 	{
 		if (threads_processing(coder))
 			return (NULL);

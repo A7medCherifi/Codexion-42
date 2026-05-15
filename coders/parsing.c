@@ -9,14 +9,14 @@ void	swap_nodes(t_request *parent, t_request *child)
 	*child = temp;
 }
 
-int check_numbers(char *argument, int min)
+int	check_numbers(char *argument, int min)
 {
 	int		number;
 
 	if (strlen(argument) == 0)
 		return (-1);
 	if (my_isdigit(argument))
-    {
+	{
 		number = ft_atoi(argument);
 		if (number >= min)
 			return (number);
@@ -24,8 +24,7 @@ int check_numbers(char *argument, int min)
 	return (-1);
 }
 
-
-void check_add_agrs(int *arg, char *str, int *isvalid, int min)
+void	check_add_agrs(int *arg, char *str, int *isvalid, int min)
 {
 	int		value;
 
@@ -40,7 +39,7 @@ void check_add_agrs(int *arg, char *str, int *isvalid, int min)
 	*arg = value;
 }
 
-void check_sheduler(int *arg, char *str, int *isvalid)
+void	check_sheduler(int *arg, char *str, int *isvalid)
 {
 	if (!*isvalid)
 		return ;
@@ -51,7 +50,7 @@ void check_sheduler(int *arg, char *str, int *isvalid)
 	else if (strcmp(str, "edf") == 0)
 	{
 		*arg = 0;
-	} 
+	}
 	else
 	{
 		*isvalid = 0;
@@ -59,12 +58,12 @@ void check_sheduler(int *arg, char *str, int *isvalid)
 	}
 }
 
-int parsing(t_table *table, int argc, char **argv)
+int	parsing(t_table *table, int argc, char **argv)
 {
 	int			isvalid;
 
 	memset(table, 0, sizeof(t_table));
-	if (argc != 9) 
+	if (argc != 9)
 		return (1);
 	table->args = malloc(sizeof(t_arguments));
 	if (!table->args)
@@ -75,7 +74,8 @@ int parsing(t_table *table, int argc, char **argv)
 	check_add_agrs(&table->args->time_to_compile, argv[3], &isvalid, 0);
 	check_add_agrs(&table->args->time_to_debug, argv[4], &isvalid, 0);
 	check_add_agrs(&table->args->time_to_refactor, argv[5], &isvalid, 0);
-	check_add_agrs(&table->args->number_of_compiles_required, argv[6], &isvalid, 1);
+	check_add_agrs(&table->args->number_of_compiles_required, argv[6],
+		&isvalid, 1);
 	check_add_agrs(&table->args->dongle_cooldown, argv[7], &isvalid, 0);
 	check_sheduler(&table->args->scheduler, argv[8], &isvalid);
 	if (!isvalid)

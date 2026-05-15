@@ -1,11 +1,25 @@
 #include "codexion.h"
 
-
 int	get_priority(t_request child, t_request parent, int scheduler)
 {
 	if (scheduler)
 		return (child.requested_at < parent.requested_at);
-	return (child.deadline < parent.deadline);
+	else
+	{
+		if (child.deadline < parent.deadline)
+			return (1);
+		if (child.deadline > parent.deadline)
+			return (0);
+		if (child.compiles < parent.compiles)
+			return (1);
+		if (child.compiles > parent.compiles)
+			return (0);
+		if (child.coder_id < parent.coder_id)
+			return (1);
+		if (child.coder_id > parent.coder_id)
+			return (0);
+	}
+	return (0);
 }
 
 void	push_and_bubble_up(t_coder *coder, t_dongle *dongle, t_request request)
@@ -30,14 +44,13 @@ void	push_and_bubble_up(t_coder *coder, t_dongle *dongle, t_request request)
 			i = parent;
 		}
 		else
-			break;
+			return ;
 	}
 }
 
 void	pop_and_bubble_down(t_dongle *dongle, int scheduler)
 {
 	int		smal;
-	int		right;
 	int		left;
 	int		i;
 
@@ -47,22 +60,23 @@ void	pop_and_bubble_down(t_dongle *dongle, int scheduler)
 	while (1)
 	{
 		left = (i * 2) + 1;
-		right = (i * 2) + 2;
 		smal = i;
 		if (left < dongle->queue_size
-			&& get_priority(dongle->queue[left], dongle->queue[smal], scheduler))
+			&& get_priority(dongle->queue[left], dongle->queue[smal],
+				scheduler))
 			smal = left;
-		if (right < dongle->queue_size
-			&& get_priority(dongle->queue[right], dongle->queue[smal], scheduler))
-			smal = right;
+		if ((left + 1) < dongle->queue_size
+			&& get_priority(dongle->queue[left + 1], dongle->queue[smal],
+				scheduler))
+			smal = left + 1;
 		if (smal == i)
-			break;
+			break ;
 		swap_nodes(&dongle->queue[i], &dongle->queue[smal]);
 		i = smal;
 	}
 }
 
-int	take_dongle(t_coder *coder)
+int	take_both_dongles(t_coder *coder)
 {
 	while (1)
 	{
@@ -76,14 +90,11 @@ int	take_dongle(t_coder *coder)
 				pthread_mutex_unlock(&coder->table->log_mutex);
 				return (1);
 			}
-			printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
-			printf("%ld %d is taken dongle\n", get_time() - coder->table->start_time, coder->id);
 			coder->left_dongle->is_available = 0;
 			coder->right_dongle->is_available = 0;
-			pop_and_bubble_down(coder->left_dongle, coder->table->args->scheduler);
-			pop_and_bubble_down(coder->right_dongle, coder->table->args->scheduler);
+			print_and_pop_dongles(coder);
 			pthread_mutex_unlock(&coder->table->log_mutex);
-			break;
+			break ;
 		}
 		pthread_mutex_unlock(&coder->table->log_mutex);
 		usleep(300);
@@ -91,17 +102,19 @@ int	take_dongle(t_coder *coder)
 	return (0);
 }
 
-int	take_both_dongles(t_coder *coder)
+int	take_dongles(t_coder *coder)
 {
-    if (check_for_stop(coder->table)) 
+	if (check_for_stop(coder->table))
 	{
-        return (1);
+		return (1);
 	}
-	if (take_dongle(coder)) {
-		return (1); }
-    if (check_for_stop(coder->table))
+	if (take_both_dongles(coder))
 	{
-    	return (1);
+		return (1);
+	}
+	if (check_for_stop(coder->table))
+	{
+		return (1);
 	}
 	return (0);
 }

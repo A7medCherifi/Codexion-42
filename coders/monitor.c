@@ -3,7 +3,6 @@
 void	*monitor(void *arg)
 {
 	t_table		*table;
-	int			burnout_time;
 	int			i;
 
 	table = (t_table *)arg;
@@ -13,10 +12,10 @@ void	*monitor(void *arg)
 		while (monitor_check(table, i))
 		{
 			pthread_mutex_lock(&table->log_mutex);
-			burnout_time = get_time() - table->coders[i].last_compile_start;
-			if (burnout_time >= table->args->time_to_burnout)
+			if (check_for_burnout(table, i))
 			{
-				printf("%ld %d burned out\n", get_time() - table->start_time, i + 1);
+				printf("%ld %d burned out\n",
+					get_time() - table->start_time, i + 1);
 				table->stop = 1;
 				pthread_mutex_unlock(&table->log_mutex);
 				return (NULL);
