@@ -54,8 +54,8 @@ typedef struct s_coder
 
 typedef struct s_table
 {
+	pthread_mutex_t	mutex;
 	pthread_t		monitor;
-	pthread_mutex_t	log_mutex;
 	t_arguments		*args;
 	t_coder			*coders;
 	t_dongle		*dongles;
@@ -98,5 +98,7 @@ int					monitor_check(t_table *table, int i);
 void				print_and_pop_dongles(t_coder *coder);
 void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
 int					check_for_burnout(t_table *table, int i);
+int					initialize_mutexes(t_table *table);
+void				print_burnout(t_table *table, int i);
 
 #endif

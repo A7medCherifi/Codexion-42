@@ -11,16 +11,15 @@ void	*monitor(void *arg)
 		i = 0;
 		while (monitor_check(table, i))
 		{
-			pthread_mutex_lock(&table->log_mutex);
+			pthread_mutex_lock(&table->mutex);
 			if (check_for_burnout(table, i))
 			{
-				printf("%ld %d burned out\n",
-					get_time() - table->start_time, i + 1);
+				print_burnout(table, i);
 				table->stop = 1;
-				pthread_mutex_unlock(&table->log_mutex);
+				pthread_mutex_unlock(&table->mutex);
 				return (NULL);
 			}
-			pthread_mutex_unlock(&table->log_mutex);
+			pthread_mutex_unlock(&table->mutex);
 			i++;
 		}
 		usleep(300);

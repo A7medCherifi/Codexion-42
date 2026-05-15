@@ -52,11 +52,11 @@ int	release_dongle(t_coder *coder)
 	{
 		return (1);
 	}
-	pthread_mutex_lock(&coder->table->log_mutex);
+	pthread_mutex_lock(&coder->table->mutex);
 	coder->left_dongle->is_available = 1;
 	coder->right_dongle->is_available = 1;
 	coder->left_dongle->released_at = get_time();
 	coder->right_dongle->released_at = get_time();
-	pthread_mutex_unlock(&coder->table->log_mutex);
+	pthread_mutex_unlock(&coder->table->mutex);
 	return (0);
 }

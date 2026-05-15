@@ -82,21 +82,21 @@ int	take_both_dongles(t_coder *coder)
 	{
 		if (check_for_stop(coder->table))
 			return (1);
-		pthread_mutex_lock(&coder->table->log_mutex);
+		pthread_mutex_lock(&coder->table->mutex);
 		if (check_can_take_dongle(coder))
 		{
 			if (coder->table->stop)
 			{
-				pthread_mutex_unlock(&coder->table->log_mutex);
+				pthread_mutex_unlock(&coder->table->mutex);
 				return (1);
 			}
 			coder->left_dongle->is_available = 0;
 			coder->right_dongle->is_available = 0;
 			print_and_pop_dongles(coder);
-			pthread_mutex_unlock(&coder->table->log_mutex);
+			pthread_mutex_unlock(&coder->table->mutex);
 			break ;
 		}
-		pthread_mutex_unlock(&coder->table->log_mutex);
+		pthread_mutex_unlock(&coder->table->mutex);
 		usleep(300);
 	}
 	return (0);

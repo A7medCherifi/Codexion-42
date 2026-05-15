@@ -2,13 +2,13 @@
 
 int	check_if_start_simulation(t_coder *coder)
 {
-	pthread_mutex_lock(&coder->table->log_mutex);
+	pthread_mutex_lock(&coder->table->mutex);
 	if (coder->table->start_simulation)
 	{
-		pthread_mutex_unlock(&coder->table->log_mutex);
+		pthread_mutex_unlock(&coder->table->mutex);
 		return (1);
 	}
-	pthread_mutex_unlock(&coder->table->log_mutex);
+	pthread_mutex_unlock(&coder->table->mutex);
 	return (0);
 }
 
@@ -37,11 +37,11 @@ int	send_request_to_queue(t_coder *coder, t_dongle *dongle)
 	time_to_burnout = coder->table->args->time_to_burnout;
 	request.coder_id = coder->id;
 	request.requested_at = get_time();
-	pthread_mutex_lock(&coder->table->log_mutex);
+	pthread_mutex_lock(&coder->table->mutex);
 	request.compiles = coder->compile_count;
 	request.deadline = coder->last_compile_start + time_to_burnout;
 	push_and_bubble_up(coder, dongle, request);
-	pthread_mutex_unlock(&coder->table->log_mutex);
+	pthread_mutex_unlock(&coder->table->mutex);
 	return (0);
 }
 
@@ -65,9 +65,7 @@ int	create_threads(t_table *table)
 
 	if (create_coders(table))
 	{
-		pthread_mutex_lock(&table->log_mutex);
-		table->stop = 1;
-		pthread_mutex_unlock(&table->log_mutex);
+		printf("ERROR: pthread create failed!\n");
 		return (1);
 	}
 	i = 0;

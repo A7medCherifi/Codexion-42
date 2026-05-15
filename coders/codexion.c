@@ -4,7 +4,7 @@ int	main(int argc, char **argv)
 {
 	t_table		table;
 
-	if (pthread_mutex_init(&table.log_mutex, NULL))
+	if (initialize_mutexes(&table))
 		return (1);
 	if (parsing(&table, argc, argv))
 		return (free_all(&table));
@@ -20,10 +20,11 @@ int	main(int argc, char **argv)
 		pthread_join(table.monitor, NULL);
 		return (free_all(&table));
 	}
-	pthread_mutex_lock(&table.log_mutex);
+	pthread_mutex_lock(&table.mutex);
 	table.stop = 1;
-	pthread_mutex_unlock(&table.log_mutex);
+	pthread_mutex_unlock(&table.mutex);
 	pthread_join(table.monitor, NULL);
 	free_all(&table);
 	return (0);
 }
+                                                                                                                                                                                                                                                                          

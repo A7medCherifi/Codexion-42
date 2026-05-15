@@ -1,2980 +1,452 @@
-0 101 is taken dongle
-0 101 is taken dongle
-0 101 is compiling
-0 119 is taken dongle
-0 119 is taken dongle
-0 31 is taken dongle
-0 31 is taken dongle
-0 31 is compiling
-0 63 is taken dongle
-0 63 is taken dongle
-0 69 is taken dongle
-0 69 is taken dongle
-0 69 is compiling
-0 37 is taken dongle
-0 37 is taken dongle
-0 37 is compiling
-0 133 is taken dongle
-0 133 is taken dongle
-0 133 is compiling
-0 27 is taken dongle
-0 27 is taken dongle
-0 27 is compiling
-0 33 is taken dongle
-0 33 is taken dongle
-0 3 is taken dongle
-0 3 is taken dongle
-0 3 is compiling
-0 33 is compiling
-0 63 is compiling
-0 103 is taken dongle
-0 103 is taken dongle
-0 103 is compiling
-0 7 is taken dongle
-0 7 is taken dongle
-0 7 is compiling
-0 49 is taken dongle
-0 49 is taken dongle
-0 111 is taken dongle
-0 111 is taken dongle
-0 75 is taken dongle
-0 75 is taken dongle
-0 111 is compiling
-0 121 is taken dongle
-0 121 is taken dongle
-0 121 is compiling
-0 75 is compiling
-0 95 is taken dongle
-0 95 is taken dongle
-0 135 is taken dongle
-0 135 is taken dongle
-0 109 is taken dongle
-0 109 is taken dongle
-0 109 is compiling
-0 135 is compiling
-0 25 is taken dongle
-0 25 is taken dongle
-0 25 is compiling
-0 163 is taken dongle
-0 163 is taken dongle
-0 163 is compiling
-0 173 is taken dongle
-0 173 is taken dongle
-0 173 is compiling
-0 59 is taken dongle
-0 59 is taken dongle
-0 59 is compiling
-0 11 is taken dongle
-0 11 is taken dongle
-0 181 is taken dongle
-0 181 is taken dongle
-0 11 is compiling
-0 1 is taken dongle
-0 1 is taken dongle
-0 181 is compiling
-0 1 is compiling
-0 147 is taken dongle
-0 147 is taken dongle
-0 29 is taken dongle
-0 29 is taken dongle
-0 139 is taken dongle
-0 139 is taken dongle
-0 147 is compiling
-0 73 is taken dongle
-0 73 is taken dongle
-0 139 is compiling
-0 73 is compiling
-0 29 is compiling
-0 143 is taken dongle
-0 143 is taken dongle
-0 143 is compiling
-0 13 is taken dongle
-0 13 is taken dongle
-0 13 is compiling
-0 19 is taken dongle
-0 19 is taken dongle
-0 19 is compiling
-0 141 is taken dongle
-0 141 is taken dongle
-0 141 is compiling
-0 41 is taken dongle
-0 41 is taken dongle
-0 41 is compiling
-0 151 is taken dongle
-0 151 is taken dongle
-0 151 is compiling
-0 107 is taken dongle
-0 107 is taken dongle
-0 115 is taken dongle
-0 115 is taken dongle
-0 115 is compiling
-0 97 is taken dongle
-0 97 is taken dongle
-0 97 is compiling
-0 185 is taken dongle
-0 185 is taken dongle
-0 39 is taken dongle
-0 39 is taken dongle
-0 39 is compiling
-0 185 is compiling
-0 157 is taken dongle
-0 157 is taken dongle
-0 189 is taken dongle
-0 189 is taken dongle
-0 157 is compiling
-0 189 is compiling
-0 171 is taken dongle
-0 171 is taken dongle
-0 171 is compiling
-0 161 is taken dongle
-0 161 is taken dongle
-0 161 is compiling
-0 93 is taken dongle
-0 93 is taken dongle
-0 93 is compiling
-0 105 is taken dongle
-0 105 is taken dongle
-0 105 is compiling
-0 71 is taken dongle
-0 71 is taken dongle
-0 55 is taken dongle
-0 55 is taken dongle
-0 71 is compiling
-0 55 is compiling
-0 79 is taken dongle
-0 79 is taken dongle
-0 169 is taken dongle
-0 169 is taken dongle
-0 169 is compiling
-0 79 is compiling
-0 129 is taken dongle
-0 129 is taken dongle
-0 43 is taken dongle
-0 43 is taken dongle
-0 129 is compiling
-0 43 is compiling
-0 61 is taken dongle
-0 61 is taken dongle
-0 65 is taken dongle
-0 65 is taken dongle
-0 65 is compiling
-0 61 is compiling
-0 77 is taken dongle
-0 77 is taken dongle
-0 53 is taken dongle
-0 53 is taken dongle
-0 119 is compiling
-0 53 is compiling
-0 77 is compiling
-0 125 is taken dongle
-0 125 is taken dongle
-0 155 is taken dongle
-0 155 is taken dongle
-0 155 is compiling
-0 125 is compiling
-0 127 is taken dongle
-0 127 is taken dongle
-0 85 is taken dongle
-0 85 is taken dongle
-0 85 is compiling
-0 127 is compiling
-0 51 is taken dongle
-0 51 is taken dongle
-0 107 is compiling
-0 51 is compiling
-0 145 is taken dongle
-0 145 is taken dongle
-0 145 is compiling
-0 47 is taken dongle
-0 47 is taken dongle
-0 165 is taken dongle
-0 165 is taken dongle
-0 165 is compiling
-0 47 is compiling
-0 83 is taken dongle
-0 83 is taken dongle
-0 45 is taken dongle
-0 45 is taken dongle
-0 21 is taken dongle
-0 21 is taken dongle
-0 45 is compiling
-0 95 is compiling
-0 153 is taken dongle
-0 153 is taken dongle
-0 153 is compiling
-0 131 is taken dongle
-0 131 is taken dongle
-0 131 is compiling
-0 57 is taken dongle
-0 57 is taken dongle
-0 57 is compiling
-0 23 is taken dongle
-0 23 is taken dongle
-0 23 is compiling
 0 9 is taken dongle
 0 9 is taken dongle
 0 9 is compiling
-0 15 is taken dongle
-0 15 is taken dongle
-0 15 is compiling
-0 67 is taken dongle
-0 67 is taken dongle
-0 91 is taken dongle
-0 91 is taken dongle
-0 67 is compiling
-0 91 is compiling
-0 81 is taken dongle
-0 81 is taken dongle
-0 81 is compiling
-0 89 is taken dongle
-0 89 is taken dongle
-0 159 is taken dongle
-0 159 is taken dongle
-0 159 is compiling
-0 89 is compiling
-0 149 is taken dongle
-0 149 is taken dongle
-0 149 is compiling
-0 175 is taken dongle
-0 175 is taken dongle
-0 175 is compiling
+0 3 is taken dongle
+0 3 is taken dongle
+0 3 is compiling
+0 7 is taken dongle
+0 7 is taken dongle
+0 7 is compiling
 0 5 is taken dongle
 0 5 is taken dongle
 0 5 is compiling
-0 177 is taken dongle
-0 177 is taken dongle
-0 177 is compiling
-0 117 is taken dongle
-0 117 is taken dongle
-0 117 is compiling
-0 195 is taken dongle
-0 195 is taken dongle
-0 195 is compiling
-0 137 is taken dongle
-0 137 is taken dongle
-0 137 is compiling
-0 83 is compiling
-0 113 is taken dongle
-0 113 is taken dongle
-0 113 is compiling
-0 87 is taken dongle
-0 87 is taken dongle
-0 87 is compiling
-0 167 is taken dongle
-0 167 is taken dongle
-0 167 is compiling
-0 21 is compiling
-0 35 is taken dongle
-0 35 is taken dongle
-0 35 is compiling
-0 183 is taken dongle
-0 183 is taken dongle
-0 183 is compiling
-0 99 is taken dongle
-0 99 is taken dongle
-0 99 is compiling
-0 17 is taken dongle
-0 17 is taken dongle
-0 17 is compiling
-0 49 is compiling
-0 123 is taken dongle
-0 123 is taken dongle
-0 123 is compiling
-0 191 is taken dongle
-0 191 is taken dongle
-0 191 is compiling
-0 179 is taken dongle
-0 179 is taken dongle
-0 179 is compiling
-0 193 is taken dongle
-0 193 is taken dongle
-0 193 is compiling
-0 197 is taken dongle
-0 197 is taken dongle
-0 197 is compiling
-0 187 is taken dongle
-0 187 is taken dongle
-0 187 is compiling
-100 129 is debugging
-100 155 is debugging
-100 43 is debugging
-100 167 is debugging
-100 87 is debugging
-100 141 is debugging
-100 161 is debugging
-100 121 is debugging
-100 163 is debugging
-100 1 is debugging
-100 187 is debugging
-100 151 is debugging
-100 47 is debugging
-100 39 is debugging
-100 97 is debugging
-100 81 is debugging
-100 117 is debugging
-100 53 is debugging
-100 133 is debugging
-100 115 is debugging
-100 67 is debugging
-100 177 is debugging
-100 159 is debugging
-100 195 is debugging
-100 119 is debugging
-100 31 is debugging
-100 137 is debugging
-100 143 is debugging
-100 109 is debugging
-100 147 is debugging
-100 27 is debugging
-100 149 is debugging
-100 189 is debugging
-100 93 is debugging
-100 37 is debugging
-100 91 is debugging
-100 49 is debugging
-100 157 is debugging
-100 179 is debugging
-100 11 is debugging
-100 9 is debugging
-100 77 is debugging
-100 191 is debugging
-100 95 is debugging
-100 101 is debugging
-100 139 is debugging
-100 83 is debugging
 100 5 is debugging
-100 29 is debugging
-100 99 is debugging
-100 65 is debugging
-100 171 is debugging
-100 3 is debugging
-100 153 is debugging
-100 33 is debugging
-100 89 is debugging
-100 35 is debugging
-100 51 is debugging
-100 173 is debugging
-100 41 is debugging
-100 23 is debugging
-100 13 is debugging
 100 7 is debugging
-100 63 is debugging
-100 113 is debugging
-100 107 is debugging
-100 79 is debugging
-100 145 is debugging
-100 85 is debugging
-100 193 is debugging
-100 123 is debugging
-100 111 is debugging
-100 19 is debugging
-100 57 is debugging
-100 197 is debugging
-100 17 is debugging
-100 125 is debugging
-100 45 is debugging
-100 25 is debugging
-100 73 is debugging
-100 55 is debugging
-100 181 is debugging
-100 61 is debugging
-100 21 is debugging
-100 69 is debugging
-100 103 is debugging
-100 169 is debugging
-100 165 is debugging
-100 15 is debugging
-100 59 is debugging
-100 127 is debugging
-100 71 is debugging
-100 183 is debugging
-100 75 is debugging
-100 135 is debugging
-100 105 is debugging
-100 175 is debugging
-100 131 is debugging
-100 185 is debugging
-200 103 is refactoring
-200 125 is refactoring
-200 197 is refactoring
-200 27 is refactoring
-200 101 is refactoring
-200 43 is refactoring
-200 23 is refactoring
-200 155 is refactoring
-200 39 is refactoring
-200 61 is refactoring
-200 141 is refactoring
-200 33 is refactoring
-200 79 is refactoring
-200 189 is refactoring
-200 133 is refactoring
-200 37 is refactoring
-200 145 is refactoring
-200 51 is refactoring
-200 123 is refactoring
-200 181 is refactoring
-200 25 is refactoring
-200 151 is refactoring
-200 57 is refactoring
-200 81 is refactoring
-200 179 is refactoring
-200 69 is refactoring
-200 65 is refactoring
-200 187 is refactoring
-200 117 is refactoring
-200 59 is refactoring
-200 5 is refactoring
-200 193 is refactoring
-200 55 is refactoring
-200 165 is refactoring
-200 87 is refactoring
-200 91 is refactoring
-200 63 is refactoring
-200 167 is refactoring
-200 113 is refactoring
-200 177 is refactoring
-200 121 is refactoring
-200 15 is refactoring
-200 53 is refactoring
-200 115 is refactoring
-200 47 is refactoring
-200 95 is refactoring
-200 153 is refactoring
-200 9 is refactoring
-200 21 is refactoring
-200 1 is refactoring
-200 139 is refactoring
-200 131 is refactoring
-200 67 is refactoring
-200 35 is refactoring
-200 137 is refactoring
-200 41 is refactoring
-200 45 is refactoring
-200 171 is refactoring
-200 73 is refactoring
-200 77 is refactoring
-200 31 is refactoring
-200 159 is refactoring
-200 93 is refactoring
-200 83 is refactoring
+100 3 is debugging
+100 9 is debugging
+200 6 is taken dongle
+200 6 is taken dongle
+200 1 is taken dongle
+200 1 is taken dongle
+200 1 is compiling
+200 4 is taken dongle
+200 4 is taken dongle
+200 4 is compiling
+200 6 is compiling
+200 8 is taken dongle
+200 8 is taken dongle
+200 8 is compiling
 200 3 is refactoring
-200 75 is refactoring
-200 173 is refactoring
-200 71 is refactoring
-200 143 is refactoring
-200 85 is refactoring
-200 169 is refactoring
-200 175 is refactoring
-200 105 is refactoring
-200 161 is refactoring
-200 111 is refactoring
-200 49 is refactoring
-200 109 is refactoring
-200 147 is refactoring
-200 29 is refactoring
-200 185 is refactoring
-200 127 is refactoring
-200 119 is refactoring
-200 135 is refactoring
-200 107 is refactoring
-200 11 is refactoring
+200 5 is refactoring
 200 7 is refactoring
-200 191 is refactoring
-200 183 is refactoring
-200 157 is refactoring
-200 17 is refactoring
-200 163 is refactoring
-200 89 is refactoring
-200 195 is refactoring
-200 99 is refactoring
-200 19 is refactoring
-200 97 is refactoring
-200 13 is refactoring
-200 149 is refactoring
-200 129 is refactoring
-700 143 is taken dongle
-700 143 is taken dongle
-700 83 is taken dongle
-700 83 is taken dongle
-700 143 is compiling
-700 83 is compiling
-700 185 is taken dongle
-700 185 is taken dongle
-700 185 is compiling
-700 181 is taken dongle
-700 181 is taken dongle
-700 181 is compiling
-700 75 is taken dongle
-700 75 is taken dongle
-700 167 is taken dongle
-700 167 is taken dongle
-700 167 is compiling
-700 33 is taken dongle
-700 33 is taken dongle
-700 49 is taken dongle
-700 49 is taken dongle
-700 33 is compiling
-700 45 is taken dongle
-700 45 is taken dongle
-700 49 is compiling
-700 45 is compiling
-700 3 is taken dongle
-700 3 is taken dongle
-700 3 is compiling
-700 111 is taken dongle
-700 111 is taken dongle
-700 111 is compiling
-700 163 is taken dongle
-700 163 is taken dongle
-700 75 is compiling
-700 179 is taken dongle
-700 179 is taken dongle
-700 31 is taken dongle
-700 31 is taken dongle
-700 55 is taken dongle
-700 55 is taken dongle
-700 55 is compiling
-700 129 is taken dongle
-700 129 is taken dongle
-700 31 is compiling
-700 135 is taken dongle
-700 135 is taken dongle
-700 129 is compiling
-700 53 is taken dongle
-700 53 is taken dongle
-700 137 is taken dongle
-700 137 is taken dongle
-700 53 is compiling
-700 41 is taken dongle
-700 41 is taken dongle
-700 41 is compiling
-700 135 is compiling
-700 137 is compiling
-700 109 is taken dongle
-700 109 is taken dongle
-700 109 is compiling
-700 29 is taken dongle
-700 29 is taken dongle
-700 29 is compiling
-700 65 is taken dongle
-700 65 is taken dongle
-700 65 is compiling
-700 151 is taken dongle
-700 151 is taken dongle
-700 85 is taken dongle
-700 85 is taken dongle
-700 151 is compiling
-700 85 is compiling
-700 155 is taken dongle
-700 155 is taken dongle
-700 183 is taken dongle
-700 183 is taken dongle
-700 183 is compiling
-700 79 is taken dongle
-700 79 is taken dongle
-700 193 is taken dongle
-700 193 is taken dongle
-700 79 is compiling
-700 161 is taken dongle
-700 161 is taken dongle
-700 193 is compiling
-700 161 is compiling
-700 99 is taken dongle
-700 99 is taken dongle
-700 57 is taken dongle
-700 57 is taken dongle
-700 57 is compiling
-700 99 is compiling
-700 89 is taken dongle
-700 89 is taken dongle
-700 165 is taken dongle
-700 165 is taken dongle
-700 165 is compiling
-700 89 is compiling
-700 23 is taken dongle
-700 23 is taken dongle
-700 23 is compiling
-700 169 is taken dongle
-700 169 is taken dongle
-700 169 is compiling
-700 15 is taken dongle
-700 15 is taken dongle
-700 15 is compiling
-700 131 is taken dongle
-700 131 is taken dongle
-700 131 is compiling
-700 5 is taken dongle
-700 5 is taken dongle
-700 77 is taken dongle
-700 77 is taken dongle
-700 77 is compiling
-700 5 is compiling
-700 189 is taken dongle
-700 189 is taken dongle
-700 189 is compiling
-700 103 is taken dongle
-700 103 is taken dongle
-700 197 is taken dongle
-700 197 is taken dongle
-700 149 is taken dongle
-700 149 is taken dongle
-700 149 is compiling
-700 197 is compiling
-700 25 is taken dongle
-700 25 is taken dongle
-700 25 is compiling
-700 37 is taken dongle
-700 37 is taken dongle
-700 37 is compiling
-700 51 is taken dongle
-700 51 is taken dongle
-700 101 is taken dongle
-700 101 is taken dongle
-700 101 is compiling
-700 39 is taken dongle
-700 39 is taken dongle
-700 141 is taken dongle
-700 141 is taken dongle
-700 141 is compiling
-700 39 is compiling
-700 103 is compiling
-700 171 is taken dongle
-700 171 is taken dongle
-700 123 is taken dongle
-700 123 is taken dongle
-700 171 is compiling
-700 123 is compiling
-700 13 is taken dongle
-700 13 is taken dongle
-700 13 is compiling
-700 61 is taken dongle
-700 61 is taken dongle
-700 117 is taken dongle
-700 117 is taken dongle
-700 117 is compiling
-700 159 is taken dongle
-700 159 is taken dongle
-700 159 is compiling
-700 125 is taken dongle
-700 125 is taken dongle
-700 125 is compiling
-700 51 is compiling
-700 133 is taken dongle
-700 133 is taken dongle
-700 133 is compiling
-700 127 is taken dongle
-700 127 is taken dongle
-700 87 is taken dongle
-700 87 is taken dongle
-700 175 is taken dongle
-700 175 is taken dongle
-700 87 is compiling
-700 175 is compiling
-700 127 is compiling
-700 27 is taken dongle
-700 27 is taken dongle
-700 113 is taken dongle
-700 113 is taken dongle
-700 27 is compiling
-700 153 is taken dongle
-700 153 is taken dongle
-700 115 is taken dongle
-700 115 is taken dongle
-700 113 is compiling
-700 153 is compiling
-700 115 is compiling
-700 71 is taken dongle
-700 71 is taken dongle
-700 71 is compiling
-700 67 is taken dongle
-700 67 is taken dongle
-700 7 is taken dongle
-700 7 is taken dongle
-700 21 is taken dongle
-700 21 is taken dongle
-700 7 is compiling
-700 67 is compiling
-700 21 is compiling
-700 95 is taken dongle
-700 95 is taken dongle
-700 157 is taken dongle
-700 157 is taken dongle
-700 9 is taken dongle
-700 9 is taken dongle
-700 95 is compiling
-700 61 is compiling
-700 9 is compiling
-700 63 is taken dongle
-700 63 is taken dongle
-700 157 is compiling
-700 119 is taken dongle
-700 119 is taken dongle
-700 63 is compiling
-700 119 is compiling
-700 59 is taken dongle
-700 59 is taken dongle
-700 35 is taken dongle
-700 35 is taken dongle
-700 35 is compiling
-700 59 is compiling
-700 17 is taken dongle
-700 17 is taken dongle
-700 17 is compiling
-700 97 is taken dongle
-700 97 is taken dongle
-700 97 is compiling
-700 173 is taken dongle
-700 173 is taken dongle
-700 173 is compiling
-700 139 is taken dongle
-700 139 is taken dongle
-700 187 is taken dongle
-700 187 is taken dongle
-700 187 is compiling
-700 139 is compiling
-700 91 is taken dongle
-700 91 is taken dongle
-700 91 is compiling
-700 179 is compiling
-700 47 is taken dongle
-700 47 is taken dongle
-700 155 is compiling
-700 47 is compiling
-700 11 is taken dongle
-700 11 is taken dongle
-700 43 is taken dongle
-700 43 is taken dongle
-700 11 is compiling
-700 43 is compiling
-700 107 is taken dongle
-700 107 is taken dongle
-700 73 is taken dongle
-700 73 is taken dongle
-700 107 is compiling
-700 73 is compiling
-700 145 is taken dongle
-700 145 is taken dongle
-700 145 is compiling
-700 81 is taken dongle
-700 81 is taken dongle
-700 177 is taken dongle
-700 177 is taken dongle
-700 177 is compiling
-700 81 is compiling
-700 199 is taken dongle
-700 199 is taken dongle
-700 199 is compiling
-700 69 is taken dongle
-700 69 is taken dongle
-700 69 is compiling
-700 121 is taken dongle
-700 121 is taken dongle
-700 121 is compiling
-700 163 is compiling
-700 191 is taken dongle
-700 191 is taken dongle
-700 191 is compiling
-700 147 is taken dongle
-700 147 is taken dongle
-700 147 is compiling
-700 19 is taken dongle
-700 19 is taken dongle
-700 19 is compiling
-700 105 is taken dongle
-700 105 is taken dongle
-700 105 is compiling
-700 93 is taken dongle
-700 93 is taken dongle
-700 93 is compiling
-700 195 is taken dongle
-700 195 is taken dongle
-700 195 is compiling
-800 5 is debugging
-800 97 is debugging
-800 187 is debugging
-800 63 is debugging
-800 113 is debugging
-800 183 is debugging
-800 115 is debugging
-800 77 is debugging
-800 27 is debugging
-800 47 is debugging
-800 89 is debugging
-800 57 is debugging
-800 99 is debugging
-800 139 is debugging
-800 149 is debugging
-800 159 is debugging
-800 125 is debugging
-800 129 is debugging
-800 147 is debugging
-800 105 is debugging
-800 103 is debugging
-800 17 is debugging
-800 195 is debugging
-800 145 is debugging
-800 117 is debugging
-800 13 is debugging
-800 79 is debugging
-800 71 is debugging
-800 65 is debugging
-800 101 is debugging
-800 59 is debugging
-800 191 is debugging
-800 11 is debugging
-800 199 is debugging
-800 135 is debugging
-800 7 is debugging
-800 41 is debugging
-800 153 is debugging
-800 53 is debugging
-800 171 is debugging
-800 151 is debugging
-800 143 is debugging
-800 157 is debugging
-800 165 is debugging
-800 167 is debugging
-800 9 is debugging
-800 133 is debugging
-800 177 is debugging
-800 181 is debugging
-800 141 is debugging
-800 33 is debugging
-800 21 is debugging
-800 91 is debugging
-800 75 is debugging
-800 55 is debugging
-800 25 is debugging
-800 121 is debugging
-800 3 is debugging
-800 163 is debugging
-800 51 is debugging
-800 29 is debugging
-800 109 is debugging
-800 93 is debugging
-800 173 is debugging
-800 39 is debugging
-800 61 is debugging
-800 69 is debugging
-800 185 is debugging
-800 179 is debugging
-800 119 is debugging
-800 197 is debugging
-800 15 is debugging
-800 161 is debugging
-800 81 is debugging
-800 95 is debugging
-800 49 is debugging
-800 45 is debugging
-800 175 is debugging
-800 19 is debugging
-800 137 is debugging
-800 85 is debugging
-800 111 is debugging
-800 123 is debugging
-800 193 is debugging
-800 131 is debugging
-800 43 is debugging
-800 23 is debugging
-800 127 is debugging
-800 107 is debugging
-800 189 is debugging
-800 35 is debugging
-800 73 is debugging
-800 169 is debugging
-800 31 is debugging
-800 87 is debugging
-800 67 is debugging
-800 83 is debugging
-800 155 is debugging
-800 37 is debugging
-900 135 is refactoring
-900 13 is refactoring
-900 147 is refactoring
-900 39 is refactoring
-900 33 is refactoring
-900 27 is refactoring
-900 3 is refactoring
-900 49 is refactoring
-900 111 is refactoring
-900 93 is refactoring
-900 65 is refactoring
-900 91 is refactoring
-900 101 is refactoring
-900 117 is refactoring
-900 191 is refactoring
-900 115 is refactoring
-900 167 is refactoring
-900 19 is refactoring
-900 83 is refactoring
-900 145 is refactoring
-900 57 is refactoring
-900 127 is refactoring
-900 75 is refactoring
-900 11 is refactoring
-900 43 is refactoring
-900 131 is refactoring
-900 155 is refactoring
-900 109 is refactoring
-900 55 is refactoring
-900 121 is refactoring
-900 137 is refactoring
-900 193 is refactoring
-900 97 is refactoring
-900 103 is refactoring
-900 123 is refactoring
-900 9 is refactoring
-900 81 is refactoring
-900 141 is refactoring
-900 139 is refactoring
-900 5 is refactoring
-900 173 is refactoring
-900 95 is refactoring
-900 181 is refactoring
-900 51 is refactoring
-900 199 is refactoring
-900 169 is refactoring
-900 59 is refactoring
-900 15 is refactoring
-900 125 is refactoring
-900 67 is refactoring
-900 47 is refactoring
-900 69 is refactoring
-900 129 is refactoring
-900 105 is refactoring
-900 165 is refactoring
-900 85 is refactoring
-900 21 is refactoring
-900 107 is refactoring
-900 77 is refactoring
-900 31 is refactoring
-900 177 is refactoring
-900 151 is refactoring
-900 185 is refactoring
-900 171 is refactoring
-900 71 is refactoring
-900 175 is refactoring
-900 189 is refactoring
-900 73 is refactoring
-900 25 is refactoring
-900 179 is refactoring
-900 183 is refactoring
-900 161 is refactoring
-900 197 is refactoring
-900 119 is refactoring
-900 195 is refactoring
-900 113 is refactoring
-900 149 is refactoring
-900 61 is refactoring
-900 159 is refactoring
-900 45 is refactoring
-900 29 is refactoring
-900 187 is refactoring
-900 7 is refactoring
-900 23 is refactoring
-900 157 is refactoring
-900 35 is refactoring
-900 79 is refactoring
-900 153 is refactoring
-900 133 is refactoring
-900 17 is refactoring
-900 89 is refactoring
-900 143 is refactoring
-900 63 is refactoring
-900 53 is refactoring
-900 99 is refactoring
-900 37 is refactoring
-900 163 is refactoring
-900 87 is refactoring
-900 41 is refactoring
-1400 148 is taken dongle
-1400 148 is taken dongle
-1400 148 is compiling
-1400 186 is taken dongle
-1400 186 is taken dongle
-1400 198 is taken dongle
-1400 198 is taken dongle
-1400 98 is taken dongle
-1400 98 is taken dongle
-1400 98 is compiling
-1400 198 is compiling
-1400 68 is taken dongle
-1400 68 is taken dongle
-1400 68 is compiling
-1400 128 is taken dongle
-1400 128 is taken dongle
-1400 100 is taken dongle
-1400 100 is taken dongle
-1400 196 is taken dongle
-1400 196 is taken dongle
-1400 102 is taken dongle
-1400 102 is taken dongle
-1400 100 is compiling
-1400 102 is compiling
-1400 22 is taken dongle
-1400 22 is taken dongle
-1400 76 is taken dongle
-1400 76 is taken dongle
-1400 22 is compiling
-1400 190 is taken dongle
-1400 190 is taken dongle
-1400 190 is compiling
-1400 160 is taken dongle
-1400 160 is taken dongle
-1400 140 is taken dongle
-1400 140 is taken dongle
-1400 140 is compiling
-1400 48 is taken dongle
-1400 48 is taken dongle
-1400 48 is compiling
-1400 160 is compiling
-1400 134 is taken dongle
-1400 134 is taken dongle
-1400 134 is compiling
-1400 90 is taken dongle
-1400 90 is taken dongle
-1400 114 is taken dongle
-1400 114 is taken dongle
-1400 114 is compiling
-1400 158 is taken dongle
-1400 158 is taken dongle
-1400 158 is compiling
-1400 130 is taken dongle
-1400 130 is taken dongle
-1400 90 is compiling
-1400 82 is taken dongle
-1400 82 is taken dongle
-1400 82 is compiling
-1400 130 is compiling
-1400 42 is taken dongle
-1400 42 is taken dongle
-1400 16 is taken dongle
-1400 16 is taken dongle
-1400 16 is compiling
-1400 12 is taken dongle
-1400 12 is taken dongle
-1400 174 is taken dongle
-1400 174 is taken dongle
-1400 174 is compiling
-1400 12 is compiling
-1400 70 is taken dongle
-1400 70 is taken dongle
-1400 70 is compiling
-1400 42 is compiling
-1400 72 is taken dongle
-1400 72 is taken dongle
-1400 72 is compiling
-1400 86 is taken dongle
-1400 86 is taken dongle
-1400 28 is taken dongle
-1400 28 is taken dongle
-1400 28 is compiling
-1400 182 is taken dongle
-1400 182 is taken dongle
-1400 86 is compiling
-1400 182 is compiling
-1400 162 is taken dongle
-1400 162 is taken dongle
-1400 162 is compiling
-1400 176 is taken dongle
-1400 176 is taken dongle
-1400 110 is taken dongle
-1400 110 is taken dongle
-1400 176 is compiling
-1400 110 is compiling
-1400 172 is taken dongle
-1400 172 is taken dongle
-1400 172 is compiling
-1400 24 is taken dongle
-1400 24 is taken dongle
-1400 52 is taken dongle
-1400 52 is taken dongle
-1400 56 is taken dongle
-1400 56 is taken dongle
-1400 56 is compiling
-1400 24 is compiling
-1400 50 is taken dongle
-1400 50 is taken dongle
-1400 52 is compiling
-1400 32 is taken dongle
-1400 32 is taken dongle
-1400 32 is compiling
-1400 50 is compiling
-1400 126 is taken dongle
-1400 126 is taken dongle
-1400 184 is taken dongle
-1400 184 is taken dongle
-1400 184 is compiling
-1400 126 is compiling
-1400 120 is taken dongle
-1400 120 is taken dongle
-1400 168 is taken dongle
-1400 168 is taken dongle
-1400 36 is taken dongle
-1400 36 is taken dongle
-1400 168 is compiling
-1400 4 is taken dongle
-1400 4 is taken dongle
-1400 36 is compiling
-1400 196 is compiling
-1400 4 is compiling
-1400 128 is compiling
-1400 66 is taken dongle
-1400 66 is taken dongle
-1400 142 is taken dongle
-1400 142 is taken dongle
-1400 142 is compiling
-1400 66 is compiling
-1400 132 is taken dongle
-1400 132 is taken dongle
-1400 14 is taken dongle
-1400 14 is taken dongle
-1400 14 is compiling
-1400 192 is taken dongle
-1400 192 is taken dongle
-1400 192 is compiling
-1400 132 is compiling
-1400 38 is taken dongle
-1400 38 is taken dongle
-1400 38 is compiling
-1400 62 is taken dongle
-1400 62 is taken dongle
-1400 62 is compiling
-1400 120 is compiling
-1400 74 is taken dongle
-1400 74 is taken dongle
-1400 74 is compiling
-1400 26 is taken dongle
-1400 26 is taken dongle
-1400 26 is compiling
-1400 186 is compiling
-1400 18 is taken dongle
-1400 18 is taken dongle
-1400 18 is compiling
-1400 76 is compiling
-1400 112 is taken dongle
-1400 112 is taken dongle
-1400 112 is compiling
-1400 164 is taken dongle
-1400 164 is taken dongle
-1400 164 is compiling
-1400 156 is taken dongle
-1400 156 is taken dongle
-1400 156 is compiling
-1400 108 is taken dongle
-1400 108 is taken dongle
-1400 108 is compiling
-1400 54 is taken dongle
-1400 54 is taken dongle
-1400 44 is taken dongle
-1400 44 is taken dongle
-1400 44 is compiling
-1400 64 is taken dongle
-1400 64 is taken dongle
-1400 58 is taken dongle
-1400 58 is taken dongle
-1400 180 is taken dongle
-1400 180 is taken dongle
-1400 180 is compiling
-1400 104 is taken dongle
-1400 104 is taken dongle
-1400 166 is taken dongle
-1400 166 is taken dongle
-1400 104 is compiling
-1400 166 is compiling
-1400 34 is taken dongle
-1400 34 is taken dongle
-1400 34 is compiling
-1400 10 is taken dongle
-1400 10 is taken dongle
-1400 10 is compiling
-1400 178 is taken dongle
-1400 178 is taken dongle
-1400 96 is taken dongle
-1400 96 is taken dongle
-1400 78 is taken dongle
-1400 78 is taken dongle
-1400 78 is compiling
-1400 146 is taken dongle
-1400 146 is taken dongle
-1400 96 is compiling
-1400 178 is compiling
-1400 116 is taken dongle
-1400 116 is taken dongle
-1400 88 is taken dongle
-1400 88 is taken dongle
-1400 88 is compiling
-1400 146 is compiling
-1400 122 is taken dongle
-1400 122 is taken dongle
-1400 122 is compiling
-1400 94 is taken dongle
-1400 94 is taken dongle
-1400 94 is compiling
-1400 154 is taken dongle
-1400 154 is taken dongle
-1400 154 is compiling
-1400 8 is taken dongle
-1400 8 is taken dongle
-1400 8 is compiling
-1400 116 is compiling
-1400 150 is taken dongle
-1400 150 is taken dongle
-1400 144 is taken dongle
-1400 144 is taken dongle
-1400 144 is compiling
-1400 92 is taken dongle
-1400 92 is taken dongle
-1400 92 is compiling
-1400 194 is taken dongle
-1400 194 is taken dongle
-1400 136 is taken dongle
-1400 136 is taken dongle
-1400 194 is compiling
-1400 170 is taken dongle
-1400 170 is taken dongle
-1400 118 is taken dongle
-1400 118 is taken dongle
-1400 118 is compiling
-1400 170 is compiling
-1400 138 is taken dongle
-1400 138 is taken dongle
-1400 138 is compiling
-1400 54 is compiling
-1400 136 is compiling
-1400 106 is taken dongle
-1400 106 is taken dongle
-1400 106 is compiling
-1400 60 is taken dongle
-1400 60 is taken dongle
-1400 60 is compiling
-1400 58 is compiling
-1400 80 is taken dongle
-1400 80 is taken dongle
-1400 6 is taken dongle
-1400 6 is taken dongle
-1400 6 is compiling
-1400 80 is compiling
-1400 152 is taken dongle
-1400 152 is taken dongle
-1400 152 is compiling
-1400 64 is compiling
-1400 150 is compiling
-1400 40 is taken dongle
-1400 40 is taken dongle
-1400 40 is compiling
-1400 188 is taken dongle
-1400 188 is taken dongle
-1400 124 is taken dongle
-1400 124 is taken dongle
-1400 124 is compiling
+200 9 is refactoring
+300 6 is debugging
+300 4 is debugging
+300 1 is debugging
+300 8 is debugging
+400 5 is taken dongle
+400 5 is taken dongle
+400 5 is compiling
+400 7 is taken dongle
+400 7 is taken dongle
+400 7 is compiling
+400 2 is taken dongle
+400 2 is taken dongle
+400 2 is compiling
+400 9 is taken dongle
+400 9 is taken dongle
+400 9 is compiling
+400 4 is refactoring
+400 8 is refactoring
+400 1 is refactoring
+400 6 is refactoring
+500 5 is debugging
+500 9 is debugging
+500 7 is debugging
+500 2 is debugging
+600 7 is refactoring
+600 9 is refactoring
+600 2 is refactoring
+600 6 is taken dongle
+600 6 is taken dongle
+600 6 is compiling
+600 1 is taken dongle
+600 1 is taken dongle
+600 1 is compiling
+600 3 is taken dongle
+600 3 is taken dongle
+600 3 is compiling
+600 8 is taken dongle
+600 8 is taken dongle
+600 8 is compiling
+600 5 is refactoring
+700 6 is debugging
+700 3 is debugging
+700 8 is debugging
+700 1 is debugging
+800 8 is refactoring
+800 4 is taken dongle
+800 4 is taken dongle
+800 4 is compiling
+800 7 is taken dongle
+800 7 is taken dongle
+800 7 is compiling
+800 2 is taken dongle
+800 2 is taken dongle
+800 2 is compiling
+800 9 is taken dongle
+800 9 is taken dongle
+800 9 is compiling
+800 6 is refactoring
+800 1 is refactoring
+800 3 is refactoring
+900 7 is debugging
+900 9 is debugging
+900 4 is debugging
+900 2 is debugging
+1000 8 is taken dongle
+1000 8 is taken dongle
+1000 8 is compiling
+1000 1 is taken dongle
+1000 1 is taken dongle
+1000 1 is compiling
+1000 4 is refactoring
+1000 7 is refactoring
+1000 9 is refactoring
+1000 3 is taken dongle
+1000 3 is taken dongle
+1000 3 is compiling
+1000 5 is taken dongle
+1000 5 is taken dongle
+1000 5 is compiling
+1000 2 is refactoring
+1100 3 is debugging
+1100 5 is debugging
+1100 1 is debugging
+1100 8 is debugging
+1200 5 is refactoring
+1200 1 is refactoring
+1200 8 is refactoring
+1200 6 is taken dongle
+1200 6 is taken dongle
+1200 6 is compiling
+1200 3 is refactoring
+1200 4 is taken dongle
+1200 4 is taken dongle
+1200 4 is compiling
+1200 2 is taken dongle
+1200 2 is taken dongle
+1200 2 is compiling
+1200 9 is taken dongle
+1200 9 is taken dongle
+1200 9 is compiling
+1300 9 is debugging
+1300 4 is debugging
+1300 6 is debugging
+1300 2 is debugging
+1400 9 is refactoring
+1400 2 is refactoring
+1400 7 is taken dongle
+1400 7 is taken dongle
+1400 7 is compiling
+1400 5 is taken dongle
+1400 5 is taken dongle
+1400 5 is compiling
+1400 3 is taken dongle
+1400 3 is taken dongle
+1400 3 is compiling
 1400 1 is taken dongle
 1400 1 is taken dongle
-1400 188 is compiling
 1400 1 is compiling
-1400 84 is taken dongle
-1400 84 is taken dongle
-1400 84 is compiling
-1400 30 is taken dongle
-1400 30 is taken dongle
-1400 30 is compiling
-1400 46 is taken dongle
-1400 46 is taken dongle
-1400 46 is compiling
-1400 20 is taken dongle
-1400 20 is taken dongle
-1400 20 is compiling
-1500 132 is debugging
-1500 48 is debugging
-1500 12 is debugging
-1500 14 is debugging
-1500 44 is debugging
-1500 94 is debugging
-1500 10 is debugging
-1500 24 is debugging
-1500 56 is debugging
-1500 130 is debugging
-1500 52 is debugging
-1500 60 is debugging
-1500 120 is debugging
-1500 106 is debugging
-1500 162 is debugging
-1500 96 is debugging
-1500 46 is debugging
-1500 50 is debugging
-1500 102 is debugging
-1500 146 is debugging
-1500 74 is debugging
-1500 124 is debugging
-1500 90 is debugging
-1500 84 is debugging
-1500 184 is debugging
-1500 6 is debugging
-1500 182 is debugging
-1500 194 is debugging
-1500 22 is debugging
-1500 150 is debugging
-1500 68 is debugging
-1500 72 is debugging
-1500 78 is debugging
-1500 58 is debugging
-1500 36 is debugging
-1500 152 is debugging
-1500 110 is debugging
-1500 188 is debugging
-1500 104 is debugging
-1500 26 is debugging
-1500 136 is debugging
-1500 112 is debugging
-1500 20 is debugging
-1500 186 is debugging
-1500 144 is debugging
-1500 98 is debugging
-1500 34 is debugging
-1500 190 is debugging
-1500 126 is debugging
-1500 172 is debugging
-1500 4 is debugging
-1500 92 is debugging
-1500 178 is debugging
-1500 108 is debugging
-1500 198 is debugging
-1500 122 is debugging
-1500 164 is debugging
-1500 114 is debugging
-1500 168 is debugging
-1500 32 is debugging
-1500 76 is debugging
-1500 148 is debugging
-1500 158 is debugging
-1500 66 is debugging
-1500 156 is debugging
-1500 40 is debugging
-1500 18 is debugging
-1500 142 is debugging
-1500 38 is debugging
-1500 8 is debugging
-1500 30 is debugging
-1500 192 is debugging
-1500 176 is debugging
-1500 118 is debugging
-1500 128 is debugging
-1500 180 is debugging
-1500 170 is debugging
-1500 70 is debugging
-1500 134 is debugging
-1500 28 is debugging
-1500 62 is debugging
-1500 100 is debugging
-1500 116 is debugging
-1500 160 is debugging
-1500 86 is debugging
-1500 166 is debugging
-1500 140 is debugging
-1500 82 is debugging
-1500 154 is debugging
+1400 6 is refactoring
+1400 4 is refactoring
+1500 7 is debugging
 1500 1 is debugging
-1500 174 is debugging
-1500 54 is debugging
-1500 196 is debugging
-1500 42 is debugging
-1500 88 is debugging
-1500 138 is debugging
-1500 80 is debugging
-1500 64 is debugging
-1500 16 is debugging
-1600 144 is refactoring
-1600 120 is refactoring
-1600 142 is refactoring
-1600 174 is refactoring
-1600 112 is refactoring
-1600 166 is refactoring
-1600 16 is refactoring
-1600 170 is refactoring
-1600 180 is refactoring
-1600 178 is refactoring
-1600 54 is refactoring
-1600 158 is refactoring
-1600 58 is refactoring
-1600 118 is refactoring
-1600 82 is refactoring
-1600 40 is refactoring
-1600 6 is refactoring
-1600 134 is refactoring
-1600 190 is refactoring
-1600 88 is refactoring
-1600 156 is refactoring
-1600 168 is refactoring
-1600 94 is refactoring
-1600 146 is refactoring
-1600 152 is refactoring
-1600 126 is refactoring
-1600 148 is refactoring
-1600 114 is refactoring
-1600 122 is refactoring
-1600 72 is refactoring
-1600 18 is refactoring
-1600 80 is refactoring
-1600 32 is refactoring
-1600 74 is refactoring
-1600 42 is refactoring
-1600 10 is refactoring
-1600 182 is refactoring
-1600 96 is refactoring
-1600 108 is refactoring
-1600 106 is refactoring
-1600 124 is refactoring
-1600 36 is refactoring
-1600 30 is refactoring
-1600 8 is refactoring
-1600 56 is refactoring
-1600 78 is refactoring
-1600 100 is refactoring
-1600 38 is refactoring
-1600 12 is refactoring
-1600 90 is refactoring
-1600 50 is refactoring
-1600 4 is refactoring
-1600 198 is refactoring
-1600 48 is refactoring
-1600 172 is refactoring
-1600 24 is refactoring
-1600 52 is refactoring
-1600 44 is refactoring
-1600 176 is refactoring
-1600 34 is refactoring
-1600 104 is refactoring
-1600 132 is refactoring
-1600 138 is refactoring
-1600 186 is refactoring
-1600 116 is refactoring
-1600 164 is refactoring
-1600 86 is refactoring
-1600 66 is refactoring
-1600 136 is refactoring
-1600 192 is refactoring
-1600 68 is refactoring
-1600 22 is refactoring
-1600 194 is refactoring
-1600 26 is refactoring
-1600 28 is refactoring
-1600 76 is refactoring
-1600 20 is refactoring
-1600 130 is refactoring
-1600 46 is refactoring
-1600 60 is refactoring
-1600 150 is refactoring
-1600 110 is refactoring
-1600 14 is refactoring
-1600 70 is refactoring
-1600 62 is refactoring
-1600 98 is refactoring
+1500 3 is debugging
+1500 5 is debugging
 1600 1 is refactoring
-1600 92 is refactoring
-1600 160 is refactoring
-1600 64 is refactoring
-1600 102 is refactoring
-1600 84 is refactoring
-1600 196 is refactoring
-1600 188 is refactoring
-1600 184 is refactoring
-1600 154 is refactoring
-1600 140 is refactoring
-1600 162 is refactoring
-1600 128 is refactoring
-2100 21 is taken dongle
-2100 21 is taken dongle
-2100 21 is compiling
-2100 95 is taken dongle
-2100 95 is taken dongle
-2100 41 is taken dongle
-2100 41 is taken dongle
-2100 61 is taken dongle
-2100 61 is taken dongle
-2100 61 is compiling
-2100 137 is taken dongle
-2100 137 is taken dongle
-2100 137 is compiling
-2100 161 is taken dongle
-2100 161 is taken dongle
-2100 161 is compiling
-2100 117 is taken dongle
-2100 117 is taken dongle
-2100 117 is compiling
-2100 131 is taken dongle
-2100 131 is taken dongle
-2100 131 is compiling
-2100 195 is taken dongle
-2100 195 is taken dongle
-2100 195 is compiling
-2100 121 is taken dongle
-2100 121 is taken dongle
-2100 121 is compiling
-2100 159 is taken dongle
-2100 159 is taken dongle
-2100 159 is compiling
-2100 75 is taken dongle
-2100 75 is taken dongle
-2100 75 is compiling
-2100 67 is taken dongle
-2100 67 is taken dongle
-2100 67 is compiling
-2100 107 is taken dongle
-2100 107 is taken dongle
-2100 107 is compiling
-2100 181 is taken dongle
-2100 181 is taken dongle
-2100 181 is compiling
-2100 17 is taken dongle
-2100 17 is taken dongle
-2100 17 is compiling
-2100 55 is taken dongle
-2100 55 is taken dongle
-2100 55 is compiling
-2100 51 is taken dongle
-2100 51 is taken dongle
-2100 51 is compiling
-2100 129 is taken dongle
-2100 129 is taken dongle
-2100 129 is compiling
-2100 63 is taken dongle
-2100 63 is taken dongle
-2100 91 is taken dongle
-2100 91 is taken dongle
-2100 91 is compiling
-2100 63 is compiling
-2100 99 is taken dongle
-2100 99 is taken dongle
-2100 99 is compiling
-2100 133 is taken dongle
-2100 133 is taken dongle
-2100 133 is compiling
-2100 25 is taken dongle
-2100 25 is taken dongle
-2100 25 is compiling
-2100 31 is taken dongle
-2100 31 is taken dongle
-2100 31 is compiling
-2100 151 is taken dongle
-2100 151 is taken dongle
-2100 151 is compiling
-2100 199 is taken dongle
-2100 199 is taken dongle
-2100 199 is compiling
-2100 155 is taken dongle
-2100 155 is taken dongle
-2100 155 is compiling
-2100 59 is taken dongle
-2100 59 is taken dongle
-2100 59 is compiling
-2100 79 is taken dongle
-2100 79 is taken dongle
-2100 79 is compiling
-2100 153 is taken dongle
-2100 153 is taken dongle
-2100 153 is compiling
-2100 115 is taken dongle
-2100 115 is taken dongle
-2100 89 is taken dongle
-2100 89 is taken dongle
-2100 89 is compiling
-2100 111 is taken dongle
-2100 111 is taken dongle
-2100 111 is compiling
-2100 189 is taken dongle
-2100 189 is taken dongle
-2100 189 is compiling
-2100 127 is taken dongle
-2100 127 is taken dongle
-2100 127 is compiling
-2100 119 is taken dongle
-2100 119 is taken dongle
-2100 119 is compiling
-2100 23 is taken dongle
-2100 23 is taken dongle
-2100 23 is compiling
-2100 115 is compiling
-2100 81 is taken dongle
-2100 81 is taken dongle
-2100 53 is taken dongle
-2100 53 is taken dongle
-2100 81 is compiling
-2100 147 is taken dongle
-2100 147 is taken dongle
-2100 9 is taken dongle
-2100 9 is taken dongle
-2100 147 is compiling
-2100 101 is taken dongle
-2100 101 is taken dongle
-2100 101 is compiling
-2100 9 is compiling
-2100 53 is compiling
-2100 93 is taken dongle
-2100 93 is taken dongle
-2100 93 is compiling
-2100 37 is taken dongle
-2100 37 is taken dongle
-2100 97 is taken dongle
-2100 97 is taken dongle
-2100 37 is compiling
-2100 97 is compiling
-2100 139 is taken dongle
-2100 139 is taken dongle
-2100 139 is compiling
-2100 135 is taken dongle
-2100 135 is taken dongle
-2100 135 is compiling
-2100 141 is taken dongle
-2100 141 is taken dongle
-2100 141 is compiling
-2100 43 is taken dongle
-2100 43 is taken dongle
-2100 43 is compiling
-2100 71 is taken dongle
-2100 71 is taken dongle
-2100 83 is taken dongle
-2100 83 is taken dongle
-2100 83 is compiling
-2100 65 is taken dongle
-2100 65 is taken dongle
-2100 65 is compiling
-2100 71 is compiling
-2100 197 is taken dongle
-2100 197 is taken dongle
-2100 197 is compiling
-2100 183 is taken dongle
-2100 183 is taken dongle
-2100 183 is compiling
-2100 103 is taken dongle
-2100 103 is taken dongle
-2100 103 is compiling
-2100 145 is taken dongle
-2100 145 is taken dongle
-2100 145 is compiling
-2100 41 is compiling
-2100 165 is taken dongle
-2100 165 is taken dongle
-2100 143 is taken dongle
-2100 143 is taken dongle
-2100 169 is taken dongle
-2100 169 is taken dongle
-2100 169 is compiling
-2100 143 is compiling
-2100 69 is taken dongle
-2100 69 is taken dongle
-2100 69 is compiling
-2100 175 is taken dongle
-2100 175 is taken dongle
-2100 175 is compiling
-2100 191 is taken dongle
-2100 191 is taken dongle
-2100 191 is compiling
-2100 177 is taken dongle
-2100 177 is taken dongle
-2100 177 is compiling
-2100 163 is taken dongle
-2100 163 is taken dongle
-2100 163 is compiling
-2100 185 is taken dongle
-2100 185 is taken dongle
-2100 7 is taken dongle
-2100 7 is taken dongle
-2100 7 is compiling
-2100 105 is taken dongle
-2100 105 is taken dongle
-2100 105 is compiling
-2100 185 is compiling
-2100 27 is taken dongle
-2100 27 is taken dongle
-2100 27 is compiling
-2100 157 is taken dongle
-2100 157 is taken dongle
-2100 157 is compiling
-2100 193 is taken dongle
-2100 193 is taken dongle
-2100 15 is taken dongle
-2100 15 is taken dongle
-2100 15 is compiling
-2100 165 is compiling
-2100 193 is compiling
-2100 2 is taken dongle
-2100 2 is taken dongle
-2100 2 is compiling
-2100 33 is taken dongle
-2100 33 is taken dongle
-2100 95 is compiling
-2100 33 is compiling
-2100 29 is taken dongle
-2100 29 is taken dongle
-2100 29 is compiling
-2100 5 is taken dongle
-2100 5 is taken dongle
-2100 5 is compiling
-2100 73 is taken dongle
-2100 73 is taken dongle
-2100 125 is taken dongle
-2100 125 is taken dongle
-2100 125 is compiling
-2100 49 is taken dongle
-2100 49 is taken dongle
-2100 49 is compiling
-2100 73 is compiling
-2100 167 is taken dongle
-2100 167 is taken dongle
-2100 19 is taken dongle
-2100 19 is taken dongle
-2100 19 is compiling
-2100 85 is taken dongle
-2100 85 is taken dongle
-2100 123 is taken dongle
-2100 123 is taken dongle
-2100 123 is compiling
-2100 85 is compiling
-2100 109 is taken dongle
-2100 109 is taken dongle
-2100 109 is compiling
-2100 39 is taken dongle
-2100 39 is taken dongle
-2100 87 is taken dongle
-2100 87 is taken dongle
-2100 87 is compiling
-2100 39 is compiling
-2100 45 is taken dongle
-2100 45 is taken dongle
-2100 45 is compiling
-2100 167 is compiling
-2100 179 is taken dongle
-2100 179 is taken dongle
-2100 179 is compiling
-2100 11 is taken dongle
-2100 11 is taken dongle
-2100 11 is compiling
-2100 113 is taken dongle
-2100 113 is taken dongle
-2100 113 is compiling
-2100 77 is taken dongle
-2100 77 is taken dongle
-2100 77 is compiling
-2100 149 is taken dongle
-2100 149 is taken dongle
-2100 149 is compiling
-2100 57 is taken dongle
-2100 57 is taken dongle
-2100 57 is compiling
-2100 171 is taken dongle
-2100 171 is taken dongle
-2100 171 is compiling
-2100 187 is taken dongle
-2100 187 is taken dongle
-2100 187 is compiling
-2100 13 is taken dongle
-2100 13 is taken dongle
-2100 13 is compiling
-2100 35 is taken dongle
-2100 35 is taken dongle
-2100 35 is compiling
-2100 47 is taken dongle
-2100 47 is taken dongle
-2100 47 is compiling
-2100 173 is taken dongle
-2100 173 is taken dongle
-2100 173 is compiling
-2200 151 is debugging
-2200 163 is debugging
-2200 161 is debugging
-2200 173 is debugging
-2200 61 is debugging
-2200 11 is debugging
-2200 101 is debugging
-2200 181 is debugging
-2200 57 is debugging
-2200 127 is debugging
-2200 111 is debugging
-2200 65 is debugging
-2200 13 is debugging
-2200 15 is debugging
-2200 177 is debugging
-2200 169 is debugging
-2200 83 is debugging
-2200 99 is debugging
-2200 105 is debugging
-2200 147 is debugging
-2200 29 is debugging
-2200 143 is debugging
-2200 103 is debugging
-2200 17 is debugging
-2200 63 is debugging
-2200 41 is debugging
-2200 125 is debugging
-2200 31 is debugging
-2200 75 is debugging
-2200 107 is debugging
-2200 19 is debugging
-2200 39 is debugging
-2200 35 is debugging
-2200 5 is debugging
-2200 113 is debugging
-2200 153 is debugging
-2200 185 is debugging
-2200 175 is debugging
-2200 155 is debugging
-2200 165 is debugging
-2200 167 is debugging
-2200 55 is debugging
-2200 123 is debugging
-2200 71 is debugging
-2200 187 is debugging
-2200 79 is debugging
-2200 119 is debugging
-2200 121 is debugging
-2200 45 is debugging
-2200 47 is debugging
-2200 179 is debugging
-2200 27 is debugging
-2200 189 is debugging
-2200 159 is debugging
-2200 59 is debugging
-2200 145 is debugging
-2200 2 is debugging
-2200 49 is debugging
-2200 69 is debugging
-2200 141 is debugging
-2200 191 is debugging
-2200 73 is debugging
-2200 43 is debugging
-2200 197 is debugging
-2200 85 is debugging
-2200 95 is debugging
-2200 67 is debugging
-2200 135 is debugging
-2200 199 is debugging
-2200 33 is debugging
-2200 9 is debugging
-2200 193 is debugging
-2200 137 is debugging
-2200 117 is debugging
-2200 97 is debugging
-2200 195 is debugging
-2200 183 is debugging
-2200 139 is debugging
-2200 51 is debugging
-2200 171 is debugging
-2200 133 is debugging
-2200 23 is debugging
-2200 53 is debugging
-2200 81 is debugging
-2200 89 is debugging
-2200 157 is debugging
-2200 21 is debugging
-2200 87 is debugging
-2200 37 is debugging
-2200 77 is debugging
-2200 91 is debugging
-2200 7 is debugging
-2200 129 is debugging
-2200 93 is debugging
-2200 109 is debugging
-2200 131 is debugging
-2200 115 is debugging
-2200 25 is debugging
-2200 149 is debugging
-2300 83 is refactoring
-2300 175 is refactoring
-2300 133 is refactoring
-2300 25 is refactoring
-2300 23 is refactoring
-2300 107 is refactoring
-2300 195 is refactoring
-2300 7 is refactoring
-2300 159 is refactoring
-2300 79 is refactoring
-2300 145 is refactoring
-2300 29 is refactoring
-2300 33 is refactoring
-2300 17 is refactoring
-2300 105 is refactoring
-2300 193 is refactoring
-2300 109 is refactoring
-2300 151 is refactoring
-2300 149 is refactoring
-2300 19 is refactoring
-2300 31 is refactoring
-2300 39 is refactoring
-2300 63 is refactoring
-2300 119 is refactoring
-2300 5 is refactoring
-2300 49 is refactoring
-2300 185 is refactoring
-2300 147 is refactoring
-2300 55 is refactoring
-2300 163 is refactoring
-2300 123 is refactoring
-2300 21 is refactoring
-2300 171 is refactoring
-2300 153 is refactoring
-2300 71 is refactoring
-2300 141 is refactoring
-2300 65 is refactoring
-2300 135 is refactoring
-2300 69 is refactoring
-2300 127 is refactoring
-2300 121 is refactoring
-2300 53 is refactoring
-2300 91 is refactoring
-2300 197 is refactoring
-2300 67 is refactoring
-2300 45 is refactoring
-2300 137 is refactoring
-2300 157 is refactoring
-2300 103 is refactoring
-2300 2 is refactoring
-2300 41 is refactoring
-2300 181 is refactoring
-2300 75 is refactoring
-2300 199 is refactoring
-2300 139 is refactoring
-2300 99 is refactoring
-2300 101 is refactoring
-2300 183 is refactoring
-2300 129 is refactoring
-2300 179 is refactoring
-2300 77 is refactoring
-2300 131 is refactoring
-2300 89 is refactoring
-2300 173 is refactoring
-2300 189 is refactoring
-2300 13 is refactoring
-2300 167 is refactoring
-2300 95 is refactoring
-2300 169 is refactoring
-2300 97 is refactoring
-2300 117 is refactoring
-2300 115 is refactoring
-2300 111 is refactoring
-2300 59 is refactoring
-2300 165 is refactoring
-2300 47 is refactoring
-2300 15 is refactoring
-2300 51 is refactoring
-2300 191 is refactoring
-2300 35 is refactoring
-2300 61 is refactoring
-2300 143 is refactoring
-2300 11 is refactoring
-2300 57 is refactoring
-2300 37 is refactoring
-2300 87 is refactoring
-2300 155 is refactoring
-2300 85 is refactoring
-2300 81 is refactoring
-2300 177 is refactoring
-2300 27 is refactoring
-2300 9 is refactoring
-2300 187 is refactoring
-2300 161 is refactoring
-2300 113 is refactoring
-2300 43 is refactoring
-2300 125 is refactoring
-2300 93 is refactoring
-2300 73 is refactoring
-2800 128 is taken dongle
-2800 128 is taken dongle
-2800 190 is taken dongle
-2800 190 is taken dongle
-2800 190 is compiling
-2800 114 is taken dongle
-2800 114 is taken dongle
-2800 198 is taken dongle
-2800 198 is taken dongle
-2800 28 is taken dongle
-2800 28 is taken dongle
-2800 28 is compiling
-2800 42 is taken dongle
-2800 42 is taken dongle
-2800 42 is compiling
-2800 198 is compiling
-2800 66 is taken dongle
-2800 66 is taken dongle
-2800 128 is compiling
-2800 114 is compiling
-2800 66 is compiling
-2800 132 is taken dongle
-2800 132 is taken dongle
-2800 132 is compiling
-2800 34 is taken dongle
-2800 34 is taken dongle
-2800 34 is compiling
-2800 176 is taken dongle
-2800 176 is taken dongle
-2800 174 is taken dongle
-2800 174 is taken dongle
-2800 174 is compiling
-2800 176 is compiling
-2800 22 is taken dongle
-2800 22 is taken dongle
-2800 160 is taken dongle
-2800 160 is taken dongle
-2800 22 is compiling
-2800 168 is taken dongle
-2800 168 is taken dongle
-2800 110 is taken dongle
-2800 110 is taken dongle
-2800 88 is taken dongle
-2800 88 is taken dongle
-2800 88 is compiling
-2800 110 is compiling
-2800 140 is taken dongle
-2800 140 is taken dongle
-2800 100 is taken dongle
-2800 100 is taken dongle
-2800 160 is compiling
-2800 100 is compiling
-2800 140 is compiling
-2800 62 is taken dongle
-2800 62 is taken dongle
-2800 184 is taken dongle
-2800 184 is taken dongle
-2800 184 is compiling
-2800 62 is compiling
-2800 158 is taken dongle
-2800 158 is taken dongle
-2800 158 is compiling
-2800 80 is taken dongle
-2800 80 is taken dongle
-2800 130 is taken dongle
-2800 130 is taken dongle
-2800 130 is compiling
-2800 38 is taken dongle
-2800 38 is taken dongle
-2800 38 is compiling
-2800 80 is compiling
-2800 46 is taken dongle
-2800 46 is taken dongle
-2800 46 is compiling
-2800 188 is taken dongle
-2800 188 is taken dongle
-2800 26 is taken dongle
-2800 26 is taken dongle
-2800 104 is taken dongle
-2800 104 is taken dongle
-2800 104 is compiling
-2800 26 is compiling
-2800 188 is compiling
-2800 124 is taken dongle
-2800 124 is taken dongle
-2800 146 is taken dongle
-2800 146 is taken dongle
-2800 126 is taken dongle
-2800 126 is taken dongle
-2800 126 is compiling
-2800 56 is taken dongle
-2800 56 is taken dongle
-2800 56 is compiling
-2800 146 is compiling
-2800 120 is taken dongle
-2800 120 is taken dongle
-2800 120 is compiling
-2800 162 is taken dongle
-2800 162 is taken dongle
-2800 124 is compiling
-2800 164 is taken dongle
-2800 164 is taken dongle
-2800 164 is compiling
-2800 6 is taken dongle
-2800 6 is taken dongle
-2800 60 is taken dongle
-2800 60 is taken dongle
-2800 6 is compiling
-2800 70 is taken dongle
-2800 70 is taken dongle
-2800 106 is taken dongle
-2800 106 is taken dongle
-2800 70 is compiling
-2800 106 is compiling
-2800 40 is taken dongle
-2800 40 is taken dongle
-2800 40 is compiling
-2800 142 is taken dongle
-2800 142 is taken dongle
-2800 142 is compiling
-2800 64 is taken dongle
-2800 64 is taken dongle
-2800 162 is compiling
-2800 74 is taken dongle
-2800 74 is taken dongle
-2800 64 is compiling
-2800 30 is taken dongle
-2800 30 is taken dongle
-2800 30 is compiling
-2800 74 is compiling
-2800 60 is compiling
-2800 90 is taken dongle
-2800 90 is taken dongle
-2800 90 is compiling
-2800 196 is taken dongle
-2800 196 is taken dongle
-2800 196 is compiling
-2800 32 is taken dongle
-2800 32 is taken dongle
-2800 32 is compiling
-2800 98 is taken dongle
-2800 98 is taken dongle
-2800 98 is compiling
-2800 194 is taken dongle
-2800 194 is taken dongle
-2800 194 is compiling
-2800 50 is taken dongle
-2800 50 is taken dongle
-2800 50 is compiling
-2800 92 is taken dongle
-2800 92 is taken dongle
-2800 92 is compiling
-2800 52 is taken dongle
-2800 52 is taken dongle
-2800 154 is taken dongle
-2800 154 is taken dongle
-2800 154 is compiling
-2800 182 is taken dongle
-2800 182 is taken dongle
-2800 52 is compiling
-2800 182 is compiling
-2800 68 is taken dongle
-2800 68 is taken dongle
-2800 68 is compiling
-2800 44 is taken dongle
-2800 44 is taken dongle
-2800 44 is compiling
-2800 168 is compiling
-2800 1 is taken dongle
-2800 1 is taken dongle
-2800 1 is compiling
-2800 94 is taken dongle
-2800 94 is taken dongle
-2800 94 is compiling
-2800 118 is taken dongle
-2800 118 is taken dongle
-2800 118 is compiling
-2800 24 is taken dongle
-2800 24 is taken dongle
-2800 24 is compiling
-2800 180 is taken dongle
-2800 180 is taken dongle
-2800 180 is compiling
-2800 54 is taken dongle
-2800 54 is taken dongle
+1600 6 is taken dongle
+1600 6 is taken dongle
+1600 2 is taken dongle
+1600 2 is taken dongle
+1600 2 is compiling
+1600 4 is taken dongle
+1600 4 is taken dongle
+1600 4 is compiling
+1600 5 is refactoring
+1600 8 is taken dongle
+1600 8 is taken dongle
+1600 8 is compiling
+1600 6 is compiling
+1600 7 is refactoring
+1600 3 is refactoring
+1700 4 is debugging
+1700 2 is debugging
+1700 8 is debugging
+1700 6 is debugging
+1800 7 is taken dongle
+1800 7 is taken dongle
+1800 7 is compiling
+1800 5 is taken dongle
+1800 5 is taken dongle
+1800 5 is compiling
+1800 3 is taken dongle
+1800 3 is taken dongle
+1800 6 is refactoring
+1800 3 is compiling
+1800 2 is refactoring
+1800 8 is refactoring
+1800 4 is refactoring
+1800 9 is taken dongle
+1800 9 is taken dongle
+1800 9 is compiling
+1900 9 is debugging
+1900 3 is debugging
+1900 5 is debugging
+1900 7 is debugging
+2000 6 is taken dongle
+2000 6 is taken dongle
+2000 6 is compiling
+2000 4 is taken dongle
+2000 4 is taken dongle
+2000 4 is compiling
+2000 1 is taken dongle
+2000 1 is taken dongle
+2000 1 is compiling
+2000 8 is taken dongle
+2000 8 is taken dongle
+2000 8 is compiling
+2000 3 is refactoring
+2000 5 is refactoring
+2000 9 is refactoring
+2000 7 is refactoring
+2100 8 is debugging
+2100 4 is debugging
+2100 1 is debugging
+2100 6 is debugging
+2200 2 is taken dongle
+2200 2 is taken dongle
+2200 2 is compiling
+2200 9 is taken dongle
+2200 9 is taken dongle
+2200 9 is compiling
+2200 5 is taken dongle
+2200 5 is taken dongle
+2200 5 is compiling
+2200 7 is taken dongle
+2200 7 is taken dongle
+2200 7 is compiling
+2200 1 is refactoring
+2200 6 is refactoring
+2200 4 is refactoring
+2200 8 is refactoring
+2300 7 is debugging
+2300 9 is debugging
+2300 2 is debugging
+2300 5 is debugging
+2400 9 is refactoring
+2400 1 is taken dongle
+2400 1 is taken dongle
+2400 1 is compiling
+2400 3 is taken dongle
+2400 3 is taken dongle
+2400 3 is compiling
+2400 8 is taken dongle
+2400 8 is taken dongle
+2400 8 is compiling
+2400 6 is taken dongle
+2400 6 is taken dongle
+2400 6 is compiling
+2400 7 is refactoring
+2400 5 is refactoring
+2400 2 is refactoring
+2500 3 is debugging
+2500 6 is debugging
+2500 1 is debugging
+2500 8 is debugging
+2600 9 is taken dongle
+2600 9 is taken dongle
+2600 9 is compiling
+2600 8 is refactoring
+2600 7 is taken dongle
+2600 7 is taken dongle
+2600 7 is compiling
+2600 2 is taken dongle
+2600 2 is taken dongle
+2600 2 is compiling
+2600 3 is refactoring
+2600 4 is taken dongle
+2600 4 is taken dongle
+2600 4 is compiling
+2600 1 is refactoring
+2600 6 is refactoring
+2700 9 is debugging
+2700 7 is debugging
+2700 2 is debugging
+2700 4 is debugging
+2800 9 is refactoring
+2800 5 is taken dongle
+2800 5 is taken dongle
+2800 5 is compiling
 2800 8 is taken dongle
 2800 8 is taken dongle
-2800 54 is compiling
-2800 82 is taken dongle
-2800 82 is taken dongle
-2800 156 is taken dongle
-2800 156 is taken dongle
-2800 82 is compiling
-2800 156 is compiling
-2800 102 is taken dongle
-2800 102 is taken dongle
-2800 102 is compiling
-2800 148 is taken dongle
-2800 148 is taken dongle
-2800 84 is taken dongle
-2800 84 is taken dongle
-2800 96 is taken dongle
-2800 96 is taken dongle
-2800 148 is compiling
-2800 84 is compiling
-2800 96 is compiling
-2800 16 is taken dongle
-2800 16 is taken dongle
-2800 16 is compiling
-2800 20 is taken dongle
-2800 20 is taken dongle
-2800 20 is compiling
-2800 72 is taken dongle
-2800 72 is taken dongle
-2800 36 is taken dongle
-2800 36 is taken dongle
-2800 36 is compiling
-2800 134 is taken dongle
-2800 134 is taken dongle
-2800 134 is compiling
-2800 72 is compiling
-2800 138 is taken dongle
-2800 138 is taken dongle
-2800 138 is compiling
-2800 192 is taken dongle
-2800 192 is taken dongle
-2800 192 is compiling
-2800 78 is taken dongle
-2800 78 is taken dongle
-2800 78 is compiling
-2800 152 is taken dongle
-2800 152 is taken dongle
-2800 152 is compiling
-2800 136 is taken dongle
-2800 136 is taken dongle
 2800 8 is compiling
-2800 10 is taken dongle
-2800 10 is taken dongle
 2800 3 is taken dongle
 2800 3 is taken dongle
 2800 3 is compiling
-2800 10 is compiling
-2800 58 is taken dongle
-2800 58 is taken dongle
-2800 58 is compiling
-2800 136 is compiling
-2800 86 is taken dongle
-2800 86 is taken dongle
-2800 86 is compiling
-2800 48 is taken dongle
-2800 48 is taken dongle
-2800 122 is taken dongle
-2800 122 is taken dongle
-2800 122 is compiling
-2800 48 is compiling
-2800 112 is taken dongle
-2800 112 is taken dongle
-2800 170 is taken dongle
-2800 170 is taken dongle
-2800 170 is compiling
-2800 112 is compiling
-2800 12 is taken dongle
-2800 12 is taken dongle
-2800 12 is compiling
-2800 116 is taken dongle
-2800 116 is taken dongle
-2800 116 is compiling
-2800 14 is taken dongle
-2800 14 is taken dongle
-2800 14 is compiling
-2800 186 is taken dongle
-2800 186 is taken dongle
-2800 186 is compiling
-2800 150 is taken dongle
-2800 150 is taken dongle
-2800 150 is compiling
-2800 166 is taken dongle
-2800 166 is taken dongle
-2800 178 is taken dongle
-2800 178 is taken dongle
-2800 166 is compiling
-2800 178 is compiling
-2800 172 is taken dongle
-2800 172 is taken dongle
-2800 76 is taken dongle
-2800 76 is taken dongle
-2800 76 is compiling
-2800 172 is compiling
-2800 108 is taken dongle
-2800 108 is taken dongle
-2800 18 is taken dongle
-2800 18 is taken dongle
-2800 18 is compiling
-2800 108 is compiling
-2800 144 is taken dongle
-2800 144 is taken dongle
-2800 144 is compiling
-2900 34 is debugging
-2900 12 is debugging
-2900 38 is debugging
-2900 16 is debugging
-2900 74 is debugging
-2900 158 is debugging
-2900 106 is debugging
-2900 20 is debugging
-2900 88 is debugging
-2900 174 is debugging
-2900 52 is debugging
-2900 94 is debugging
-2900 102 is debugging
-2900 6 is debugging
-2900 168 is debugging
-2900 150 is debugging
-2900 24 is debugging
-2900 66 is debugging
-2900 90 is debugging
-2900 130 is debugging
-2900 116 is debugging
-2900 80 is debugging
-2900 112 is debugging
-2900 70 is debugging
-2900 170 is debugging
-2900 196 is debugging
-2900 1 is debugging
-2900 86 is debugging
-2900 194 is debugging
-2900 172 is debugging
-2900 8 is debugging
-2900 14 is debugging
-2900 98 is debugging
-2900 110 is debugging
-2900 186 is debugging
-2900 140 is debugging
-2900 56 is debugging
-2900 156 is debugging
-2900 72 is debugging
-2900 118 is debugging
-2900 192 is debugging
-2900 142 is debugging
-2900 42 is debugging
-2900 40 is debugging
-2900 10 is debugging
-2900 138 is debugging
-2900 58 is debugging
-2900 46 is debugging
-2900 76 is debugging
-2900 60 is debugging
-2900 188 is debugging
-2900 182 is debugging
-2900 184 is debugging
-2900 166 is debugging
-2900 36 is debugging
-2900 82 is debugging
-2900 44 is debugging
-2900 120 is debugging
-2900 162 is debugging
-2900 54 is debugging
-2900 198 is debugging
-2900 154 is debugging
-2900 28 is debugging
-2900 160 is debugging
-2900 92 is debugging
-2900 100 is debugging
-2900 124 is debugging
-2900 144 is debugging
-2900 22 is debugging
-2900 164 is debugging
-2900 84 is debugging
-2900 128 is debugging
-2900 136 is debugging
-2900 190 is debugging
-2900 126 is debugging
-2900 32 is debugging
-2900 64 is debugging
-2900 180 is debugging
-2900 176 is debugging
-2900 48 is debugging
-2900 148 is debugging
-2900 96 is debugging
-2900 178 is debugging
-2900 146 is debugging
-2900 26 is debugging
+2800 1 is taken dongle
+2800 1 is taken dongle
+2800 1 is compiling
+2800 7 is refactoring
+2800 4 is refactoring
+2800 2 is refactoring
 2900 3 is debugging
-2900 152 is debugging
-2900 114 is debugging
-2900 18 is debugging
-2900 134 is debugging
-2900 30 is debugging
-2900 122 is debugging
-2900 78 is debugging
-2900 62 is debugging
-2900 104 is debugging
-2900 68 is debugging
-2900 108 is debugging
-2900 132 is debugging
-2900 50 is debugging
-3000 82 is refactoring
-3000 74 is refactoring
-3000 84 is refactoring
-3000 162 is refactoring
-3000 194 is refactoring
-3000 42 is refactoring
-3000 26 is refactoring
-3000 102 is refactoring
+2900 1 is debugging
+2900 5 is debugging
+2900 8 is debugging
+3000 4 is taken dongle
+3000 4 is taken dongle
+3000 4 is compiling
+3000 9 is taken dongle
+3000 9 is taken dongle
+3000 9 is compiling
+3000 2 is taken dongle
+3000 2 is taken dongle
+3000 2 is compiling
+3000 6 is taken dongle
+3000 6 is taken dongle
+3000 6 is compiling
 3000 1 is refactoring
-3000 192 is refactoring
-3000 62 is refactoring
-3000 186 is refactoring
-3000 6 is refactoring
-3000 118 is refactoring
-3000 76 is refactoring
-3000 196 is refactoring
-3000 180 is refactoring
-3000 128 is refactoring
-3000 172 is refactoring
-3000 152 is refactoring
-3000 156 is refactoring
-3000 14 is refactoring
-3000 148 is refactoring
-3000 140 is refactoring
-3000 60 is refactoring
-3000 164 is refactoring
-3000 68 is refactoring
-3000 176 is refactoring
-3000 3 is refactoring
-3000 34 is refactoring
-3000 116 is refactoring
-3000 182 is refactoring
-3000 40 is refactoring
-3000 52 is refactoring
-3000 56 is refactoring
-3000 106 is refactoring
-3000 98 is refactoring
-3000 142 is refactoring
-3000 120 is refactoring
-3000 94 is refactoring
-3000 188 is refactoring
-3000 20 is refactoring
-3000 22 is refactoring
-3000 66 is refactoring
-3000 154 is refactoring
-3000 190 is refactoring
-3000 104 is refactoring
-3000 28 is refactoring
-3000 18 is refactoring
-3000 170 is refactoring
-3000 24 is refactoring
-3000 12 is refactoring
-3000 54 is refactoring
-3000 122 is refactoring
-3000 16 is refactoring
-3000 70 is refactoring
-3000 130 is refactoring
-3000 36 is refactoring
-3000 86 is refactoring
-3000 38 is refactoring
-3000 198 is refactoring
-3000 64 is refactoring
-3000 80 is refactoring
-3000 150 is refactoring
-3000 184 is refactoring
 3000 8 is refactoring
-3000 132 is refactoring
-3000 100 is refactoring
-3000 44 is refactoring
-3000 78 is refactoring
-3000 158 is refactoring
-3000 110 is refactoring
-3000 134 is refactoring
-3000 48 is refactoring
-3000 126 is refactoring
-3000 58 is refactoring
-3000 50 is refactoring
-3000 136 is refactoring
-3000 72 is refactoring
-3000 160 is refactoring
-3000 146 is refactoring
-3000 90 is refactoring
-3000 144 is refactoring
-3000 174 is refactoring
-3000 10 is refactoring
-3000 92 is refactoring
-3000 32 is refactoring
-3000 108 is refactoring
-3000 178 is refactoring
-3000 166 is refactoring
-3000 168 is refactoring
-3000 30 is refactoring
-3000 112 is refactoring
-3000 114 is refactoring
-3000 46 is refactoring
-3000 124 is refactoring
-3000 138 is refactoring
-3000 96 is refactoring
-3000 88 is refactoring
-3500 94 is taken dongle
-3500 94 is taken dongle
-3500 94 is compiling
-3500 22 is taken dongle
-3500 22 is taken dongle
-3500 22 is compiling
-3500 92 is taken dongle
-3500 92 is taken dongle
-3500 92 is compiling
-3500 58 is taken dongle
-3500 58 is taken dongle
-3500 58 is compiling
-3500 18 is taken dongle
-3500 18 is taken dongle
-3500 18 is compiling
-3500 172 is taken dongle
-3500 172 is taken dongle
-3500 172 is compiling
-3500 50 is taken dongle
-3500 50 is taken dongle
-3500 50 is compiling
-3500 14 is taken dongle
-3500 14 is taken dongle
-3500 14 is compiling
-3500 168 is taken dongle
-3500 168 is taken dongle
-3500 168 is compiling
-3500 156 is taken dongle
-3500 156 is taken dongle
-3500 156 is compiling
-3500 88 is taken dongle
-3500 88 is taken dongle
-3500 88 is compiling
-3500 84 is taken dongle
-3500 84 is taken dongle
-3500 84 is compiling
-3500 76 is taken dongle
-3500 76 is taken dongle
-3500 76 is compiling
-3500 10 is taken dongle
-3500 10 is taken dongle
-3500 10 is compiling
-3500 36 is taken dongle
-3500 36 is taken dongle
-3500 160 is taken dongle
-3500 160 is taken dongle
-3500 154 is taken dongle
-3500 154 is taken dongle
-3500 154 is compiling
-3500 160 is compiling
-3500 36 is compiling
-3500 142 is taken dongle
-3500 142 is taken dongle
-3500 146 is taken dongle
-3500 146 is taken dongle
-3500 90 is taken dongle
-3500 90 is taken dongle
-3500 90 is compiling
-3500 146 is compiling
-3500 142 is compiling
-3500 82 is taken dongle
-3500 82 is taken dongle
-3500 192 is taken dongle
-3500 192 is taken dongle
-3500 126 is taken dongle
-3500 126 is taken dongle
-3500 82 is compiling
-3500 108 is taken dongle
-3500 108 is taken dongle
-3500 24 is taken dongle
-3500 24 is taken dongle
-3500 108 is compiling
-3500 126 is compiling
-3500 158 is taken dongle
-3500 158 is taken dongle
-3500 158 is compiling
-3500 96 is taken dongle
-3500 96 is taken dongle
-3500 30 is taken dongle
-3500 30 is taken dongle
-3500 98 is taken dongle
-3500 98 is taken dongle
-3500 98 is compiling
-3500 60 is taken dongle
-3500 60 is taken dongle
-3500 30 is compiling
-3500 60 is compiling
-3500 24 is compiling
-3500 20 is taken dongle
-3500 20 is taken dongle
-3500 20 is compiling
-3500 8 is taken dongle
-3500 8 is taken dongle
-3500 186 is taken dongle
-3500 186 is taken dongle
-3500 186 is compiling
-3500 8 is compiling
-3500 80 is taken dongle
-3500 80 is taken dongle
-3500 182 is taken dongle
-3500 182 is taken dongle
-3500 150 is taken dongle
-3500 150 is taken dongle
-3500 150 is compiling
-3500 182 is compiling
-3500 114 is taken dongle
-3500 114 is taken dongle
-3500 114 is compiling
-3500 6 is taken dongle
-3500 6 is taken dongle
-3500 6 is compiling
-3500 194 is taken dongle
-3500 194 is taken dongle
-3500 194 is compiling
-3500 2 is taken dongle
-3500 2 is taken dongle
-3500 86 is taken dongle
-3500 86 is taken dongle
-3500 2 is compiling
-3500 86 is compiling
-3500 120 is taken dongle
-3500 120 is taken dongle
-3500 120 is compiling
-3500 70 is taken dongle
-3500 70 is taken dongle
-3500 70 is compiling
-3500 140 is taken dongle
-3500 140 is taken dongle
-3500 184 is taken dongle
-3500 184 is taken dongle
-3500 134 is taken dongle
-3500 134 is taken dongle
-3500 134 is compiling
-3500 34 is taken dongle
-3500 34 is taken dongle
-3500 34 is compiling
-3500 184 is compiling
-3500 102 is taken dongle
-3500 102 is taken dongle
-3500 102 is compiling
-3500 140 is compiling
-3500 74 is taken dongle
-3500 74 is taken dongle
-3500 74 is compiling
-3500 196 is taken dongle
-3500 196 is taken dongle
-3500 196 is compiling
-3500 78 is taken dongle
-3500 78 is taken dongle
-3500 152 is taken dongle
-3500 152 is taken dongle
-3500 122 is taken dongle
-3500 122 is taken dongle
-3500 122 is compiling
-3500 110 is taken dongle
-3500 110 is taken dongle
-3500 48 is taken dongle
-3500 48 is taken dongle
-3500 78 is compiling
-3500 4 is taken dongle
-3500 4 is taken dongle
-3500 56 is taken dongle
-3500 56 is taken dongle
-3500 56 is compiling
-3500 66 is taken dongle
-3500 66 is taken dongle
-3500 4 is compiling
-3500 128 is taken dongle
-3500 128 is taken dongle
-3500 128 is compiling
-3500 66 is compiling
-3500 28 is taken dongle
-3500 28 is taken dongle
-3500 152 is compiling
-3500 28 is compiling
-3500 192 is compiling
-3500 110 is compiling
-3500 12 is taken dongle
-3500 12 is taken dongle
-3500 12 is compiling
-3500 166 is taken dongle
-3500 166 is taken dongle
-3500 166 is compiling
-3500 118 is taken dongle
-3500 118 is taken dongle
-3500 52 is taken dongle
-3500 52 is taken dongle
-3500 118 is compiling
-3500 46 is taken dongle
-3500 46 is taken dongle
-3500 46 is compiling
-3500 96 is compiling
-3500 52 is compiling
-3500 162 is taken dongle
-3500 162 is taken dongle
-3500 190 is taken dongle
-3500 190 is taken dongle
-3500 40 is taken dongle
-3500 40 is taken dongle
-3500 42 is taken dongle
-3500 42 is taken dongle
-3500 190 is compiling
-3500 40 is compiling
-3500 42 is compiling
-3500 80 is compiling
-3500 130 is taken dongle
-3500 130 is taken dongle
-3500 130 is compiling
-3500 174 is taken dongle
-3500 174 is taken dongle
-3500 176 is taken dongle
-3500 176 is taken dongle
-3500 112 is taken dongle
-3500 112 is taken dongle
-3500 174 is compiling
-3500 112 is compiling
-3500 170 is taken dongle
-3500 170 is taken dongle
-3500 138 is taken dongle
-3500 138 is taken dongle
-3500 170 is compiling
-3500 178 is taken dongle
-3500 178 is taken dongle
-3500 178 is compiling
-3500 176 is compiling
-3500 138 is compiling
-3500 26 is taken dongle
-3500 26 is taken dongle
-3500 144 is taken dongle
-3500 144 is taken dongle
-3500 148 is taken dongle
-3500 148 is taken dongle
-3500 26 is compiling
-3500 64 is taken dongle
-3500 64 is taken dongle
-3500 188 is taken dongle
-3500 188 is taken dongle
-3500 64 is compiling
-3500 16 is taken dongle
-3500 16 is taken dongle
-3500 116 is taken dongle
-3500 116 is taken dongle
-3500 106 is taken dongle
-3500 106 is taken dongle
-3500 106 is compiling
-3500 148 is compiling
-3500 116 is compiling
-3500 144 is compiling
-3500 162 is compiling
-3500 188 is compiling
-3500 180 is taken dongle
-3500 180 is taken dongle
-3500 180 is compiling
-3500 164 is taken dongle
-3500 164 is taken dongle
-3500 164 is compiling
-3500 48 is compiling
-3500 16 is compiling
-3500 68 is taken dongle
-3500 68 is taken dongle
-3500 68 is compiling
-3500 44 is taken dongle
-3500 44 is taken dongle
-3500 44 is compiling
-3500 54 is taken dongle
-3500 54 is taken dongle
-3500 54 is compiling
-3500 62 is taken dongle
-3500 62 is taken dongle
-3500 62 is compiling
-3500 38 is taken dongle
-3500 38 is taken dongle
-3500 38 is compiling
-3500 136 is taken dongle
-3500 136 is taken dongle
-3500 136 is compiling
-3500 124 is taken dongle
-3500 124 is taken dongle
-3500 124 is compiling
-3500 132 is taken dongle
-3500 132 is taken dongle
-3500 132 is compiling
-3500 72 is taken dongle
-3500 72 is taken dongle
-3500 72 is compiling
-3500 100 is taken dongle
-3500 100 is taken dongle
-3500 100 is compiling
-3500 32 is taken dongle
-3500 32 is taken dongle
-3500 32 is compiling
-3500 104 is taken dongle
-3500 104 is taken dongle
-3500 104 is compiling
-3500 199 is taken dongle
-3500 199 is taken dongle
-3500 199 is compiling
-3600 168 is debugging
-3600 174 is debugging
-3600 184 is debugging
-3600 60 is debugging
-3600 110 is debugging
-3600 160 is debugging
-3600 134 is debugging
-3600 122 is debugging
-3600 100 is debugging
-3600 18 is debugging
-3600 30 is debugging
-3600 34 is debugging
-3600 82 is debugging
-3600 8 is debugging
-3600 88 is debugging
-3600 166 is debugging
-3600 156 is debugging
-3600 132 is debugging
-3600 58 is debugging
-3600 182 is debugging
-3600 148 is debugging
-3600 114 is debugging
-3600 22 is debugging
-3600 78 is debugging
-3600 194 is debugging
-3600 112 is debugging
-3600 188 is debugging
-3600 28 is debugging
-3600 164 is debugging
-3600 70 is debugging
-3600 56 is debugging
-3600 2 is debugging
-3600 90 is debugging
-3600 24 is debugging
-3600 10 is debugging
-3600 36 is debugging
-3600 118 is debugging
-3600 152 is debugging
-3600 96 is debugging
-3600 20 is debugging
-3600 162 is debugging
-3600 128 is debugging
-3600 6 is debugging
-3600 86 is debugging
-3600 172 is debugging
-3600 190 is debugging
-3600 32 is debugging
-3600 192 is debugging
-3600 42 is debugging
-3600 196 is debugging
-3600 146 is debugging
-3600 138 is debugging
-3600 178 is debugging
-3600 14 is debugging
-3600 46 is debugging
-3600 104 is debugging
-3600 116 is debugging
-3600 102 is debugging
-3600 186 is debugging
-3600 176 is debugging
-3600 94 is debugging
-3600 66 is debugging
-3600 16 is debugging
-3600 126 is debugging
-3600 38 is debugging
-3600 130 is debugging
-3600 50 is debugging
-3600 68 is debugging
-3600 80 is debugging
-3600 12 is debugging
-3600 64 is debugging
-3600 158 is debugging
-3600 44 is debugging
-3600 136 is debugging
-3600 98 is debugging
-3600 62 is debugging
-3600 124 is debugging
-3600 92 is debugging
-3600 170 is debugging
-3600 180 is debugging
-3600 74 is debugging
-3600 48 is debugging
-3600 40 is debugging
-3600 199 is debugging
-3600 144 is debugging
-3600 150 is debugging
-3600 120 is debugging
-3600 106 is debugging
-3600 54 is debugging
-3600 4 is debugging
-3600 26 is debugging
-3600 108 is debugging
-3600 76 is debugging
-3600 52 is debugging
-3600 154 is debugging
-3600 84 is debugging
-3600 140 is debugging
-3600 142 is debugging
-3600 72 is debugging
-3700 60 is refactoring
-3700 28 is refactoring
-3700 130 is refactoring
-3700 112 is refactoring
-3700 102 is refactoring
-3700 56 is refactoring
-3700 118 is refactoring
-3700 78 is refactoring
-3700 140 is refactoring
-3700 92 is refactoring
-3700 128 is refactoring
-3700 108 is refactoring
-3700 70 is refactoring
-3700 38 is refactoring
-3700 58 is refactoring
-3700 96 is refactoring
-3700 98 is refactoring
-3700 40 is refactoring
-3700 192 is refactoring
-3700 168 is refactoring
-3700 82 is refactoring
-3700 66 is refactoring
-3700 150 is refactoring
-3700 100 is refactoring
-3700 134 is refactoring
-3700 172 is refactoring
-3700 138 is refactoring
-3700 32 is refactoring
-3700 194 is refactoring
-3700 42 is refactoring
-3700 170 is refactoring
-3700 94 is refactoring
-3700 188 is refactoring
-3700 46 is refactoring
-3700 52 is refactoring
-3700 180 is refactoring
-3700 182 is refactoring
-3700 12 is refactoring
-3700 164 is refactoring
-3700 156 is refactoring
-3700 166 is refactoring
-3700 20 is refactoring
-3700 176 is refactoring
-3700 144 is refactoring
-3700 74 is refactoring
-3700 86 is refactoring
-3700 64 is refactoring
-3700 50 is refactoring
-3700 88 is refactoring
-3700 4 is refactoring
-3700 62 is refactoring
-3700 116 is refactoring
-3700 24 is refactoring
-3700 178 is refactoring
-3700 6 is refactoring
-3700 10 is refactoring
-3700 184 is refactoring
-3700 104 is refactoring
-3700 152 is refactoring
-3700 114 is refactoring
-3700 126 is refactoring
-3700 80 is refactoring
-3700 14 is refactoring
-3700 199 is refactoring
-3700 36 is refactoring
-3700 110 is refactoring
-3700 148 is refactoring
-3700 154 is refactoring
-3700 84 is refactoring
-3700 68 is refactoring
-3700 132 is refactoring
-3700 2 is refactoring
-3700 44 is refactoring
-3700 30 is refactoring
-3700 136 is refactoring
-3700 160 is refactoring
-3700 122 is refactoring
-3700 124 is refactoring
-3700 54 is refactoring
-3700 106 is refactoring
-3700 16 is refactoring
-3700 174 is refactoring
-3700 26 is refactoring
-3700 190 is refactoring
-3700 196 is refactoring
-3700 8 is refactoring
-3700 158 is refactoring
-3700 162 is refactoring
-3700 72 is refactoring
-3700 146 is refactoring
-3700 18 is refactoring
-3700 22 is refactoring
-3700 142 is refactoring
-3700 186 is refactoring
-3700 76 is refactoring
-3700 48 is refactoring
-3700 34 is refactoring
-3700 90 is refactoring
-3700 120 is refactoring
-4200 2 is taken dongle
-4200 2 is taken dongle
-4200 2 is compiling
-4200 198 is taken dongle
-4200 198 is taken dongle
-4200 198 is compiling
-4200 4 is taken dongle
-4200 4 is taken dongle
-4200 4 is compiling
-[0;32m4210 5 burned out
+3000 5 is refactoring
+3000 3 is refactoring
+3100 6 is debugging
+3100 4 is debugging
+3100 9 is debugging
+3100 2 is debugging
+3200 1 is taken dongle
+3200 1 is taken dongle
+3200 1 is compiling
+3200 6 is refactoring
+3200 9 is refactoring
+3200 4 is refactoring
+3200 3 is taken dongle
+3200 3 is taken dongle
+3200 3 is compiling
+3200 7 is taken dongle
+3200 7 is taken dongle
+3200 7 is compiling
+3200 5 is taken dongle
+3200 5 is taken dongle
+3200 5 is compiling
+3201 2 is refactoring
+3300 3 is debugging
+3300 5 is debugging
+3300 7 is debugging
+3300 1 is debugging
+3400 1 is refactoring
+3400 5 is refactoring
+3400 3 is refactoring
+3400 7 is refactoring
+3400 2 is taken dongle
+3400 2 is taken dongle
+3400 2 is compiling
+3400 6 is taken dongle
+3400 6 is taken dongle
+3400 6 is compiling
+3400 4 is taken dongle
+3400 4 is taken dongle
+3400 4 is compiling
+3400 8 is taken dongle
+3400 8 is taken dongle
+3400 8 is compiling
+3500 8 is debugging
+3500 4 is debugging
+3500 2 is debugging
+3500 6 is debugging
+3600 5 is taken dongle
+3600 5 is taken dongle
+3600 5 is compiling
+3600 3 is taken dongle
+3600 3 is taken dongle
+3600 3 is compiling
+3600 7 is taken dongle
+3600 7 is taken dongle
+3600 7 is compiling
+3600 9 is taken dongle
+3600 9 is taken dongle
+3600 9 is compiling
+3600 2 is refactoring
+3600 6 is refactoring
+3600 8 is refactoring
+3600 4 is refactoring
+3700 9 is debugging
+3700 3 is debugging
+3700 5 is debugging
+3700 7 is debugging
+3800 9 is refactoring
+3800 4 is taken dongle
+3800 4 is taken dongle
+3800 4 is compiling
+3800 1 is taken dongle
+3800 1 is taken dongle
+3800 1 is compiling
+3800 8 is taken dongle
+3800 8 is taken dongle
+3800 8 is compiling
+3800 6 is taken dongle
+3800 6 is taken dongle
+3800 6 is compiling
+3800 3 is refactoring
+3800 7 is refactoring
+3800 5 is refactoring
+3900 1 is debugging
+3900 6 is debugging
+3900 4 is debugging
+3900 8 is debugging
+4000 5 is taken dongle
+4000 5 is taken dongle
+4000 5 is compiling
+4000 2 is taken dongle
+4000 2 is taken dongle
+4000 2 is compiling
+4000 6 is refactoring
+4000 1 is refactoring
+4000 8 is refactoring
+4000 4 is refactoring
+4000 9 is taken dongle
+4000 9 is taken dongle
+4000 9 is compiling
+4000 7 is taken dongle
+4000 7 is taken dongle
+4000 7 is compiling
+4100 2 is debugging
+4100 7 is debugging
+4100 5 is debugging
+4100 9 is debugging
+4200 2 is refactoring
+4200 8 is taken dongle
+4200 8 is taken dongle
+4200 8 is compiling
+4200 5 is refactoring
+4200 9 is refactoring
+4200 6 is taken dongle
+4200 6 is taken dongle
+4200 6 is compiling
+4200 3 is taken dongle
+4200 3 is taken dongle
+4200 3 is compiling
+4200 7 is refactoring
+4200 1 is taken dongle
+4200 1 is taken dongle
+4200 1 is compiling
+4300 6 is debugging
+4300 3 is debugging
+4300 1 is debugging
+4300 8 is debugging
+4400 4 is taken dongle
+4400 4 is taken dongle
+4400 4 is compiling
+4400 9 is taken dongle
+4400 9 is taken dongle
+4400 9 is compiling
+4400 2 is taken dongle
+4400 2 is taken dongle
+4400 2 is compiling
+4400 1 is refactoring
+4400 8 is refactoring
+4400 6 is refactoring
+4400 3 is refactoring
+4400 7 is taken dongle
+4400 7 is taken dongle
+4400 7 is compiling
