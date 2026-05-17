@@ -3,7 +3,7 @@
 int	check_if_start_simulation(t_coder *coder)
 {
 	pthread_mutex_lock(&coder->table->mutex);
-	if (coder->table->start_simulation)
+	if (coder->table->start_simulation || coder->table->stop)
 	{
 		pthread_mutex_unlock(&coder->table->mutex);
 		return (1);

@@ -20,39 +20,16 @@ void	start_coders_simulation(t_table *table)
 	pthread_mutex_unlock(&table->mutex);
 }
 
-int	free_all(t_table *table)
-{
-	int	i;
-
-	if (!table)
-		return (1);
-	pthread_mutex_destroy(&table->mutex);
-	i = 0;
-	if (table->dongles)
-	{
-		while (i < table->args->number_of_coders)
-			pthread_mutex_destroy(&table->dongles[i++].mutex);
-		free(table->dongles);
-	}
-	i = 0;
-	if (table->coders)
-	{
-		while (i < table->args->number_of_coders)
-			pthread_mutex_destroy(&table->coders[i++].mutex);
-		free(table->coders);
-	}
-	if (table->args)
-	{
-		free(table->args);
-	}
-	return (1);
-}
-
 int	my_isdigit(char *str)
 {
 	int	i;
 
 	i = 0;
+	if (str[i] == '-')
+	{
+		if (ft_atoi(str) == 0)
+			return (1);
+	}
 	if (str[i] == '+' && strlen(str) > 1)
 		i++;
 	while (str[i])
@@ -72,7 +49,6 @@ t_dongle	*create_dongles(t_table *table)
 	table->dongles = malloc(sizeof(t_dongle) * (table->args->number_of_coders));
 	if (!table->dongles)
 		return (NULL);
-
 	i = 0;
 	while (i < table->args->number_of_coders)
 	{
@@ -147,4 +123,3 @@ int	create_coders(t_table *table)
 	start_coders_simulation(table);
 	return (0);
 }
-

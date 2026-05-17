@@ -1,11 +1,5 @@
 #include "codexion.h"
 
-void	print_burnout(t_table *table, int i)
-{
-	printf("%ld %d burned out\n",
-		get_time() - table->start_time, i + 1);
-}
-
 int	monitor_check(t_table *table, int i)
 {
 	pthread_mutex_lock(&table->mutex);
@@ -33,7 +27,8 @@ void	*monitor(void *arg)
 			if (check_for_burnout(table, i))
 			{
 				pthread_mutex_lock(&table->mutex);
-				print_burnout(table, i);
+				printf("%ld %d burned out\n",
+					get_time() - table->start_time, i + 1);
 				table->stop = 1;
 				pthread_mutex_unlock(&table->mutex);
 				return (NULL);

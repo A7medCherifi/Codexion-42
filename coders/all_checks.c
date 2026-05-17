@@ -58,6 +58,19 @@ void	check_for_done_simulation(t_coder *coder)
 	}
 }
 
+void	check_coder_cycle(t_coder *coder)
+{
+	pthread_mutex_lock(&coder->mutex);
+	if (coder->compile_count > coder->table->args->number_of_compiles_required)
+	{
+		pthread_mutex_unlock(&coder->mutex);
+		while (!check_for_stop(coder->table))
+			usleep(500);
+		return ;
+	}
+	pthread_mutex_unlock(&coder->mutex);
+}
+
 int	check_can_take_dongle(t_coder *coder)
 {
 	long	left_released;
@@ -79,4 +92,3 @@ int	check_can_take_dongle(t_coder *coder)
 	}
 	return (0);
 }
-

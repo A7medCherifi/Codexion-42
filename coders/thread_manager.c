@@ -8,6 +8,7 @@ int	coder_compiles(t_coder *coder)
 		return (1);
 	pthread_mutex_lock(&coder->mutex);
 	coder->last_compile_start = get_time();
+	coder->compile_count++;
 	pthread_mutex_unlock(&coder->mutex);
 	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->mutex);
@@ -74,9 +75,6 @@ int	threads_processing(t_coder *coder)
 		return (1);
 	if (check_for_stop(coder->table))
 		return (1);
-	pthread_mutex_lock(&coder->mutex);
-	coder->compile_count++;
-	pthread_mutex_unlock(&coder->mutex);
 	check_for_done_simulation(coder);
 	return (0);
 }
@@ -104,15 +102,7 @@ void	*thread_manager(void *arg)
 	{
 		if (threads_processing(coder))
 			return (NULL);
-		pthread_mutex_lock(&coder->mutex);
-		if (coder->compile_count > coder->table->args->number_of_compiles_required)
-		{
-			pthread_mutex_unlock(&coder->mutex);
-			while (!check_for_stop(coder->table))
-				usleep(300);
-			return (NULL);
-		}
-		pthread_mutex_unlock(&coder->mutex);
-		}
+		check_coder_cycle(coder);
+	}
 	return (NULL);
 }

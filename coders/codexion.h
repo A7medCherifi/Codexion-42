@@ -99,6 +99,6 @@ int					monitor_check(t_table *table, int i);
 void				print_and_pop_dongles(t_coder *coder);
 void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
 int					check_for_burnout(t_table *table, int i);
-void				print_burnout(t_table *table, int i);
+void				check_coder_cycle(t_coder *coder);
 
 #endif
