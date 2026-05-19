@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   heap_manager.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/19 14:36:02 by acherifi          #+#    #+#             */
+/*   Updated: 2026/05/19 14:36:02 by acherifi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "codexion.h"
 
 int	get_priority(t_request child, t_request parent, int scheduler)
@@ -16,8 +28,6 @@ int	get_priority(t_request child, t_request parent, int scheduler)
 			return (0);
 		if (child.coder_id < parent.coder_id)
 			return (1);
-		if (child.coder_id > parent.coder_id)
-			return (0);
 	}
 	return (0);
 }
@@ -78,47 +88,38 @@ void	pop_and_bubble_down(t_dongle *dongle, int scheduler)
 
 int	take_both_dongles(t_coder *coder)
 {
-	while (1)
+	if (coder->left_dongle->id > coder->right_dongle->id)
 	{
-		if (check_for_stop(coder->table))
-			return (1);
-		if (coder->left_dongle->id < coder->right_dongle->id)
-		{
-			pthread_mutex_lock(&coder->left_dongle->mutex);
-			pthread_mutex_lock(&coder->right_dongle->mutex);
-		}
-		else
-		{
-			pthread_mutex_lock(&coder->right_dongle->mutex);
-			pthread_mutex_lock(&coder->left_dongle->mutex);
-		}
-		if (check_can_take_dongle(coder))
-		{
-			coder->left_dongle->is_available = 0;
-			pop_and_bubble_down(coder->left_dongle, coder->table->args->scheduler);
-			coder->right_dongle->is_available = 0;
-			pop_and_bubble_down(coder->right_dongle, coder->table->args->scheduler);
-			pthread_mutex_unlock(&coder->left_dongle->mutex);
-			pthread_mutex_unlock(&coder->right_dongle->mutex);
-			print_and_pop_dongles(coder);
-			break ;
-		}
-		pthread_mutex_unlock(&coder->left_dongle->mutex);
-		pthread_mutex_unlock(&coder->right_dongle->mutex);
-		usleep(300);
+		pthread_mutex_lock(&coder->left_dongle->mutex);
+		pthread_mutex_lock(&coder->right_dongle->mutex);
 	}
+	else
+	{
+		pthread_mutex_lock(&coder->right_dongle->mutex);
+		pthread_mutex_lock(&coder->left_dongle->mutex);
+	}
+	if (check_can_take_dongle(coder))
+	{
+		take_and_pop(coder);
+		pthread_mutex_unlock(&coder->right_dongle->mutex);
+		pthread_mutex_unlock(&coder->left_dongle->mutex);
+		print_and_pop_dongles(coder);
+		return (1);
+	}
+	pthread_mutex_unlock(&coder->right_dongle->mutex);
+	pthread_mutex_unlock(&coder->left_dongle->mutex);
 	return (0);
 }
 
 int	take_dongles(t_coder *coder)
 {
-	if (check_for_stop(coder->table))
+	while (1)
 	{
-		return (1);
-	}
-	if (take_both_dongles(coder))
-	{
-		return (1);
+		if (check_for_stop(coder->table))
+			return (1);
+		if (take_both_dongles(coder))
+			break ;
+		usleep(300);
 	}
 	if (check_for_stop(coder->table))
 	{

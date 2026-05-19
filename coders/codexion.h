@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   codexion.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/19 14:35:56 by acherifi          #+#    #+#             */
+/*   Updated: 2026/05/19 14:35:56 by acherifi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CODEXION_H
 # define CODEXION_H
 
@@ -9,8 +21,6 @@
 # include <sys/time.h>
 
 typedef struct s_table	t_table;
-// typedef struct s_coder t_coder;
-// typedef struct s_dongle t_dongle;
 
 typedef struct s_arguments
 {
@@ -100,5 +110,7 @@ void				print_and_pop_dongles(t_coder *coder);
 void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
 int					check_for_burnout(t_table *table, int i);
 void				check_coder_cycle(t_coder *coder);
+void				take_and_pop(t_coder *coder);
+void				fill_coders(t_table *table, int i);
 
 #endif

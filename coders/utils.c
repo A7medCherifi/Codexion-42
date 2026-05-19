@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/19 14:36:16 by acherifi          #+#    #+#             */
+/*   Updated: 2026/05/19 14:36:16 by acherifi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "codexion.h"
 
 void	start_coders_simulation(t_table *table)
@@ -70,7 +82,6 @@ t_dongle	*create_dongles(t_table *table)
 t_coder	*create_coders_data(t_table *table)
 {
 	int		i;
-	int		right_index;
 
 	i = 0;
 	table->coders = malloc(sizeof(t_coder) * (table->args->number_of_coders));
@@ -88,15 +99,8 @@ t_coder	*create_coders_data(t_table *table)
 				pthread_mutex_destroy(&table->coders[i].mutex);
 			return (NULL);
 		}
-		table->coders[i].id = i + 1;
-		table->coders[i].table = table;
-		table->coders[i].compile_count = 1;
-		table->coders[i].left_dongle = &table->dongles[i];
-		right_index = (i + 1) % table->args->number_of_coders;
-		if (right_index == i)
-			table->coders[i++].right_dongle = NULL;
-		else
-			table->coders[i++].right_dongle = &table->dongles[right_index];
+		fill_coders(table, i);
+		i++;
 	}
 	return (table->coders);
 }
