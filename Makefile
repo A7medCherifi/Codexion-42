@@ -30,5 +30,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean
-
-#-fsanitize=thread  -g3 -O0 -fsanitize=address -fsanitize=undefined       -g -fsanitize=address 

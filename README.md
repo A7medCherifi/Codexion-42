@@ -22,7 +22,7 @@ make
 
 ### Example
 ```bash
-./codexion 5 800 200 200 200 3 50 fifo
+./codexion 199 350 100 100 100 3 10 edf
 ```
 
 ## Blocking cases handled
@@ -42,13 +42,18 @@ make
   - The monitor reads those timestamps under the same locks to avoid data race.
   - The global `stop` flag is checked and updated with `table->mutex` to ensure safety across threads.
 - **Race condition prevention**:
-  - Dongle acquisition uses ordered locking to prevent inconsistent states and races between competing coders.
+  - Dongles uses ordered locking to prevent races between competing coders.
   - Queue operations are always done while holding the dongle mutex.
 
 ## Resources
-- POSIX Threads Programming (pthreads): official documentation and man pages (`pthread_mutex_*`, `pthread_create`, `pthread_join`)
-- Classic concurrency references: dining philosophers problem, deadlock and Coffman’s conditions
-- EDF and FIFO scheduling basics: introductory OS scheduling material
+- [Threads 1](https://kuleuven-diepenbeek.github.io/osc-course/ch6-tasks/threads/)
+- [Threads 2 (Youtube playlist)](https://www.youtube.com/watch?v=d9s_d28yJq0)
+- [Concurrency with Pthread](https://dev.to/emanuelgustafzon/mastering-concurrency-in-c-with-pthreads-a-comprehensive-guide-56je)
+- [Priority queue](https://www.slideshare.net/slideshow/priority-queue-using-heap-using-c-in-data-structure/269400140)
+- [Heaps and Heap Sort](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/lecture-4-heaps-and-heap-sort/)
 
 ### AI usage
-AI was used only to draft this README text based on the project requirements. It was not used to write or modify the project’s code, logic, or concurrency mechanisms.
+- Help me with creating this README file
+- Explain more things in details of some concepts
+- Helped in debuging and finding errors
+- Helped me in code enhancement

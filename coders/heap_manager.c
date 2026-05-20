@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:02 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:36:02 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/05/20 10:33:20 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void	pop_and_bubble_down(t_dongle *dongle, int scheduler)
 
 int	take_both_dongles(t_coder *coder)
 {
-	if (coder->left_dongle->id > coder->right_dongle->id)
+	if (coder->left_dongle->id < coder->right_dongle->id)
 	{
 		pthread_mutex_lock(&coder->left_dongle->mutex);
 		pthread_mutex_lock(&coder->right_dongle->mutex);
@@ -101,13 +101,13 @@ int	take_both_dongles(t_coder *coder)
 	if (check_can_take_dongle(coder))
 	{
 		take_and_pop(coder);
-		pthread_mutex_unlock(&coder->right_dongle->mutex);
 		pthread_mutex_unlock(&coder->left_dongle->mutex);
+		pthread_mutex_unlock(&coder->right_dongle->mutex);
 		print_and_pop_dongles(coder);
 		return (1);
 	}
-	pthread_mutex_unlock(&coder->right_dongle->mutex);
 	pthread_mutex_unlock(&coder->left_dongle->mutex);
+	pthread_mutex_unlock(&coder->right_dongle->mutex);
 	return (0);
 }
 
