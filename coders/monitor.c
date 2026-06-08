@@ -6,19 +6,11 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:04 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:36:04 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:07:29 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codexion.h"
-
-void	take_and_pop(t_coder *coder)
-{
-	coder->left_dongle->is_available = 0;
-	pop_and_bubble_down(coder->left_dongle, coder->table->args->scheduler);
-	coder->right_dongle->is_available = 0;
-	pop_and_bubble_down(coder->right_dongle, coder->table->args->scheduler);
-}
 
 int	monitor_check(t_table *table, int i)
 {

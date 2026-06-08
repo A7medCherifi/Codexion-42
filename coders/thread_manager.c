@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:14 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:36:14 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:10:08 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	coder_compiles(t_coder *coder)
 	coder->last_compile_start = get_time();
 	coder->compile_count++;
 	pthread_mutex_unlock(&coder->mutex);
-	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->mutex);
+	current_time = get_time() - coder->table->start_time;
 	if (coder->table->stop)
 	{
 		pthread_mutex_unlock(&coder->table->mutex);
@@ -41,8 +41,8 @@ int	coder_debug(t_coder *coder)
 
 	if (check_for_stop(coder->table))
 		return (1);
-	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->mutex);
+	current_time = get_time() - coder->table->start_time;
 	if (coder->table->stop)
 	{
 		pthread_mutex_unlock(&coder->table->mutex);
@@ -60,8 +60,8 @@ int	coder_refacture(t_coder *coder)
 
 	if (check_for_stop(coder->table))
 		return (1);
-	current_time = get_time() - coder->table->start_time;
 	pthread_mutex_lock(&coder->table->mutex);
+	current_time = get_time() - coder->table->start_time;
 	if (coder->table->stop)
 	{
 		pthread_mutex_unlock(&coder->table->mutex);
@@ -114,7 +114,6 @@ void	*thread_manager(void *arg)
 	{
 		if (threads_processing(coder))
 			return (NULL);
-		check_coder_cycle(coder);
 	}
 	return (NULL);
 }

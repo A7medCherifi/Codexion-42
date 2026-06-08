@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:35:56 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:35:56 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:33:31 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ typedef struct s_table
 	int				stop;
 }	t_table;
 
-struct timespec		get_time_spec(long time);
 t_coder				*create_coders_data(t_table *table);
 t_dongle			*create_dongles(t_table *table);
 void				*monitor(void *arg);
@@ -88,10 +87,8 @@ int					free_all(t_table *table);
 int					parsing(t_table *table, int argc, char **argv);
 int					release_dongle(t_coder *coder);
 int					check_for_stop(t_table *table);
-void				broadcast(t_table *table);
 int					take_dongles(t_coder *coder);
 void				time_sleep(t_table *table, int time);
-int					check_for_compiles(t_coder *coder);
 void				swap_nodes(t_request *parent, t_request *child);
 void				check_for_done_simulation(t_coder *coder);
 void				push_and_bubble_up(
@@ -109,7 +106,6 @@ int					monitor_check(t_table *table, int i);
 void				print_and_pop_dongles(t_coder *coder);
 void				pop_and_bubble_down(t_dongle *dongle, int scheduler);
 int					check_for_burnout(t_table *table, int i);
-void				check_coder_cycle(t_coder *coder);
 void				take_and_pop(t_coder *coder);
 void				fill_coders(t_table *table, int i);
 

@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:07 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/20 10:22:31 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 15:02:54 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,8 @@ int	parsing(t_table *table, int argc, char **argv)
 	if (!table->args)
 		return (1);
 	isvalid = 1;
+	if (pthread_mutex_init(&table->mutex, NULL))
+		return (1);
 	check_add_agrs(&table->args->number_of_coders, argv[1], &isvalid, 1);
 	check_add_agrs(&table->args->time_to_burnout, argv[2], &isvalid, 0);
 	check_add_agrs(&table->args->time_to_compile, argv[3], &isvalid, 0);
@@ -92,7 +94,6 @@ int	parsing(t_table *table, int argc, char **argv)
 	check_sheduler(&table->args->scheduler, argv[8], &isvalid);
 	if (!isvalid)
 	{
-		printf("ERROR: Invalid Input!!\n");
 		return (1);
 	}
 	return (0);

@@ -6,26 +6,11 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:35:49 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:35:49 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:34:43 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codexion.h"
-
-void	fill_coders(t_table *table, int i)
-{
-	int		right_index;
-
-	table->coders[i].id = i + 1;
-	table->coders[i].table = table;
-	table->coders[i].compile_count = 1;
-	table->coders[i].left_dongle = &table->dongles[i];
-	right_index = (i + 1) % table->args->number_of_coders;
-	if (right_index == i)
-		table->coders[i].right_dongle = NULL;
-	else
-		table->coders[i].right_dongle = &table->dongles[right_index];
-}
 
 int	free_all(t_table *table)
 {
@@ -59,8 +44,6 @@ int	main(int argc, char **argv)
 {
 	t_table		table;
 
-	if (pthread_mutex_init(&table.mutex, NULL))
-		return (1);
 	if (parsing(&table, argc, argv))
 		return (free_all(&table));
 	table.dongles = create_dongles(&table);

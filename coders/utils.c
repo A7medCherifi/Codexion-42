@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:16 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:36:16 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:58:12 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,10 +87,8 @@ t_coder	*create_coders_data(t_table *table)
 	table->coders = malloc(sizeof(t_coder) * (table->args->number_of_coders));
 	if (!table->coders)
 		return (NULL);
-	pthread_mutex_lock(&table->mutex);
 	table->stop = 0;
 	table->start_simulation = 0;
-	pthread_mutex_unlock(&table->mutex);
 	while (i < table->args->number_of_coders)
 	{
 		if (pthread_mutex_init(&table->coders[i].mutex, NULL))

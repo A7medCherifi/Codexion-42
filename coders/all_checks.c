@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:35:45 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:35:45 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 15:03:14 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,6 @@ int	check_for_stop(t_table *table)
 		return (1);
 	}
 	pthread_mutex_unlock(&table->mutex);
-	return (0);
-}
-
-int	check_for_compiles(t_coder *coder)
-{
-	int		number_of_compiles;
-
-	if (check_for_stop(coder->table))
-		return (0);
-	number_of_compiles = coder->table->args->number_of_compiles_required;
-	pthread_mutex_lock(&coder->mutex);
-	if (coder->compile_count <= number_of_compiles)
-	{
-		pthread_mutex_unlock(&coder->mutex);
-		return (1);
-	}
-	pthread_mutex_unlock(&coder->mutex);
 	return (0);
 }
 
@@ -70,17 +53,12 @@ void	check_for_done_simulation(t_coder *coder)
 	}
 }
 
-void	check_coder_cycle(t_coder *coder)
+void	take_and_pop(t_coder *coder)
 {
-	pthread_mutex_lock(&coder->mutex);
-	if (coder->compile_count > coder->table->args->number_of_compiles_required)
-	{
-		pthread_mutex_unlock(&coder->mutex);
-		while (!check_for_stop(coder->table))
-			usleep(500);
-		return ;
-	}
-	pthread_mutex_unlock(&coder->mutex);
+	coder->left_dongle->is_available = 0;
+	pop_and_bubble_down(coder->left_dongle, coder->table->args->scheduler);
+	coder->right_dongle->is_available = 0;
+	pop_and_bubble_down(coder->right_dongle, coder->table->args->scheduler);
 }
 
 int	check_can_take_dongle(t_coder *coder)
@@ -103,4 +81,19 @@ int	check_can_take_dongle(t_coder *coder)
 		return (1);
 	}
 	return (0);
+}
+
+void	fill_coders(t_table *table, int i)
+{
+	int		right_index;
+
+	table->coders[i].id = i + 1;
+	table->coders[i].table = table;
+	table->coders[i].compile_count = 1;
+	table->coders[i].left_dongle = &table->dongles[i];
+	right_index = (i + 1) % table->args->number_of_coders;
+	if (right_index == i)
+		table->coders[i].right_dongle = NULL;
+	else
+		table->coders[i].right_dongle = &table->dongles[right_index];
 }

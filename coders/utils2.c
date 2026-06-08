@@ -6,7 +6,7 @@
 /*   By: acherifi <acherifi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 14:36:32 by acherifi          #+#    #+#             */
-/*   Updated: 2026/05/19 14:36:32 by acherifi         ###   ########.fr       */
+/*   Updated: 2026/06/08 14:45:14 by acherifi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ void	time_sleep(t_table *table, int time)
 	long	start;
 
 	start = get_time();
+	if (time == 0)
+	{
+		usleep(time);
+		return ;
+	}
 	while ((get_time() - start) < time)
 	{
 		if (check_for_stop(table))
