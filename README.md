@@ -22,13 +22,13 @@ make
 
 ### Example
 ```bash
-./codexion 199 350 100 100 100 3 10 edf
+./codexion 199 340 100 100 100 3 10 edf
 ```
 
 ## Blocking cases handled
 - **Deadlock prevention**: with taking both dongles at once and also by using lower id to avoiding circular wait and satisfying Coffman’s deadlock-prevention strategy.
-- **Starvation prevention**: each dongle send a request to the queue with scheduling (FIFO or EDF) so that waiting coders are eventually served.
-- **Cooldown handling**: dongles cannot be taken until their cooldown expires.
+- **Starvation prevention**: each dongle send a request to the queue with scheduling (FIFO or EDF) so that waiting coders are served.
+- **Cooldown handling**: both dongles cannot be taken until their cooldown expires.
 - **Precise burnout detection**: the monitor continuously checks the time since each coder’s last compile start to detect burnout.
 - **Log serialization**: logging is guarded to avoid interleaved output during concurrent prints.
 
@@ -45,6 +45,34 @@ make
   - Dongles uses ordered locking to prevent races between competing coders.
   - Queue operations are always done while holding the dongle mutex.
 
+  **Example**
+  ```C
+	int	take_both_dongles(t_coder *coder)
+	{
+		if (coder->left_dongle->id < coder->right_dongle->id)
+		{
+			pthread_mutex_lock(&coder->left_dongle->mutex);
+			pthread_mutex_lock(&coder->right_dongle->mutex);
+		}
+		else
+		{
+			pthread_mutex_lock(&coder->right_dongle->mutex);
+			pthread_mutex_lock(&coder->left_dongle->mutex);
+		}
+		if (check_can_take_dongle(coder))
+		{
+			take_and_pop(coder);
+			pthread_mutex_unlock(&coder->left_dongle->mutex);
+			pthread_mutex_unlock(&coder->right_dongle->mutex);
+			print_and_pop_dongles(coder);
+			return (1);
+		}
+		pthread_mutex_unlock(&coder->left_dongle->mutex);
+		pthread_mutex_unlock(&coder->right_dongle->mutex);
+		return (0);
+	}
+  ```
+
 ## Resources
 - [Threads 1](https://kuleuven-diepenbeek.github.io/osc-course/ch6-tasks/threads/)
 - [Threads 2 (Youtube playlist)](https://www.youtube.com/watch?v=d9s_d28yJq0)
@@ -55,5 +83,4 @@ make
 ### AI usage
 - Help me with creating this README file
 - Explain more things in details of some concepts
-- Helped in debuging and finding errors
 - Helped me in code enhancement
